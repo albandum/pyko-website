@@ -9,8 +9,13 @@ import CTASection from '../../components/CTASection.astro';
   <section class="gradient-hero py-16 md:py-24">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl md:text-5xl font-bold text-navy mb-6">Your CRM. In Slack.</h1>
-        <p class="text-xl text-gray-700 mb-8">Install the Pyko bot in your Slack workspace. Get rich, interactive CRM alerts in any channel or direct message.</p>
+        <div class="flex items-center justify-center gap-4 mb-6">
+          <img src="/images/logos/slack.svg" alt="Slack" class="h-16 w-16" />
+          <span class="text-4xl text-white">×</span>
+          <img src="/images/logos/pyko-logo-sm.png" alt="Pyko" class="h-12" />
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Your CRM. In Slack.</h1>
+        <p class="text-xl text-gray-300 mb-8">Install the Pyko bot in your Slack workspace. Get rich, interactive CRM alerts in any channel or direct message.</p>
         <Button href="/trial" variant="primary" size="lg">Add to Slack</Button>
       </div>
     </div>
@@ -18,7 +23,7 @@ import CTASection from '../../components/CTASection.astro';
 
   <section class="py-16 md:py-24 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">Key Features</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" style="color: #061A35;">Key Features</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <FeatureCard icon="📢" title="Channel & DM Routing" description="Send to public/private channels or direct messages. Route dynamically based on CRM data." />
         <FeatureCard icon="@" title="User Mentions" description="@mention users by CRM field. Get the right person's attention instantly." />

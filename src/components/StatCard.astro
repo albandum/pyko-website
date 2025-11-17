@@ -10,14 +10,14 @@ const { number, label, description, class: className = '' } = Astro.props;
 ---
 
 <div class={`text-center p-6 ${className}`}>
-  <div class="text-4xl md:text-5xl lg:text-6xl font-bold text-accent mb-2">
+  <div class="text-4xl md:text-5xl lg:text-6xl font-bold mb-2" style="color: #F94730;">
     {number}
   </div>
-  <div class="text-lg md:text-xl font-semibold text-navy mb-2">
+  <div class="text-lg md:text-xl font-semibold text-white mb-2">
     {label}
   </div>
   {description && (
-    <p class="text-sm text-gray-600">
+    <p class="text-sm text-gray-400">
       {description}
     </p>
   )}

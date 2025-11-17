@@ -13,10 +13,10 @@ import CTASection from '../../components/CTASection.astro';
   <section class="gradient-hero py-16 md:py-24">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-navy mb-6">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
           Real-time CRM alerts. Zero context switching.
         </h1>
-        <p class="text-xl md:text-2xl text-gray-700 mb-8">
+        <p class="text-xl md:text-2xl text-gray-300 mb-8">
           Know the moment something important happens in your CRM. Get instant Slack or Teams notifications and take action without opening a browser.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -37,11 +37,11 @@ import CTASection from '../../components/CTASection.astro';
           </div>
           <div class="bg-white p-6">
             <div class="flex gap-3 mb-4">
-              <div class="w-10 h-10 bg-accent rounded flex items-center justify-center text-white font-bold">P</div>
+              <div class="w-10 h-10 rounded flex items-center justify-center text-white font-bold" style="background-color: #F94730;">P</div>
               <div class="flex-1">
                 <div class="font-semibold mb-1">Pyko</div>
                 <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
-                  <div class="font-semibold text-navy mb-2">🎯 High-Value Opportunity Created</div>
+                  <div class="font-semibold mb-2" style="color: #061A35;">🎯 High-Value Opportunity Created</div>
                   <div class="space-y-1 text-sm text-gray-700">
                     <div><strong>Account:</strong> Acme Corporation</div>
                     <div><strong>Amount:</strong> $125,000</div>
@@ -49,7 +49,7 @@ import CTASection from '../../components/CTASection.astro';
                     <div><strong>Owner:</strong> @sarah.chen</div>
                   </div>
                   <div class="flex gap-2 mt-4">
-                    <button class="px-4 py-2 bg-accent text-white rounded text-sm font-medium">Update Stage</button>
+                    <button class="px-4 py-2 text-white rounded text-sm font-medium" style="background-color: #F94730;">Update Stage</button>
                     <button class="px-4 py-2 bg-gray-200 rounded text-sm font-medium">Create Task</button>
                     <button class="px-4 py-2 bg-gray-200 rounded text-sm font-medium">Open in CRM</button>
                   </div>
@@ -66,47 +66,47 @@ import CTASection from '../../components/CTASection.astro';
   <section class="py-16 md:py-24 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: #061A35;">
           True real-time alerts
         </h2>
-        <p class="text-lg text-gray-600">
+        <p class="text-lg text-gray-700">
           Different CRMs require different approaches. We optimize for speed on both.
         </p>
       </div>
 
       <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-        <div class="p-8 bg-blue-50 rounded-xl border-2 border-blue-200">
+        <div class="p-8 bg-gray-50 rounded-xl border-2 border-gray-200">
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-12 h-12 bg-blue-600 rounded flex items-center justify-center text-white font-bold text-lg">SF</div>
-            <h3 class="text-2xl font-bold text-navy">Salesforce</h3>
+            <img src="/images/logos/salesforce.svg" alt="Salesforce" class="h-12 w-12" />
+            <h3 class="text-2xl font-bold" style="color: #061A35;">Salesforce</h3>
           </div>
-          <h4 class="font-semibold text-navy mb-2">True real-time with Platform Events</h4>
+          <h4 class="font-semibold mb-2" style="color: #061A35;">True real-time with Platform Events</h4>
           <p class="text-gray-700 mb-4">
             We use Salesforce Platform Events and Flows for instant push notifications. When a record changes, you know within seconds.
           </p>
-          <div class="bg-white rounded-lg p-4 text-sm">
-            <div class="font-mono text-xs space-y-1">
+          <div class="bg-white rounded-lg p-4 text-sm border border-gray-200">
+            <div class="font-mono text-xs space-y-1 text-gray-700">
               <div>Record changes → Flow triggers →</div>
               <div>Platform Event → Pyko →</div>
-              <div class="text-accent font-semibold">Slack alert (1-3 seconds)</div>
+              <div class="font-semibold" style="color: #F94730;">⚡ Slack alert (1-3 seconds)</div>
             </div>
           </div>
         </div>
 
-        <div class="p-8 bg-orange-50 rounded-xl border-2 border-orange-200">
+        <div class="p-8 bg-gray-50 rounded-xl border-2 border-gray-200">
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-12 h-12 bg-orange-600 rounded flex items-center justify-center text-white font-bold text-lg">HS</div>
-            <h3 class="text-2xl font-bold text-navy">HubSpot</h3>
+            <img src="/images/logos/hubspot.svg" alt="HubSpot" class="h-12 w-12" />
+            <h3 class="text-2xl font-bold" style="color: #061A35;">HubSpot</h3>
           </div>
-          <h4 class="font-semibold text-navy mb-2">Intelligent polling every 5 minutes</h4>
+          <h4 class="font-semibold mb-2" style="color: #061A35;">Intelligent polling every 5 minutes</h4>
           <p class="text-gray-700 mb-4">
             We check for changes every 5 minutes using HubSpot's Search API. Fast enough to catch every important update.
           </p>
-          <div class="bg-white rounded-lg p-4 text-sm">
-            <div class="font-mono text-xs space-y-1">
+          <div class="bg-white rounded-lg p-4 text-sm border border-gray-200">
+            <div class="font-mono text-xs space-y-1 text-gray-700">
               <div>Pyko polls every 5 min →</div>
               <div>Search API detects changes →</div>
-              <div class="text-accent font-semibold">Slack alert (max 5 min delay)</div>
+              <div class="font-semibold" style="color: #F94730;">⚡ Slack alert (max 5 min delay)</div>
             </div>
           </div>
         </div>
@@ -118,10 +118,10 @@ import CTASection from '../../components/CTASection.astro';
   <section class="py-16 md:py-24 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: #061A35;">
           Say exactly what you need to say
         </h2>
-        <p class="text-lg text-gray-600">
+        <p class="text-lg text-gray-700">
           Customize messages with dynamic fields, mentions, and rich formatting
         </p>
       </div>
@@ -166,26 +166,26 @@ import CTASection from '../../components/CTASection.astro';
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl mx-auto">
         <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: #061A35;">
             Send alerts to the right people, every time
           </h2>
         </div>
 
         <div class="space-y-6">
           <div class="p-6 bg-gray-50 rounded-xl">
-            <h3 class="text-xl font-bold text-navy mb-2">📢 Specific Channels</h3>
+            <h3 class="text-xl font-bold mb-2" style="color: #061A35;">📢 Specific Channels</h3>
             <p class="text-gray-700">Send to #sales-team, #pipeline-alerts, or any channel in your workspace</p>
           </div>
 
           <div class="p-6 bg-gray-50 rounded-xl">
-            <h3 class="text-xl font-bold text-navy mb-2">💬 Direct Messages</h3>
+            <h3 class="text-xl font-bold mb-2" style="color: #061A35;">💬 Direct Messages</h3>
             <p class="text-gray-700">Send private alerts to individual users. Perfect for personal tasks and reminders.</p>
           </div>
 
           <div class="p-6 bg-gray-50 rounded-xl">
-            <h3 class="text-xl font-bold text-navy mb-2">🎯 Dynamic Routing</h3>
+            <h3 class="text-xl font-bold mb-2" style="color: #061A35;">🎯 Dynamic Routing</h3>
             <p class="text-gray-700 mb-3">Route based on CRM data:</p>
-            <ul class="space-y-2 text-sm text-gray-600">
+            <ul class="space-y-2 text-sm text-gray-700">
               <li>• Send to record owner</li>
               <li>• Send to owner's manager</li>
               <li>• Route by territory (EMEA → #emea-sales)</li>
@@ -201,18 +201,18 @@ import CTASection from '../../components/CTASection.astro';
   <section class="py-16 md:py-24 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
           No notification spam. Ever.
         </h2>
         <p class="text-lg text-gray-700 mb-8">
           Enable "run once per record" to ensure you never get duplicate alerts for the same record, even if it re-enters your filter conditions.
         </p>
-        <div class="bg-white rounded-xl p-8 border-2 border-accent">
+        <div class="bg-white rounded-xl p-8 border-2" style="border-color: #F94730;">
           <div class="text-left space-y-4">
             <div class="flex items-start gap-3">
-              <div class="w-6 h-6 bg-success rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">✓</div>
+              <div class="w-6 h-6 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1" style="background-color: #10B981;">✓</div>
               <div>
-                <div class="font-semibold text-navy">Example: Deal enters "Negotiation" stage</div>
+                <div class="font-semibold" style="color: #061A35;">Example: Deal enters "Negotiation" stage</div>
                 <div class="text-sm text-gray-600">Alert sent to owner</div>
               </div>
             </div>
@@ -233,7 +233,7 @@ import CTASection from '../../components/CTASection.astro';
   <section class="py-16 md:py-24 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: #061A35;">
           Common live alert use cases
         </h2>
       </div>
@@ -241,9 +241,9 @@ import CTASection from '../../components/CTASection.astro';
       <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
         <div class="p-6 bg-gray-50 rounded-xl">
           <div class="text-2xl mb-3">🚀</div>
-          <h3 class="text-xl font-bold text-navy mb-2">Hot Lead Assignment</h3>
+          <h3 class="text-xl font-bold mb-2" style="color: #061A35;">Hot Lead Assignment</h3>
           <p class="text-gray-700 mb-3">New inbound lead assigned to you? Get instant DM within 60 seconds.</p>
-          <div class="text-sm text-gray-600 bg-white p-3 rounded border border-gray-200">
+          <div class="text-sm text-gray-700 bg-white p-3 rounded border border-gray-200">
             <strong>Trigger:</strong> Lead created, Status = "New", Owner = Me<br/>
             <strong>Alert:</strong> Slack DM with lead details + "Call Now" button
           </div>
@@ -251,9 +251,9 @@ import CTASection from '../../components/CTASection.astro';
 
         <div class="p-6 bg-gray-50 rounded-xl">
           <div class="text-2xl mb-3">📈</div>
-          <h3 class="text-xl font-bold text-navy mb-2">Deal Stage Progression</h3>
+          <h3 class="text-xl font-bold mb-2" style="color: #061A35;">Deal Stage Progression</h3>
           <p class="text-gray-700 mb-3">Know when your opportunities move forward (or backward).</p>
-          <div class="text-sm text-gray-600 bg-white p-3 rounded border border-gray-200">
+          <div class="text-sm text-gray-700 bg-white p-3 rounded border border-gray-200">
             <strong>Trigger:</strong> Opportunity stage changes<br/>
             <strong>Alert:</strong> Team channel + @mention owner
           </div>
@@ -261,9 +261,9 @@ import CTASection from '../../components/CTASection.astro';
 
         <div class="p-6 bg-gray-50 rounded-xl">
           <div class="text-2xl mb-3">🏆</div>
-          <h3 class="text-xl font-bold text-navy mb-2">Win Celebrations</h3>
+          <h3 class="text-xl font-bold mb-2" style="color: #061A35;">Win Celebrations</h3>
           <p class="text-gray-700 mb-3">Deal marked Closed Won? Celebrate in the team channel!</p>
-          <div class="text-sm text-gray-600 bg-white p-3 rounded border border-gray-200">
+          <div class="text-sm text-gray-700 bg-white p-3 rounded border border-gray-200">
             <strong>Trigger:</strong> Opportunity stage = "Closed Won"<br/>
             <strong>Alert:</strong> #sales-wins channel with confetti emoji
           </div>
@@ -271,9 +271,9 @@ import CTASection from '../../components/CTASection.astro';
 
         <div class="p-6 bg-gray-50 rounded-xl">
           <div class="text-2xl mb-3">⚠️</div>
-          <h3 class="text-xl font-bold text-navy mb-2">Manager Escalations</h3>
+          <h3 class="text-xl font-bold mb-2" style="color: #061A35;">Manager Escalations</h3>
           <p class="text-gray-700 mb-3">High-value deal slipping? Alert the manager immediately.</p>
-          <div class="text-sm text-gray-600 bg-white p-3 rounded border border-gray-200">
+          <div class="text-sm text-gray-700 bg-white p-3 rounded border border-gray-200">
             <strong>Trigger:</strong> Opportunity >$100K, Stage = "Closed Lost"<br/>
             <strong>Alert:</strong> DM to sales manager with details
           </div>
@@ -281,9 +281,9 @@ import CTASection from '../../components/CTASection.astro';
 
         <div class="p-6 bg-gray-50 rounded-xl">
           <div class="text-2xl mb-3">🗺️</div>
-          <h3 class="text-xl font-bold text-navy mb-2">Territory Routing</h3>
+          <h3 class="text-xl font-bold mb-2" style="color: #061A35;">Territory Routing</h3>
           <p class="text-gray-700 mb-3">New lead in EMEA? Route to the EMEA team automatically.</p>
-          <div class="text-sm text-gray-600 bg-white p-3 rounded border border-gray-200">
+          <div class="text-sm text-gray-700 bg-white p-3 rounded border border-gray-200">
             <strong>Trigger:</strong> Lead created, Country in (UK, FR, DE...)<br/>
             <strong>Alert:</strong> #emea-sales channel
           </div>
@@ -291,9 +291,9 @@ import CTASection from '../../components/CTASection.astro';
 
         <div class="p-6 bg-gray-50 rounded-xl">
           <div class="text-2xl mb-3">🔄</div>
-          <h3 class="text-xl font-bold text-navy mb-2">Renewal Opportunities</h3>
+          <h3 class="text-xl font-bold mb-2" style="color: #061A35;">Renewal Opportunities</h3>
           <p class="text-gray-700 mb-3">Contract renewing soon? Alert CSM to start the conversation.</p>
-          <div class="text-sm text-gray-600 bg-white p-3 rounded border border-gray-200">
+          <div class="text-sm text-gray-700 bg-white p-3 rounded border border-gray-200">
             <strong>Trigger:</strong> Account contract end date in 60 days<br/>
             <strong>Alert:</strong> DM to CSM + create renewal task
           </div>
@@ -306,7 +306,7 @@ import CTASection from '../../components/CTASection.astro';
   <section class="py-16 md:py-24 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
           Pre-built alert templates
         </h2>
         <p class="text-lg text-gray-700 mb-8">

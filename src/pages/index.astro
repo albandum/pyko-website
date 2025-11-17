@@ -18,10 +18,10 @@ import CTASection from '../components/CTASection.astro';
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <!-- Left: Text Content -->
         <div class="text-center lg:text-left">
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-navy mb-6 leading-tight">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Your Revenue Radar
           </h1>
-          <p class="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
+          <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
             Instant CRM alerts and one-click actions in Slack and Teams. Never miss a deal signal again.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
@@ -32,7 +32,7 @@ import CTASection from '../components/CTASection.astro';
               See How It Works
             </Button>
           </div>
-          <p class="text-sm text-gray-600">
+          <p class="text-sm text-gray-400">
             ✓ No credit card required  ✓ 14-day free trial  ✓ Setup in 5 minutes
           </p>
         </div>
@@ -41,23 +41,23 @@ import CTASection from '../components/CTASection.astro';
         <div class="relative">
           <!-- Placeholder for split-screen comparison -->
           <div class="grid grid-cols-2 gap-4">
-            <div class="p-4 bg-gray-100 rounded-lg border-2 border-gray-300">
+            <div class="p-4 rounded-lg border-2 border-gray-700" style="background-color: #0A2342;">
               <div class="text-xs text-gray-500 mb-2">❌ Without Pyko</div>
               <div class="space-y-2">
-                <div class="h-3 bg-gray-300 rounded"></div>
-                <div class="h-3 bg-gray-300 rounded w-3/4"></div>
-                <div class="h-3 bg-gray-300 rounded w-1/2"></div>
-                <div class="text-xs text-gray-400 mt-4">Cluttered CRM interface</div>
+                <div class="h-3 rounded" style="background-color: #1E3A5F;"></div>
+                <div class="h-3 rounded w-3/4" style="background-color: #1E3A5F;"></div>
+                <div class="h-3 rounded w-1/2" style="background-color: #1E3A5F;"></div>
+                <div class="text-xs text-gray-500 mt-4">Cluttered CRM interface</div>
               </div>
             </div>
-            <div class="p-4 bg-white rounded-lg border-2 border-accent shadow-lg">
-              <div class="text-xs text-accent mb-2">✓ With Pyko</div>
+            <div class="p-4 rounded-lg border-2" style="background-color: #0A2342; border-color: #F94730;">
+              <div class="text-xs mb-2" style="color: #F94730;">✓ With Pyko</div>
               <div class="space-y-2">
-                <div class="text-xs font-semibold">Deal Update</div>
-                <div class="text-xs text-gray-600">Acme Corp → Negotiation</div>
+                <div class="text-xs font-semibold text-white">Deal Update</div>
+                <div class="text-xs text-gray-400">Acme Corp → Negotiation</div>
                 <div class="flex gap-2 mt-3">
-                  <div class="px-2 py-1 bg-accent text-white text-xs rounded">Push Date</div>
-                  <div class="px-2 py-1 bg-gray-200 text-xs rounded">Update</div>
+                  <div class="px-2 py-1 text-white text-xs rounded" style="background-color: #F94730;">Push Date</div>
+                  <div class="px-2 py-1 text-xs rounded" style="background-color: #1E3A5F; color: white;">Update</div>
                 </div>
               </div>
             </div>
@@ -68,10 +68,10 @@ import CTASection from '../components/CTASection.astro';
   </section>
 
   <!-- The Problem Section -->
-  <section class="py-16 md:py-24 bg-white">
+  <section class="py-16 md:py-24 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-6">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style="color: #061A35;">
           Your reps live in Slack. Your deals live in Salesforce. That's a problem.
         </h2>
       </div>
@@ -95,8 +95,8 @@ import CTASection from '../components/CTASection.astro';
       </div>
 
       <div class="text-center">
-        <div class="inline-block px-6 py-3 bg-orange/10 rounded-lg">
-          <p class="text-lg font-semibold text-orange-dark">
+        <div class="inline-block px-6 py-3 rounded-lg" style="background-color: rgba(249, 71, 48, 0.1);">
+          <p class="text-lg font-semibold" style="color: #FA6854;">
             Sales teams lose <span class="text-2xl font-bold">5+ hours per week</span> to CRM busywork
           </p>
         </div>
@@ -105,10 +105,10 @@ import CTASection from '../components/CTASection.astro';
   </section>
 
   <!-- The Solution Section -->
-  <section class="py-16 md:py-24 bg-gray-50">
+  <section class="py-16 md:py-24 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-6">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style="color: #061A35;">
           Bring your CRM into your team's command center
         </h2>
       </div>
@@ -119,7 +119,7 @@ import CTASection from '../components/CTASection.astro';
           title="Live Alerts"
           description="Get instant Slack notifications when deals hit critical stages. Custom triggers. Rich messages. Zero noise."
         >
-          <a href="/product/live-alerts" class="text-accent hover:text-accent-dark font-medium text-sm mt-4 inline-block">
+          <a href="/product/live-alerts" class="font-medium text-sm mt-4 inline-block" style="color: #F94730;">
             Learn more →
           </a>
         </FeatureCard>
@@ -129,7 +129,7 @@ import CTASection from '../components/CTASection.astro';
           title="One-Click Actions"
           description="Update records, push dates, create tasks - right from Slack. No CRM login required. Ever."
         >
-          <a href="/product/actions" class="text-accent hover:text-accent-dark font-medium text-sm mt-4 inline-block">
+          <a href="/product/actions" class="font-medium text-sm mt-4 inline-block" style="color: #F94730;">
             Learn more →
           </a>
         </FeatureCard>
@@ -139,7 +139,7 @@ import CTASection from '../components/CTASection.astro';
           title="Cleaning Rules"
           description="Automated data hygiene that runs on your schedule. Catch problems before they hurt your forecast."
         >
-          <a href="/product/cleaning-rules" class="text-accent hover:text-accent-dark font-medium text-sm mt-4 inline-block">
+          <a href="/product/cleaning-rules" class="font-medium text-sm mt-4 inline-block" style="color: #F94730;">
             Learn more →
           </a>
         </FeatureCard>
@@ -148,26 +148,26 @@ import CTASection from '../components/CTASection.astro';
   </section>
 
   <!-- Demo Video Section -->
-  <section id="demo" class="py-16 md:py-24 bg-white">
+  <section id="demo" class="py-16 md:py-24 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
           See it in action
         </h2>
-        <p class="text-lg text-gray-600 mb-8">
+        <p class="text-lg text-gray-700 mb-8">
           From CRM change to action taken in 5 seconds. No context switching. No manual updates.
         </p>
 
-        <!-- Placeholder for demo video -->
-        <div class="aspect-video bg-gray-200 rounded-xl flex items-center justify-center mb-6 relative overflow-hidden">
-          <div class="text-center">
-            <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
-              </svg>
-            </div>
-            <p class="text-gray-600 font-medium">Demo video coming soon</p>
-          </div>
+        <!-- Demo video -->
+        <div class="aspect-video rounded-xl mb-6 relative overflow-hidden bg-gray-200">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/OFJXKzacfwE"
+            title="Pyko Demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
         <p class="text-sm text-gray-500">
           Watch how Pyko detects an opportunity stage change in Salesforce, sends an alert to Slack, and lets the rep push the close date forward - all in under 5 seconds.
@@ -177,10 +177,10 @@ import CTASection from '../components/CTASection.astro';
   </section>
 
   <!-- How It Works Section -->
-  <section class="py-16 md:py-24 bg-gray-50">
+  <section class="py-16 md:py-24 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
           Set it up in minutes. Not months.
         </h2>
       </div>
@@ -188,66 +188,68 @@ import CTASection from '../components/CTASection.astro';
       <div class="max-w-4xl mx-auto">
         <div class="grid md:grid-cols-3 gap-8 mb-12">
           <div class="text-center">
-            <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+            <div class="w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" style="background-color: #F94730;">
               1
             </div>
-            <h3 class="text-xl font-bold text-navy mb-2">Connect</h3>
-            <p class="text-gray-600 mb-2">
+            <h3 class="text-xl font-bold mb-2" style="color: #061A35;">Connect</h3>
+            <p class="text-gray-700 mb-2">
               Plug in Salesforce or HubSpot + Slack or Teams
             </p>
-            <p class="text-sm text-accent font-semibold">30 seconds</p>
+            <div class="flex items-center justify-center gap-2 mb-2">
+              <img src="/images/logos/salesforce.svg" alt="Salesforce" class="h-6 w-6 opacity-70" />
+              <img src="/images/logos/hubspot.svg" alt="HubSpot" class="h-6 w-6 opacity-70" />
+              <span class="text-gray-400">+</span>
+              <img src="/images/logos/slack.svg" alt="Slack" class="h-6 w-6 opacity-70" />
+              <img src="/images/logos/teams.svg" alt="Teams" class="h-6 w-6 opacity-70" />
+            </div>
+            <p class="text-sm font-semibold" style="color: #F94730;">30 seconds</p>
           </div>
 
           <div class="text-center">
-            <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+            <div class="w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" style="background-color: #F94730;">
               2
             </div>
-            <h3 class="text-xl font-bold text-navy mb-2">Configure</h3>
-            <p class="text-gray-600 mb-2">
+            <h3 class="text-xl font-bold mb-2" style="color: #061A35;">Configure</h3>
+            <p class="text-gray-700 mb-2">
               Choose from templates or build custom rules
             </p>
-            <p class="text-sm text-accent font-semibold">5 minutes</p>
+            <p class="text-sm font-semibold" style="color: #F94730;">5 minutes</p>
           </div>
 
           <div class="text-center">
-            <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+            <div class="w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" style="background-color: #F94730;">
               3
             </div>
-            <h3 class="text-xl font-bold text-navy mb-2">Automate</h3>
-            <p class="text-gray-600 mb-2">
+            <h3 class="text-xl font-bold mb-2" style="color: #061A35;">Automate</h3>
+            <p class="text-gray-700 mb-2">
               Let Pyko watch 24/7 and alert your team
             </p>
-            <p class="text-sm text-accent font-semibold">Ongoing</p>
+            <p class="text-sm font-semibold" style="color: #F94730;">Ongoing</p>
           </div>
         </div>
 
         <!-- Template Showcase -->
         <div class="mt-16">
-          <h3 class="text-2xl font-bold text-navy text-center mb-8">
+          <h3 class="text-2xl font-bold text-center mb-8" style="color: #061A35;">
             Popular templates to get started instantly
           </h3>
           <div class="grid md:grid-cols-2 gap-4">
-            <div class="p-4 bg-white rounded-lg border border-gray-200 hover:border-accent transition-colors">
-              <h4 class="font-semibold text-navy mb-1">New high-value lead assigned to me</h4>
-              <p class="text-sm text-gray-600">Get instant alerts for hot leads</p>
+            <div class="p-4 rounded-lg border border-gray-200 transition-colors bg-white">
+              <h4 class="font-semibold mb-1" style="color: #061A35;">New high-value lead assigned to me</h4>
+              <p class="text-sm text-gray-700">Get instant alerts for hot leads</p>
             </div>
-            <div class="p-4 bg-white rounded-lg border border-gray-200 hover:border-accent transition-colors">
-              <h4 class="font-semibold text-navy mb-1">Deal stuck in demo stage for 7+ days</h4>
-              <p class="text-sm text-gray-600">Prevent pipeline rot</p>
+            <div class="p-4 rounded-lg border border-gray-200 transition-colors bg-white">
+              <h4 class="font-semibold mb-1" style="color: #061A35;">Deal stuck in demo stage for 7+ days</h4>
+              <p class="text-sm text-gray-700">Prevent pipeline rot</p>
             </div>
-            <div class="p-4 bg-white rounded-lg border border-gray-200 hover:border-accent transition-colors">
-              <h4 class="font-semibold text-navy mb-1">Close date in the past, deal still open</h4>
-              <p class="text-sm text-gray-600">Keep your forecast clean</p>
+            <div class="p-4 rounded-lg border border-gray-200 transition-colors bg-white">
+              <h4 class="font-semibold mb-1" style="color: #061A35;">Close date in the past, deal still open</h4>
+              <p class="text-sm text-gray-700">Keep your forecast clean</p>
             </div>
-            <div class="p-4 bg-white rounded-lg border border-gray-200 hover:border-accent transition-colors">
-              <h4 class="font-semibold text-navy mb-1">Deal Closed Won - celebrate!</h4>
-              <p class="text-sm text-gray-600">Build team morale</p>
+            <div class="p-4 rounded-lg border border-gray-200 transition-colors bg-white">
+              <h4 class="font-semibold mb-1" style="color: #061A35;">Deal Closed Won - celebrate!</h4>
+              <p class="text-sm text-gray-700">Build team morale</p>
             </div>
-          </div>
-          <div class="text-center mt-6">
-            <Button href="/templates" variant="outline">
-              Browse 50+ templates →
-            </Button>
           </div>
         </div>
       </div>
@@ -255,10 +257,10 @@ import CTASection from '../components/CTASection.astro';
   </section>
 
   <!-- Use Cases Section -->
-  <section class="py-16 md:py-24 bg-white">
+  <section class="py-16 md:py-24 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
           One platform. Infinite possibilities.
         </h2>
       </div>
@@ -299,42 +301,58 @@ import CTASection from '../components/CTASection.astro';
   </section>
 
   <!-- Social Proof Section -->
-  <section class="py-16 md:py-24 bg-gray-50">
+  <section class="py-16 md:py-24 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">
+        <h3 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
           Trusted by revenue teams at...
-        </h2>
+        </h3>
       </div>
 
-      <!-- Logo Cloud (Placeholders) -->
-      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-16">
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => (
-          <div class="flex items-center justify-center p-4 bg-white rounded-lg border border-gray-200 hover:border-accent transition-colors">
-            <div class="text-gray-400 text-sm font-medium">Customer {i}</div>
-          </div>
-        ))}
+      <!-- Logo Cloud -->
+      <div class="flex flex-wrap items-center justify-center gap-12 mb-16 max-w-4xl mx-auto">
+        <div class="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+          <img src="/images/customers/abtasty.png" alt="AB Tasty" class="h-12 w-auto object-contain" />
+        </div>
+        <div class="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+          <img src="/images/customers/lifen.png" alt="Lifen" class="h-12 w-auto object-contain" />
+        </div>
+        <div class="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+          <img src="/images/customers/skello.png" alt="Skello" class="h-12 w-auto object-contain" />
+        </div>
+        <div class="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+          <img src="/images/customers/sunday.png" alt="Sunday" class="h-12 w-auto object-contain" />
+        </div>
       </div>
 
       <!-- Testimonials -->
       <div class="grid md:grid-cols-3 gap-8">
         <TestimonialCard
-          quote="I used to spend 30 minutes every morning checking for deal updates. Now Pyko pings me in Slack the second something changes. I can't imagine going back."
-          author="Sarah Chen"
-          role="Account Executive"
-          company="TechCorp"
-        />
-        <TestimonialCard
-          quote="Our close date accuracy went from 60% to 90% in the first month. The automated cleaning rules catch stale data before it pollutes our forecast."
-          author="Marcus Johnson"
+          quote="Starting to use Pyko was a game changer for us. We went from confrontational business reviews because we couldn't trust the forecasts to a smooth pipeline"
+          author="Alain Hazout"
           role="VP Sales"
-          company="GrowthCo"
+          company="Payfit"
+          photo="/images/customers/testimonials/payfit/person.jpeg"
+          logo="/images/customers/testimonials/payfit/logo.png"
+          bgColor="#061A35"
         />
         <TestimonialCard
-          quote="We have Salesforce AND HubSpot across different divisions. Pyko is the only tool that works with both. It's been a game-changer for standardization."
-          author="Priya Patel"
-          role="RevOps Lead"
-          company="Enterprise Inc"
+          quote="Pyko fixes the one issue that I've seen in every single company I worked for : out of date close dates. We also use it for task monitoring and edge cases!"
+          author="Robin Iss"
+          role="Head Of RevOps"
+          company="Sunday"
+          photo="/images/customers/testimonials/sunday/person.jpeg"
+          logo="/images/customers/testimonials/sunday/logo.png"
+          bgColor="#F94730"
+        />
+        <TestimonialCard
+          quote="Before Pyko we depended on Salesforce developers to build any alerting and routing capabilities in our CRM. Now we have full autonomy, it's just so easy!"
+          author="Mariane Perrin"
+          role="Revenue Operations"
+          company="Lifen"
+          photo="/images/customers/testimonials/lifen/person.jpeg"
+          logo="/images/customers/testimonials/lifen/logo.jpg"
+          bgColor="#061A35"
         />
       </div>
     </div>
@@ -370,13 +388,13 @@ import CTASection from '../components/CTASection.astro';
   </section>
 
   <!-- Comparison Table Section -->
-  <section class="py-16 md:py-24 bg-white">
+  <section class="py-16 md:py-24 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: #061A35;">
           Why choose Pyko?
         </h2>
-        <p class="text-lg text-gray-600">
+        <p class="text-lg text-gray-700">
           See how we compare to native integrations and enterprise platforms
         </p>
       </div>
