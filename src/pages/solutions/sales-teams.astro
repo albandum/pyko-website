@@ -10,33 +10,43 @@ import CTASection from '../../components/CTASection.astro';
   <section class="gradient-hero py-16 md:py-24">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-navy mb-6">Sell faster. Update less.</h1>
-        <p class="text-xl md:text-2xl text-gray-700 mb-8">Sales reps spend 5+ hours per week on CRM busywork. Pyko brings your CRM into Slack so you can focus on what matters: closing deals.</p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Sell faster. Update less.</h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8">Sales reps spend 5+ hours per week on CRM busywork. Pyko brings your CRM into Slack so you can focus on what matters: closing deals.</p>
         <Button href="/trial" variant="primary" size="lg">Start Free Trial</Button>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-16 md:py-24 bg-white">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">The sales rep problem</h2>
-      <div class="max-w-3xl mx-auto space-y-6">
-        <div class="p-6 bg-red-50 rounded-xl border border-red-200">
-          <h3 class="font-bold text-red-700 mb-2">📊 Sales reps spend 65% of their time on non-selling activities</h3>
-        </div>
-        <div class="p-6 bg-orange-50 rounded-xl border border-orange-200">
-          <h3 class="font-bold text-orange-700 mb-2">🔄 Average rep switches between 10+ apps per day</h3>
-        </div>
-        <div class="p-6 bg-yellow-50 rounded-xl border border-yellow-200">
-          <h3 class="font-bold text-yellow-700 mb-2">⚡ 30-50% of sales go to the vendor who responds first</h3>
-        </div>
       </div>
     </div>
   </section>
 
   <section class="py-16 md:py-24 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">How Pyko helps sales reps</h2>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style="color: #061A35;">
+          The sales rep challenge
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <FeatureCard
+          icon="📊"
+          title="Time Wasted"
+          description="Sales reps spend 65% of their time on non-selling activities. Every minute in CRM is a minute not closing deals."
+        />
+        <FeatureCard
+          icon="🔄"
+          title="Context Switching"
+          description="Average rep switches between 10+ apps per day. App switching kills productivity and focus."
+        />
+        <FeatureCard
+          icon="⚡"
+          title="Speed Matters"
+          description="30-50% of sales go to the vendor who responds first. Minutes matter in the race to respond."
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" style="color: #061A35;">How Pyko helps sales reps</h2>
       <div class="grid md:grid-cols-2 gap-8">
         <FeatureCard icon="⚡" title="Instant Lead Alerts" description="New lead assigned? You know within 60 seconds. Respond 10x faster than competitors." />
         <FeatureCard icon="🎯" title="One-Click CRM Updates" description="Update close dates, log activities, create tasks - all from Slack. No more 'I'll update it later.'" />
@@ -46,30 +56,30 @@ import CTASection from '../../components/CTASection.astro';
     </div>
   </section>
 
-  <section class="py-16 md:py-24 bg-white">
+  <section class="py-16 md:py-24 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">Common sales rep workflows</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" style="color: #061A35;">Common sales rep workflows</h2>
       <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-        <div class="p-6 bg-gray-50 rounded-xl">
-          <h3 class="text-xl font-bold text-navy mb-3">🚀 Speed to Lead</h3>
+        <div class="p-6 bg-white rounded-xl border border-gray-200">
+          <h3 class="text-xl font-bold mb-3" style="color: #061A35;">🚀 Speed to Lead</h3>
           <p class="text-sm text-gray-700 mb-3"><strong>Trigger:</strong> New inbound lead assigned to me</p>
           <p class="text-sm text-gray-700 mb-3"><strong>Alert:</strong> Slack DM with lead details</p>
           <p class="text-sm text-gray-700"><strong>Action:</strong> "Call Now" button opens dialer, logs activity</p>
         </div>
-        <div class="p-6 bg-gray-50 rounded-xl">
-          <h3 class="text-xl font-bold text-navy mb-3">📈 Deal Progression</h3>
+        <div class="p-6 bg-white rounded-xl border border-gray-200">
+          <h3 class="text-xl font-bold mb-3" style="color: #061A35;">📈 Deal Progression</h3>
           <p class="text-sm text-gray-700 mb-3"><strong>Trigger:</strong> My opportunities change stage</p>
           <p class="text-sm text-gray-700 mb-3"><strong>Alert:</strong> Slack notification with details</p>
           <p class="text-sm text-gray-700"><strong>Action:</strong> Update next steps, push close date</p>
         </div>
-        <div class="p-6 bg-gray-50 rounded-xl">
-          <h3 class="text-xl font-bold text-navy mb-3">🔄 Follow-Up Reminders</h3>
+        <div class="p-6 bg-white rounded-xl border border-gray-200">
+          <h3 class="text-xl font-bold mb-3" style="color: #061A35;">🔄 Follow-Up Reminders</h3>
           <p class="text-sm text-gray-700 mb-3"><strong>Trigger:</strong> Lead status "Attempting Contact" 48+ hours</p>
           <p class="text-sm text-gray-700 mb-3"><strong>Alert:</strong> Reminder in Slack</p>
           <p class="text-sm text-gray-700"><strong>Action:</strong> Update status or schedule call</p>
         </div>
-        <div class="p-6 bg-gray-50 rounded-xl">
-          <h3 class="text-xl font-bold text-navy mb-3">🏆 Win Celebrations</h3>
+        <div class="p-6 bg-white rounded-xl border border-gray-200">
+          <h3 class="text-xl font-bold mb-3" style="color: #061A35;">🏆 Win Celebrations</h3>
           <p class="text-sm text-gray-700 mb-3"><strong>Trigger:</strong> My opportunity marked Closed Won</p>
           <p class="text-sm text-gray-700 mb-3"><strong>Alert:</strong> Celebration in team channel</p>
           <p class="text-sm text-gray-700"><strong>Action:</strong> Create renewal task for 11 months out</p>
@@ -78,9 +88,9 @@ import CTASection from '../../components/CTASection.astro';
     </div>
   </section>
 
-  <section class="py-16 md:py-24 bg-gray-50">
+  <section class="py-16 md:py-24 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-navy mb-12 text-center">What sales reps say</h2>
+      <h2 class="text-3xl font-bold mb-12 text-center" style="color: #061A35;">What sales reps say</h2>
       <div class="max-w-4xl mx-auto">
         <TestimonialCard
           quote="I used to spend 30 minutes every morning checking for deal updates. Now Pyko pings me in Slack the second something changes. I can't imagine going back."

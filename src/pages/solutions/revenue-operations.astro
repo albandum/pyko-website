@@ -10,33 +10,43 @@ import CTASection from '../../components/CTASection.astro';
   <section class="gradient-hero py-16 md:py-24">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-navy mb-6">Automate data hygiene. Scale your team's impact.</h1>
-        <p class="text-xl md:text-2xl text-gray-700 mb-8">RevOps teams are responsible for CRM data quality and sales productivity - but you can't scale by doing everything manually. Pyko automates the busywork.</p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Automate data hygiene. Scale your team's impact.</h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8">RevOps teams are responsible for CRM data quality and sales productivity - but you can't scale by doing everything manually. Pyko automates the busywork.</p>
         <Button href="/trial" variant="primary" size="lg">Start Free Trial</Button>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-16 md:py-24 bg-white">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">The RevOps problem</h2>
-      <div class="max-w-3xl mx-auto space-y-6">
-        <div class="p-6 bg-red-50 rounded-xl border border-red-200">
-          <h3 class="font-bold text-red-700 mb-2">💰 Poor data quality costs businesses $15M annually</h3>
-        </div>
-        <div class="p-6 bg-orange-50 rounded-xl border border-orange-200">
-          <h3 class="font-bold text-orange-700 mb-2">🔧 RevOps teams manage average of 10+ sales tools</h3>
-        </div>
-        <div class="p-6 bg-yellow-50 rounded-xl border border-yellow-200">
-          <h3 class="font-bold text-yellow-700 mb-2">📉 60% of CRM data decays every year</h3>
-        </div>
       </div>
     </div>
   </section>
 
   <section class="py-16 md:py-24 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">How Pyko helps RevOps</h2>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style="color: #061A35;">
+          The RevOps challenge
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <FeatureCard
+          icon="💰"
+          title="Data Quality Crisis"
+          description="Poor data quality costs businesses $15M annually. Manual audits can't keep up with data decay."
+        />
+        <FeatureCard
+          icon="🔧"
+          title="Tool Sprawl"
+          description="RevOps teams manage an average of 10+ sales tools. Each requires different automation approaches."
+        />
+        <FeatureCard
+          icon="📉"
+          title="Constant Decay"
+          description="60% of CRM data decays every year. Without automation, you're always playing catch-up."
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" style="color: #061A35;">How Pyko helps RevOps</h2>
       <div class="grid md:grid-cols-2 gap-8">
         <FeatureCard icon="✨" title="Automated Data Hygiene" description="Scheduled rules that catch data quality issues automatically. No manual audits, no spreadsheets." />
         <FeatureCard icon="✅" title="Process Compliance" description="Enforce required fields, next steps, stage progression rules. Real-time alerts when violated." />
@@ -46,21 +56,21 @@ import CTASection from '../../components/CTASection.astro';
     </div>
   </section>
 
-  <section class="py-16 md:py-24 bg-white">
+  <section class="py-16 md:py-24 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">The multi-CRM advantage</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" style="color: #061A35;">The multi-CRM advantage</h2>
       <div class="max-w-4xl mx-auto">
-        <div class="p-8 bg-accent/10 rounded-xl border-2 border-accent">
-          <h3 class="text-2xl font-bold text-navy mb-4">One platform for Salesforce AND HubSpot</h3>
+        <div class="p-8 rounded-xl border-2 bg-white" style="border-color: #F94730;">
+          <h3 class="text-2xl font-bold mb-4" style="color: #061A35;">One platform for Salesforce AND HubSpot</h3>
           <p class="text-gray-700 mb-4">Many companies have multiple CRM systems:</p>
           <ul class="space-y-2 text-gray-700 mb-6">
             <li>• Different divisions use different CRMs</li>
             <li>• Acquired companies on different platforms</li>
             <li>• Transitioning from one CRM to another</li>
           </ul>
-          <div class="bg-white rounded-lg p-6">
-            <h4 class="font-bold text-navy mb-3">Benefits:</h4>
-            <div class="grid md:grid-cols-2 gap-4 text-sm">
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h4 class="font-bold mb-3" style="color: #061A35;">Benefits:</h4>
+            <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
               <div>✓ Standardize automation logic across CRMs</div>
               <div>✓ One tool to learn, not two</div>
               <div>✓ Unified analytics and reporting</div>
@@ -72,9 +82,9 @@ import CTASection from '../../components/CTASection.astro';
     </div>
   </section>
 
-  <section class="py-16 md:py-24 bg-gray-50">
+  <section class="py-16 md:py-24 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-navy mb-12 text-center">What RevOps leaders say</h2>
+      <h2 class="text-3xl font-bold mb-12 text-center" style="color: #061A35;">What RevOps leaders say</h2>
       <div class="max-w-4xl mx-auto">
         <TestimonialCard
           quote="We have Salesforce AND HubSpot across different divisions. Pyko is the only tool that works with both. It's been a game-changer for standardization."
