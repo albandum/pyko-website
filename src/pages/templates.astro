@@ -1,0 +1,51 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<MainLayout title="Template Library" description="50+ pre-built automation templates. Deploy proven workflows in one click.">
+  <section class="gradient-hero py-16 md:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-navy mb-6">50+ pre-built automations</h1>
+        <p class="text-xl text-gray-700 mb-8">Deploy in one click. No configuration from scratch required.</p>
+        <div class="flex justify-center gap-4 mb-8">
+          <input type="text" placeholder="Search templates..." class="px-4 py-3 rounded-lg border border-gray-300 w-full max-w-md" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-8 flex gap-4 flex-wrap justify-center">
+        <button class="px-4 py-2 bg-accent text-white rounded-lg">All Templates</button>
+        <button class="px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300">Speed to Lead</button>
+        <button class="px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300">Deal Health</button>
+        <button class="px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300">Data Quality</button>
+        <button class="px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300">Celebrations</button>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {[
+          { name: "New high-value lead assigned to me", desc: "Get instant Slack DM for leads >$50K", category: "Speed to Lead" },
+          { name: "Deal stuck in demo stage 7+ days", desc: "Weekly alert for stalled opportunities", category: "Deal Health" },
+          { name: "Close date in the past", desc: "Daily reminder to update stale close dates", category: "Data Quality" },
+          { name: "Opportunity Closed Won", desc: "Celebrate wins in team channel", category: "Celebrations" },
+          { name: "Missing next steps", desc: "Monday reminder for incomplete records", category: "Data Quality" },
+          { name: "Territory lead routing", desc: "Route EMEA leads to EMEA team", category: "Speed to Lead" },
+          { name: "High-value deal stage change", desc: "Alert manager when $100K+ deals move", category: "Deal Health" },
+          { name: "Contract renewal in 60 days", desc: "Alert CSM of upcoming renewals", category: "Deal Health" },
+          { name: "Lead response reminder", desc: "Follow up on leads after 48 hours", category: "Speed to Lead" },
+        ].map(template => (
+          <div class="p-6 bg-gray-50 rounded-xl border border-gray-200 hover:border-accent transition-all">
+            <div class="text-xs text-accent font-semibold mb-2">{template.category}</div>
+            <h3 class="font-bold text-navy mb-2">{template.name}</h3>
+            <p class="text-sm text-gray-600 mb-4">{template.desc}</p>
+            <Button href="/trial" variant="outline" size="sm">Use Template</Button>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</MainLayout>

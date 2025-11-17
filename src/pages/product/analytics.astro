@@ -1,0 +1,64 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Button from '../../components/Button.astro';
+import FeatureCard from '../../components/FeatureCard.astro';
+import CTASection from '../../components/CTASection.astro';
+---
+
+<MainLayout title="Analytics - Prove ROI & Optimize Performance" description="Track every automation run, every user action, and every engagement. See what's working and prove your impact.">
+  <section class="gradient-hero py-16 md:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-navy mb-6">Prove ROI. Optimize performance.</h1>
+        <p class="text-xl md:text-2xl text-gray-700 mb-8">Built-in analytics track every automation run, every user action, and every engagement. See what's working and prove your impact.</p>
+        <Button href="/trial" variant="primary" size="lg">Start Free Trial</Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">Complete visibility into your automation performance</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <FeatureCard icon="📊" title="Run History" description="Every time an automation runs, we log it. See how many records matched, when it ran, and success/failure status." />
+        <FeatureCard icon="🎯" title="Action Tracking" description="Every button click is logged. See who took action, what automation it came from, and what changed in the CRM." />
+        <FeatureCard icon="📈" title="Engagement Metrics" description="User-level analytics: most active users, most used automations, action rates, and response times." />
+        <FeatureCard icon="📉" title="Trends Over Time" description="Track metrics across days, weeks, months. See how automation usage evolves and data quality improves." />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">Analytics for each persona</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-xl">
+          <h3 class="text-xl font-bold text-navy mb-3">Sales Reps</h3>
+          <ul class="space-y-2 text-sm text-gray-700">
+            <li>✓ See your own activity</li>
+            <li>✓ Track response times</li>
+            <li>✓ Compare to team averages</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-white rounded-xl">
+          <h3 class="text-xl font-bold text-navy mb-3">Sales Managers</h3>
+          <ul class="space-y-2 text-sm text-gray-700">
+            <li>✓ See team adoption rates</li>
+            <li>✓ Identify coaching opportunities</li>
+            <li>✓ Track process compliance</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-white rounded-xl">
+          <h3 class="text-xl font-bold text-navy mb-3">RevOps</h3>
+          <ul class="space-y-2 text-sm text-gray-700">
+            <li>✓ Prove ROI of automation</li>
+            <li>✓ Optimize performance</li>
+            <li>✓ Track data quality trends</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection headline="Ready to see the impact of your automations?" primaryCTA={{ text: "Start Free Trial", href: "/trial" }} variant="gradient" />
+</MainLayout>

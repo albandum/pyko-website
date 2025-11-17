@@ -1,0 +1,419 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import Button from '../components/Button.astro';
+import FeatureCard from '../components/FeatureCard.astro';
+import StatCard from '../components/StatCard.astro';
+import TestimonialCard from '../components/TestimonialCard.astro';
+import ComparisonTable from '../components/ComparisonTable.astro';
+import CTASection from '../components/CTASection.astro';
+---
+
+<MainLayout
+  title="Pyko - Your Revenue Radar"
+  description="Instant CRM alerts and one-click actions in Slack and Teams. Never miss a deal signal again."
+>
+  <!-- Hero Section -->
+  <section class="gradient-hero py-16 md:py-24 lg:py-32">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left: Text Content -->
+        <div class="text-center lg:text-left">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-navy mb-6 leading-tight">
+            Your Revenue Radar
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
+            Instant CRM alerts and one-click actions in Slack and Teams. Never miss a deal signal again.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+            <Button href="/trial" variant="primary" size="lg">
+              Start Free Trial
+            </Button>
+            <Button href="#demo" variant="outline" size="lg">
+              See How It Works
+            </Button>
+          </div>
+          <p class="text-sm text-gray-600">
+            ✓ No credit card required  ✓ 14-day free trial  ✓ Setup in 5 minutes
+          </p>
+        </div>
+
+        <!-- Right: Visual -->
+        <div class="relative">
+          <!-- Placeholder for split-screen comparison -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 bg-gray-100 rounded-lg border-2 border-gray-300">
+              <div class="text-xs text-gray-500 mb-2">❌ Without Pyko</div>
+              <div class="space-y-2">
+                <div class="h-3 bg-gray-300 rounded"></div>
+                <div class="h-3 bg-gray-300 rounded w-3/4"></div>
+                <div class="h-3 bg-gray-300 rounded w-1/2"></div>
+                <div class="text-xs text-gray-400 mt-4">Cluttered CRM interface</div>
+              </div>
+            </div>
+            <div class="p-4 bg-white rounded-lg border-2 border-accent shadow-lg">
+              <div class="text-xs text-accent mb-2">✓ With Pyko</div>
+              <div class="space-y-2">
+                <div class="text-xs font-semibold">Deal Update</div>
+                <div class="text-xs text-gray-600">Acme Corp → Negotiation</div>
+                <div class="flex gap-2 mt-3">
+                  <div class="px-2 py-1 bg-accent text-white text-xs rounded">Push Date</div>
+                  <div class="px-2 py-1 bg-gray-200 text-xs rounded">Update</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem Section -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-6">
+          Your reps live in Slack. Your deals live in Salesforce. That's a problem.
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <FeatureCard
+          icon="⏳"
+          title="Missed Opportunities"
+          description="Hot leads go cold while reps are in meetings. By the time you notice a deal stalled, it's too late."
+        />
+        <FeatureCard
+          icon="🔄"
+          title="Context Switching"
+          description="Sales reps switch apps 30+ times per day. Every tab switch breaks focus and kills momentum."
+        />
+        <FeatureCard
+          icon="⚠️"
+          title="Dirty Data"
+          description="Stale close dates, missing fields, outdated info. Your forecast is only as good as your data."
+        />
+      </div>
+
+      <div class="text-center">
+        <div class="inline-block px-6 py-3 bg-orange/10 rounded-lg">
+          <p class="text-lg font-semibold text-orange-dark">
+            Sales teams lose <span class="text-2xl font-bold">5+ hours per week</span> to CRM busywork
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Solution Section -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-6">
+          Bring your CRM into your team's command center
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <FeatureCard
+          icon="📡"
+          title="Live Alerts"
+          description="Get instant Slack notifications when deals hit critical stages. Custom triggers. Rich messages. Zero noise."
+        >
+          <a href="/product/live-alerts" class="text-accent hover:text-accent-dark font-medium text-sm mt-4 inline-block">
+            Learn more →
+          </a>
+        </FeatureCard>
+
+        <FeatureCard
+          icon="⚡"
+          title="One-Click Actions"
+          description="Update records, push dates, create tasks - right from Slack. No CRM login required. Ever."
+        >
+          <a href="/product/actions" class="text-accent hover:text-accent-dark font-medium text-sm mt-4 inline-block">
+            Learn more →
+          </a>
+        </FeatureCard>
+
+        <FeatureCard
+          icon="✨"
+          title="Cleaning Rules"
+          description="Automated data hygiene that runs on your schedule. Catch problems before they hurt your forecast."
+        >
+          <a href="/product/cleaning-rules" class="text-accent hover:text-accent-dark font-medium text-sm mt-4 inline-block">
+            Learn more →
+          </a>
+        </FeatureCard>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Video Section -->
+  <section id="demo" class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">
+          See it in action
+        </h2>
+        <p class="text-lg text-gray-600 mb-8">
+          From CRM change to action taken in 5 seconds. No context switching. No manual updates.
+        </p>
+
+        <!-- Placeholder for demo video -->
+        <div class="aspect-video bg-gray-200 rounded-xl flex items-center justify-center mb-6 relative overflow-hidden">
+          <div class="text-center">
+            <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
+              </svg>
+            </div>
+            <p class="text-gray-600 font-medium">Demo video coming soon</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-500">
+          Watch how Pyko detects an opportunity stage change in Salesforce, sends an alert to Slack, and lets the rep push the close date forward - all in under 5 seconds.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">
+          Set it up in minutes. Not months.
+        </h2>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              1
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-2">Connect</h3>
+            <p class="text-gray-600 mb-2">
+              Plug in Salesforce or HubSpot + Slack or Teams
+            </p>
+            <p class="text-sm text-accent font-semibold">30 seconds</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              2
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-2">Configure</h3>
+            <p class="text-gray-600 mb-2">
+              Choose from templates or build custom rules
+            </p>
+            <p class="text-sm text-accent font-semibold">5 minutes</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              3
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-2">Automate</h3>
+            <p class="text-gray-600 mb-2">
+              Let Pyko watch 24/7 and alert your team
+            </p>
+            <p class="text-sm text-accent font-semibold">Ongoing</p>
+          </div>
+        </div>
+
+        <!-- Template Showcase -->
+        <div class="mt-16">
+          <h3 class="text-2xl font-bold text-navy text-center mb-8">
+            Popular templates to get started instantly
+          </h3>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="p-4 bg-white rounded-lg border border-gray-200 hover:border-accent transition-colors">
+              <h4 class="font-semibold text-navy mb-1">New high-value lead assigned to me</h4>
+              <p class="text-sm text-gray-600">Get instant alerts for hot leads</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg border border-gray-200 hover:border-accent transition-colors">
+              <h4 class="font-semibold text-navy mb-1">Deal stuck in demo stage for 7+ days</h4>
+              <p class="text-sm text-gray-600">Prevent pipeline rot</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg border border-gray-200 hover:border-accent transition-colors">
+              <h4 class="font-semibold text-navy mb-1">Close date in the past, deal still open</h4>
+              <p class="text-sm text-gray-600">Keep your forecast clean</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg border border-gray-200 hover:border-accent transition-colors">
+              <h4 class="font-semibold text-navy mb-1">Deal Closed Won - celebrate!</h4>
+              <p class="text-sm text-gray-600">Build team morale</p>
+            </div>
+          </div>
+          <div class="text-center mt-6">
+            <Button href="/templates" variant="outline">
+              Browse 50+ templates →
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">
+          One platform. Infinite possibilities.
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <FeatureCard
+          icon="🚀"
+          title="Speed to Lead"
+          description="New inbound lead? Notify rep in Slack within 60 seconds. Respond 10x faster than competitors."
+        />
+        <FeatureCard
+          icon="💚"
+          title="Deal Health Monitoring"
+          description="Deals stuck in stage for 14+ days? Alert manager. Prevent pipeline rot before it starts."
+        />
+        <FeatureCard
+          icon="🛡️"
+          title="Data Quality Enforcement"
+          description="Missing next step or close date? Notify rep every Monday. Keep your forecast accurate and clean."
+        />
+        <FeatureCard
+          icon="🏆"
+          title="Win/Loss Celebrations"
+          description="Deal closed? Celebrate in team channel with confetti. Build team morale and visibility."
+        />
+        <FeatureCard
+          icon="🗺️"
+          title="Territory Routing"
+          description="New lead in EMEA? Alert EMEA team lead. Route opportunities to the right rep instantly."
+        />
+        <FeatureCard
+          icon="🔄"
+          title="Renewal Alerts"
+          description="Contract up for renewal in 60 days? Notify CSM. Never miss a renewal conversation."
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof Section -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">
+          Trusted by revenue teams at...
+        </h2>
+      </div>
+
+      <!-- Logo Cloud (Placeholders) -->
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-16">
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => (
+          <div class="flex items-center justify-center p-4 bg-white rounded-lg border border-gray-200 hover:border-accent transition-colors">
+            <div class="text-gray-400 text-sm font-medium">Customer {i}</div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Testimonials -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <TestimonialCard
+          quote="I used to spend 30 minutes every morning checking for deal updates. Now Pyko pings me in Slack the second something changes. I can't imagine going back."
+          author="Sarah Chen"
+          role="Account Executive"
+          company="TechCorp"
+        />
+        <TestimonialCard
+          quote="Our close date accuracy went from 60% to 90% in the first month. The automated cleaning rules catch stale data before it pollutes our forecast."
+          author="Marcus Johnson"
+          role="VP Sales"
+          company="GrowthCo"
+        />
+        <TestimonialCard
+          quote="We have Salesforce AND HubSpot across different divisions. Pyko is the only tool that works with both. It's been a game-changer for standardization."
+          author="Priya Patel"
+          role="RevOps Lead"
+          company="Enterprise Inc"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar Section -->
+  <section class="py-16 bg-gradient-to-r from-navy to-navy-light text-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-12">Results that speak for themselves</h2>
+      <div class="grid md:grid-cols-4 gap-8">
+        <StatCard
+          number="5 hours"
+          label="saved per rep per week"
+          class="text-white"
+        />
+        <StatCard
+          number="90%+"
+          label="close date accuracy improvement"
+          class="text-white"
+        />
+        <StatCard
+          number="10x faster"
+          label="lead response time"
+          class="text-white"
+        />
+        <StatCard
+          number="<5 min"
+          label="average setup time per automation"
+          class="text-white"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table Section -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">
+          Why choose Pyko?
+        </h2>
+        <p class="text-lg text-gray-600">
+          See how we compare to native integrations and enterprise platforms
+        </p>
+      </div>
+
+      <div class="max-w-6xl mx-auto">
+        <ComparisonTable />
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <CTASection
+    headline="Start seeing your revenue in real-time"
+    subheadline="Join 500+ sales teams using Pyko to stay on top of every deal."
+    primaryCTA={{ text: "Start Free 14-Day Trial", href: "/trial" }}
+    secondaryCTA={{ text: "Schedule a Demo", href: "/demo" }}
+    variant="gradient"
+  >
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/90 mt-6">
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+        </svg>
+        <span>Setup in under 10 minutes</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+        </svg>
+        <span>No credit card required</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+        </svg>
+        <span>Cancel anytime</span>
+      </div>
+    </div>
+  </CTASection>
+</MainLayout>

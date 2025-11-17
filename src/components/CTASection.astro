@@ -1,0 +1,72 @@
+---
+import Button from './Button.astro';
+
+interface Props {
+  headline: string;
+  subheadline?: string;
+  primaryCTA: {
+    text: string;
+    href: string;
+  };
+  secondaryCTA?: {
+    text: string;
+    href: string;
+  };
+  variant?: 'gradient' | 'solid' | 'light';
+  class?: string;
+}
+
+const {
+  headline,
+  subheadline,
+  primaryCTA,
+  secondaryCTA,
+  variant = 'gradient',
+  class: className = ''
+} = Astro.props;
+
+const bgClasses = {
+  gradient: 'gradient-accent text-white',
+  solid: 'bg-navy text-white',
+  light: 'bg-gray-50 text-navy'
+};
+---
+
+<section class={`py-16 md:py-24 ${bgClasses[variant]} ${className}`}>
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class={`text-3xl md:text-4xl lg:text-5xl font-bold mb-6 ${variant === 'light' ? 'text-navy' : 'text-white'}`}>
+        {headline}
+      </h2>
+      {subheadline && (
+        <p class={`text-lg md:text-xl mb-8 ${variant === 'light' ? 'text-gray-600' : 'text-white/90'}`}>
+          {subheadline}
+        </p>
+      )}
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+        <Button
+          href={primaryCTA.href}
+          variant={variant === 'light' ? 'primary' : 'secondary'}
+          size="lg"
+          class="w-full sm:w-auto"
+        >
+          {primaryCTA.text}
+        </Button>
+        {secondaryCTA && (
+          <Button
+            href={secondaryCTA.href}
+            variant="outline"
+            size="lg"
+            class={`w-full sm:w-auto ${variant !== 'light' ? 'border-white text-white hover:bg-white hover:text-navy' : ''}`}
+          >
+            {secondaryCTA.text}
+          </Button>
+        )}
+      </div>
+
+      <!-- Optional checkmark bullets -->
+      <slot />
+    </div>
+  </div>
+</section>

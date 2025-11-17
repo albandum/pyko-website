@@ -1,0 +1,128 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Button from '../../components/Button.astro';
+import FeatureCard from '../../components/FeatureCard.astro';
+import CTASection from '../../components/CTASection.astro';
+---
+
+<MainLayout
+  title="Actions & Workflows - Update CRM from Slack"
+  description="Bi-directional CRM sync means your team can update records, push dates, create tasks, and more - all without leaving Slack or Teams."
+>
+  <section class="gradient-hero py-16 md:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-navy mb-6">
+          Update your CRM in one click. From Slack.
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-700 mb-8">
+          Bi-directional CRM sync means your team can update records, push dates, create tasks, and more - all without leaving their chat app.
+        </p>
+        <Button href="/trial" variant="primary" size="lg">Start Free Trial</Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">Why bi-directional matters</h2>
+      <div class="max-w-4xl mx-auto space-y-8">
+        <div class="p-8 bg-red-50 rounded-xl">
+          <h3 class="text-xl font-bold text-red-700 mb-4">❌ Most alert tools are one-way</h3>
+          <p class="text-gray-700">They notify you, but you still have to open your CRM to take action. Context switching remains.</p>
+        </div>
+        <div class="p-8 bg-green-50 rounded-xl">
+          <h3 class="text-xl font-bold text-success mb-4">✅ Pyko lets you take action right from the notification</h3>
+          <div class="space-y-3 text-gray-700">
+            <div class="flex items-start gap-3">
+              <span class="font-bold">1.</span>
+              <span>Get alert: "Deal close date is tomorrow but stage is still 'Demo'"</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-bold">2.</span>
+              <span>Click action: "Push Close Date +1 week"</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-bold">3.</span>
+              <span class="text-success font-semibold">Done: Salesforce updated in 2 seconds, no browser opened</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">Every action your team needs</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <FeatureCard
+          icon="✏️"
+          title="Field Updates"
+          description="One-click update with preset values. Mark as 'Attempting Contact' or set priority to High."
+        />
+        <FeatureCard
+          icon="📅"
+          title="Date Push/Pull"
+          description="Move dates forward or backward. Push Close Date +1 week, Pull Follow-up Date -3 days."
+        />
+        <FeatureCard
+          icon="📝"
+          title="Update Object (Modal)"
+          description="Opens modal in Slack to edit multiple fields at once. Update stage, date, and next steps together."
+        />
+        <FeatureCard
+          icon="➕"
+          title="Create Linked Object"
+          description="Create related records from the notification. Create Task from Opportunity, schedule meeting."
+        />
+        <FeatureCard
+          icon="📊"
+          title="Bulk Edit"
+          description="Special button that opens web interface for updating many records at once."
+        />
+        <FeatureCard
+          icon="🔗"
+          title="Open in CRM"
+          description="Quick link to view record in Salesforce/HubSpot. Opens in new tab, preserves context."
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">Security & Permissions</h2>
+      <div class="max-w-3xl mx-auto space-y-4">
+        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+          <div class="text-2xl">🔒</div>
+          <div>
+            <h3 class="font-bold text-navy mb-1">Respects CRM Permissions</h3>
+            <p class="text-gray-700 text-sm">Actions respect Salesforce/HubSpot permissions. Users can only update records they have access to.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+          <div class="text-2xl">📋</div>
+          <div>
+            <h3 class="font-bold text-navy mb-1">Complete Audit Trail</h3>
+            <p class="text-gray-700 text-sm">Every action is logged: who clicked, what changed, when it happened, success or failure.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+          <div class="text-2xl">✅</div>
+          <div>
+            <h3 class="font-bold text-navy mb-1">Prove Compliance</h3>
+            <p class="text-gray-700 text-sm">Track adoption, optimize workflows, and demonstrate ROI with full visibility.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    headline="Ready to make your CRM bi-directional?"
+    primaryCTA={{ text: "Start Free Trial", href: "/trial" }}
+    secondaryCTA={{ text: "See Actions in Action", href: "/demo" }}
+    variant="gradient"
+  />
+</MainLayout>

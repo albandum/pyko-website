@@ -1,0 +1,60 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Button from '../../components/Button.astro';
+import FeatureCard from '../../components/FeatureCard.astro';
+import CTASection from '../../components/CTASection.astro';
+---
+
+<MainLayout title="Salesforce Integration" description="Connect Pyko to Salesforce in 30 seconds. Get real-time alerts using Platform Events and take action without opening a browser.">
+  <section class="gradient-hero py-16 md:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="flex items-center justify-center gap-4 mb-6">
+          <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-2xl">SF</div>
+          <span class="text-4xl">×</span>
+          <div class="w-16 h-16 bg-accent rounded-lg flex items-center justify-center text-white font-bold text-2xl">P</div>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-navy mb-6">Salesforce alerts and actions in Slack</h1>
+        <p class="text-xl text-gray-700 mb-8">Connect Pyko to Salesforce in 30 seconds with OAuth. Get real-time alerts using Platform Events and take action without opening a browser.</p>
+        <Button href="/trial" variant="primary" size="lg">Connect Salesforce</Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">Connect in 3 clicks</h2>
+      <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="text-center p-6">
+          <div class="w-12 h-12 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center text-white font-bold text-xl">1</div>
+          <h3 class="font-bold text-navy mb-2">Click "Connect Salesforce" in Pyko</h3>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-12 h-12 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center text-white font-bold text-xl">2</div>
+          <h3 class="font-bold text-navy mb-2">Authorize Pyko in Salesforce OAuth</h3>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-12 h-12 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center text-white font-bold text-xl">3</div>
+          <h3 class="font-bold text-navy mb-2">Done! Start creating automations</h3>
+        </div>
+      </div>
+      <p class="text-center text-gray-600 mt-8">⏱️ Less than 30 seconds • 🔒 Your credentials never touch our servers</p>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">Key Features</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <FeatureCard icon="⚡" title="Real-Time with Platform Events" description="True real-time push notifications using Salesforce Platform Events and Flows." />
+        <FeatureCard icon="🔍" title="SOQL Query Support" description="All the power of SOQL, none of the code. Complex WHERE clauses with AND/OR logic." />
+        <FeatureCard icon="🎨" title="Custom Objects" description="Works with your custom objects and fields automatically." />
+        <FeatureCard icon="🏖️" title="Sandbox & Production" description="Test safely in Sandbox before deploying to Production." />
+        <FeatureCard icon="🔒" title="Secure by Default" description="Respects Salesforce sharing rules and field-level security." />
+        <FeatureCard icon="📚" title="Pre-built Templates" description="10+ Salesforce-specific automation templates ready to deploy." />
+      </div>
+    </div>
+  </section>
+
+  <CTASection headline="Ready to bring Salesforce into Slack?" primaryCTA={{ text: "Start Free Trial", href: "/trial" }} variant="gradient" />
+</MainLayout>

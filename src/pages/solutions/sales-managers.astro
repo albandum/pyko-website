@@ -1,0 +1,92 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Button from '../../components/Button.astro';
+import FeatureCard from '../../components/FeatureCard.astro';
+import TestimonialCard from '../../components/TestimonialCard.astro';
+import CTASection from '../../components/CTASection.astro';
+---
+
+<MainLayout title="Pyko for Sales Managers" description="Real-time pipeline visibility. Know when deals progress, stall, or slip. Coach your team based on actual behavior.">
+  <section class="gradient-hero py-16 md:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-navy mb-6">Real-time pipeline visibility. Zero manual updates.</h1>
+        <p class="text-xl md:text-2xl text-gray-700 mb-8">Sales managers need to know what's happening right now - not at Friday's forecast meeting. Pyko gives you instant visibility and actionable insights.</p>
+        <Button href="/trial" variant="primary" size="lg">Start Free Trial</Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">The manager problem</h2>
+      <div class="max-w-3xl mx-auto space-y-6">
+        <div class="p-6 bg-red-50 rounded-xl border border-red-200">
+          <h3 class="font-bold text-red-700 mb-2">📊 56% of sales forecasts are inaccurate</h3>
+        </div>
+        <div class="p-6 bg-orange-50 rounded-xl border border-orange-200">
+          <h3 class="font-bold text-orange-700 mb-2">⏰ Managers spend 12+ hours per week on forecast prep</h3>
+        </div>
+        <div class="p-6 bg-yellow-50 rounded-xl border border-yellow-200">
+          <h3 class="font-bold text-yellow-700 mb-2">😱 67% of deals that slip were predicted to close</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">How Pyko helps sales managers</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <FeatureCard icon="💚" title="Pipeline Health Visibility" description="Know when deals progress, stall, or slip. See problems before they become disasters." />
+        <FeatureCard icon="👥" title="Team Activity Tracking" description="See what actions your team is taking. Track adoption of CRM best practices." />
+        <FeatureCard icon="✅" title="Process Compliance" description="Automated checks for required fields, next steps. Catch violations before they pollute your forecast." />
+        <FeatureCard icon="🎯" title="Real-Time Coaching" description="Get notified when coaching opportunities arise. See patterns across your team." />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">Common manager workflows</h2>
+      <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div class="p-6 bg-gray-50 rounded-xl">
+          <h3 class="text-xl font-bold text-navy mb-3">💚 Deal Health Monitoring</h3>
+          <p class="text-sm text-gray-700 mb-2"><strong>Trigger:</strong> Any team deal stuck in stage 14+ days</p>
+          <p class="text-sm text-gray-700"><strong>Result:</strong> Daily rollup, coach rep on moving forward</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-xl">
+          <h3 class="text-xl font-bold text-navy mb-3">📅 Forecast Accuracy</h3>
+          <p class="text-sm text-gray-700 mb-2"><strong>Trigger:</strong> Weekly Monday, find team deals with close date in past</p>
+          <p class="text-sm text-gray-700"><strong>Result:</strong> Bulk push dates or mark as lost</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-xl">
+          <h3 class="text-xl font-bold text-navy mb-3">💰 High-Value Deal Tracking</h3>
+          <p class="text-sm text-gray-700 mb-2"><strong>Trigger:</strong> Any deal >$100K changes stage</p>
+          <p class="text-sm text-gray-700"><strong>Result:</strong> Real-time notification, reach out to offer support</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-xl">
+          <h3 class="text-xl font-bold text-navy mb-3">🏆 Team Celebrations</h3>
+          <p class="text-sm text-gray-700 mb-2"><strong>Trigger:</strong> Any team member closes deal</p>
+          <p class="text-sm text-gray-700"><strong>Result:</strong> Post to team channel, build morale</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">What sales managers say</h2>
+      <div class="max-w-4xl mx-auto">
+        <TestimonialCard
+          quote="Our close date accuracy went from 60% to 90% in the first month. The automated cleaning rules catch stale data before it pollutes our forecast."
+          author="Marcus Johnson"
+          role="VP Sales"
+          company="GrowthCo"
+        />
+      </div>
+    </div>
+  </section>
+
+  <CTASection headline="Ready to get real-time visibility into your pipeline?" primaryCTA={{ text: "Start Free Trial", href: "/trial" }} variant="gradient" />
+</MainLayout>

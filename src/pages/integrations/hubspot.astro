@@ -1,0 +1,65 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Button from '../../components/Button.astro';
+import FeatureCard from '../../components/FeatureCard.astro';
+import CTASection from '../../components/CTASection.astro';
+---
+
+<MainLayout title="HubSpot Integration" description="Connect Pyko to HubSpot with OAuth or Private App. Get intelligent alerts every 5 minutes and take action instantly.">
+  <section class="gradient-hero py-16 md:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="flex items-center justify-center gap-4 mb-6">
+          <div class="w-16 h-16 bg-orange-600 rounded-lg flex items-center justify-center text-white font-bold text-2xl">HS</div>
+          <span class="text-4xl">×</span>
+          <div class="w-16 h-16 bg-accent rounded-lg flex items-center justify-center text-white font-bold text-2xl">P</div>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-navy mb-6">HubSpot automation in Slack and Teams</h1>
+        <p class="text-xl text-gray-700 mb-8">Connect Pyko to HubSpot with OAuth or Private App. Get intelligent polling-based alerts every 5 minutes.</p>
+        <Button href="/trial" variant="primary" size="lg">Connect HubSpot</Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">Two ways to connect</h2>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="p-8 bg-orange-50 rounded-xl border-2 border-orange-200">
+          <h3 class="text-2xl font-bold text-navy mb-4">OAuth (Recommended)</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li>✓ Standard OAuth 2.0 flow</li>
+            <li>✓ Works for any HubSpot account</li>
+            <li>✓ Scoped permissions</li>
+            <li>✓ Setup: 30 seconds</li>
+          </ul>
+        </div>
+        <div class="p-8 bg-gray-50 rounded-xl border-2 border-gray-200">
+          <h3 class="text-2xl font-bold text-navy mb-4">Private App</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li>✓ For strict security requirements</li>
+            <li>✓ Create in HubSpot settings</li>
+            <li>✓ Copy access token to Pyko</li>
+            <li>✓ Setup: 2 minutes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">Key Features</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <FeatureCard icon="⏱️" title="Intelligent Polling (5 min)" description="Check for changes every 5 minutes using HubSpot's Search API." />
+        <FeatureCard icon="🎨" title="Custom Properties" description="Works with all your custom HubSpot properties automatically." />
+        <FeatureCard icon="🌍" title="Multi-Region Support" description="Works with NA1, EU1, and all HubSpot regions." />
+        <FeatureCard icon="🔗" title="Associated Records" description="Show Company data on Contact alerts, Deal owner on Deal notifications." />
+        <FeatureCard icon="📦" title="All CRM Objects" description="Contacts, Companies, Deals, Tickets, and custom objects." />
+        <FeatureCard icon="📚" title="Pre-built Templates" description="10+ HubSpot-specific automation templates." />
+      </div>
+    </div>
+  </section>
+
+  <CTASection headline="Ready to bring HubSpot into Slack?" primaryCTA={{ text: "Start Free Trial", href: "/trial" }} variant="gradient" />
+</MainLayout>
