@@ -5,8 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://albandum.github.io',
-  base: '/pyko-website',
+  site: 'https://pyko.co',
   vite: {
     plugins: [tailwindcss()]
   },
