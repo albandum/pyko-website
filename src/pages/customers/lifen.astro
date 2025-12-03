@@ -1,0 +1,308 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Button from '../../components/Button.astro';
+import CTASection from '../../components/CTASection.astro';
+
+const story = {
+  company: 'Lifen',
+  logo: '/images/customers/testimonials/lifen/logo.jpg',
+  person: {
+    name: 'Raphael Brousse',
+    role: 'VP of Operations',
+    photo: '/images/customers/testimonials/lifen/raphael.jpeg'
+  }
+};
+---
+
+<MainLayout
+  title="Lifen Customer Story - How Operations Solved Data Quality Once and For All"
+  description="Learn how Lifen's Operations team uses Pyko to centralize alerts, improve data quality, and transform the CRM experience for 100+ daily users."
+>
+  <!-- Hero Section -->
+  <section class="gradient-hero py-16 md:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <!-- Breadcrumb -->
+        <nav class="mb-8">
+          <a href="/customers" class="text-gray-400 hover:text-white transition-colors text-sm">
+            Customers
+          </a>
+          <span class="text-gray-600 mx-2">/</span>
+          <span class="text-white text-sm">Lifen</span>
+        </nav>
+
+        <!-- Company Logo -->
+        <div class="mb-8">
+          <div class="inline-block px-6 py-4 rounded-xl bg-white">
+            <img
+              src="/images/customers/lifen.png"
+              alt={story.company}
+              class="h-10 w-auto object-contain"
+            />
+          </div>
+        </div>
+
+        <!-- Headline Quote -->
+        <blockquote class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-8 leading-tight">
+          "We love Pyko at Lifen. It is a very intuitive, simple yet powerful tool, widely adopted by our Business & Operations teams."
+        </blockquote>
+
+        <!-- Author Info -->
+        <div class="flex items-center gap-4">
+          <img
+            src={story.person.photo}
+            alt={story.person.name}
+            class="w-16 h-16 rounded-full object-cover border-2 border-white/20"
+          />
+          <div>
+            <div class="text-white font-semibold text-lg">{story.person.name}</div>
+            <div class="text-gray-300">{story.person.role} at {story.company}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Stats -->
+  <section class="py-12 bg-white border-b border-gray-100">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="text-center p-6 rounded-xl bg-gray-50">
+            <div class="text-3xl md:text-4xl font-bold mb-2" style="color: #F94730;">20+</div>
+            <div class="text-sm text-gray-600">Active Automations</div>
+          </div>
+          <div class="text-center p-6 rounded-xl bg-gray-50">
+            <div class="text-3xl md:text-4xl font-bold mb-2" style="color: #F94730;">10/10</div>
+            <div class="text-sm text-gray-600">NPS Score</div>
+          </div>
+          <div class="text-center p-6 rounded-xl bg-gray-50">
+            <div class="text-3xl md:text-4xl font-bold mb-2" style="color: #061A35;">100+</div>
+            <div class="text-sm text-gray-600">Daily Salesforce Users</div>
+          </div>
+          <div class="text-center p-6 rounded-xl bg-gray-50">
+            <div class="text-3xl md:text-4xl font-bold mb-2" style="color: #061A35;">2 years</div>
+            <div class="text-sm text-gray-600">Using Pyko</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+
+        <!-- The Challenge -->
+        <div class="mb-16">
+          <h2 class="text-2xl md:text-3xl font-bold mb-6" style="color: #061A35;">The Challenge</h2>
+
+          <div class="prose prose-lg max-w-none">
+            <p class="text-gray-700 mb-6">
+              Before Pyko, Lifen's team tested several approaches to stay informed about CRM changes: Salesforce Tasks, email triggers, custom objects to store logs and updates. Their most successful initiative was creating "clean rates" for main objects and displaying them in their dataviz tool.
+            </p>
+
+            <p class="text-gray-700 mb-6">
+              But none of these solutions were truly convincing: people were already flooded with emails, they didn't read their Salesforce task reminders, and clean rate adoption was manager-dependent.
+            </p>
+
+            <div class="p-6 rounded-xl mb-6" style="background-color: #FEF2F2;">
+              <h3 class="font-semibold mb-3" style="color: #991B1B;">Key Pain Points</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start gap-2">
+                  <span class="text-red-500 mt-1">&#x2717;</span>
+                  <span><strong>Outdated close dates</strong> - Making pipeline management nearly impossible</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-red-500 mt-1">&#x2717;</span>
+                  <span><strong>Unreliable forecasting</strong> - Leadership couldn't trust CRM figures at all</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-red-500 mt-1">&#x2717;</span>
+                  <span><strong>Data quality issues</strong> - Impacting basic KPI tracking</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-red-500 mt-1">&#x2717;</span>
+                  <span><strong>RevOps overload</strong> - Huge burden on the team in charge of CRM administration</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Breaking Point -->
+        <div class="mb-16 p-6 rounded-xl border-l-4" style="border-color: #F94730; background-color: #FEF2F2;">
+          <h3 class="font-semibold text-lg mb-3" style="color: #061A35;">The Breaking Point</h3>
+          <p class="text-gray-700 italic">
+            "My CRO came to me once and said: 'There are three months left before the end of the year, and I cannot know if we're gonna meet the target or not. I do not trust CRM figures at all.' At some point it was really hard to track our most basic KPIs."
+          </p>
+        </div>
+
+        <!-- The Solution -->
+        <div class="mb-16">
+          <h2 class="text-2xl md:text-3xl font-bold mb-6" style="color: #061A35;">The Solution</h2>
+
+          <div class="prose prose-lg max-w-none">
+            <p class="text-gray-700 mb-6">
+              With Pyko, Lifen transformed how their entire Business & Operations teams interact with Salesforce. The platform is maintained by RevOps but used by everyone - with a dozen dedicated "bot-xxx" channels watched daily by dozens of users.
+            </p>
+
+            <div class="p-6 rounded-xl mb-6" style="background-color: #F0FDF4;">
+              <h3 class="font-semibold mb-3" style="color: #166534;">Top Automations</h3>
+              <ol class="space-y-4">
+                <li class="flex items-start gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm" style="background-color: #F94730;">1</span>
+                  <div>
+                    <strong class="text-gray-900">Billing Reminders</strong>
+                    <p class="text-gray-600 text-sm mt-1">Making sure the billing process is launched after a deal is closed</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm" style="background-color: #F94730;">2</span>
+                  <div>
+                    <strong class="text-gray-900">Objects Cleaning</strong>
+                    <p class="text-gray-600 text-sm mt-1">Record owners are asked to update key information - close dates, account data, custom objects, opportunities</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm" style="background-color: #F94730;">3</span>
+                  <div>
+                    <strong class="text-gray-900">Lead Generation Alerts</strong>
+                    <p class="text-gray-600 text-sm mt-1">Sales owners are pinged on their Slack channels when a new lead pops in</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm" style="background-color: #F94730;">4</span>
+                  <div>
+                    <strong class="text-gray-900">Project Alerts</strong>
+                    <p class="text-gray-600 text-sm mt-1">Notifications when a new delivery project is created or when a project end date is approaching</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quote Block -->
+        <div class="mb-16 p-8 rounded-2xl" style="background-color: #061A35;">
+          <svg class="w-12 h-12 mb-4 opacity-30 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+          <blockquote class="text-xl md:text-2xl text-white mb-6 leading-relaxed">
+            "Having all our alerts, reminders, and data cleaning policies centralized in Slack is very, very helpful. No matter how hard we try to improve the user experience in Salesforce, users still want to spend the least amount of their time in the CRM. Interacting with them via Slack has completely changed their experience."
+          </blockquote>
+          <div class="flex items-center gap-3">
+            <img
+              src={story.person.photo}
+              alt={story.person.name}
+              class="w-12 h-12 rounded-full object-cover"
+            />
+            <div>
+              <div class="text-white font-semibold">{story.person.name}</div>
+              <div class="text-gray-400 text-sm">{story.person.role}</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results -->
+        <div class="mb-16">
+          <h2 class="text-2xl md:text-3xl font-bold mb-6" style="color: #061A35;">The Results</h2>
+
+          <div class="prose prose-lg max-w-none">
+            <p class="text-gray-700 mb-6">
+              After 2 years of using Pyko, the transformation at Lifen has been remarkable:
+            </p>
+
+            <ul class="space-y-4 mb-6">
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 flex-shrink-0 mt-0.5" style="color: #22C55E;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700"><strong>Data quality is never an issue</strong> - Not mentioned as a problem by any of the 100+ daily Salesforce users</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 flex-shrink-0 mt-0.5" style="color: #22C55E;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700"><strong>Wide adoption</strong> - A dozen dedicated bot channels watched daily by dozens of users</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 flex-shrink-0 mt-0.5" style="color: #22C55E;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700"><strong>Continuous growth</strong> - The number of alerts & cleaning rules increases every month</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 flex-shrink-0 mt-0.5" style="color: #22C55E;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700"><strong>Transformed UX</strong> - Users interact via Slack instead of fighting with the CRM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- What If -->
+        <div class="mb-16 p-6 rounded-xl border-2" style="border-color: #F94730; background-color: rgba(249, 71, 48, 0.05);">
+          <h3 class="font-semibold text-lg mb-3" style="color: #061A35;">What would happen if you stopped using Pyko tomorrow?</h3>
+          <p class="text-gray-700 mb-4">
+            "In the short term, a lot of disorganization: some products might not be billed, people would miss key updates, leads would not be called back, important cross-team information would be lost."
+          </p>
+          <p class="text-gray-700 italic">
+            "We would need to replace Pyko with a homemade Slack integration, meaning we'd completely pause our RevOps roadmap for the next few months, which we can't afford right now."
+          </p>
+        </div>
+
+        <!-- Recommendation -->
+        <div class="mb-16 p-6 rounded-xl" style="background-color: #F0FDF4;">
+          <h3 class="font-semibold text-lg mb-3" style="color: #166534;">Who should use Pyko?</h3>
+          <p class="text-gray-700 mb-4">
+            "To all sales teams who are facing data quality issues in their CRM, or who want to put an end to conflicts with their salespeople after trying to force them to fill in the CRM."
+          </p>
+          <p class="text-gray-700 font-medium" style="color: #166534;">
+            "Before considering including CRM data quality in your salespeople's compensation (bonus), start by implementing Pyko ;)"
+          </p>
+        </div>
+
+        <!-- Final Recommendation -->
+        <div class="p-8 rounded-2xl text-center" style="background-color: #F9FAFB;">
+          <div class="w-20 h-20 rounded-full mx-auto mb-6 overflow-hidden border-4 border-white shadow-lg">
+            <img
+              src={story.person.photo}
+              alt={story.person.name}
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <blockquote class="text-2xl font-semibold mb-4" style="color: #061A35;">
+            "We love Pyko at Lifen. It is a very intuitive, simple yet powerful tool."
+          </blockquote>
+          <p class="text-gray-600 mb-4">
+            {story.person.name}, {story.person.role} at {story.company}
+          </p>
+          <div class="flex items-center justify-center gap-1">
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
+              <div
+                class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold text-white"
+                style="background-color: #F94730;"
+              >
+                {n}
+              </div>
+            ))}
+          </div>
+          <p class="text-sm text-gray-500 mt-2">NPS Score: 10/10</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <CTASection
+    headline="Ready to transform your operations?"
+    subheadline="Join Lifen and other leading teams using Pyko to solve data quality issues once and for all."
+    primaryCTA={{ text: "Start Free Trial", href: "/trial" }}
+    secondaryCTA={{ text: "Talk to Sales", href: "/contact" }}
+    variant="gradient"
+  />
+</MainLayout>

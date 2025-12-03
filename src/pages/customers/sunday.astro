@@ -1,0 +1,312 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Button from '../../components/Button.astro';
+import CTASection from '../../components/CTASection.astro';
+
+const story = {
+  company: 'Sunday',
+  logo: '/images/customers/testimonials/sunday/logo.png',
+  person: {
+    name: 'Robin Iss',
+    role: 'Head of RevOps',
+    photo: '/images/customers/testimonials/sunday/person.jpeg'
+  }
+};
+---
+
+<MainLayout
+  title="Sunday Customer Story - How RevOps Transformed Data Quality"
+  description="Learn how Sunday's RevOps team uses Pyko to automate CRM workflows, improve data quality, and save hours of development time."
+>
+  <!-- Hero Section -->
+  <section class="gradient-hero py-16 md:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <!-- Breadcrumb -->
+        <nav class="mb-8">
+          <a href="/customers" class="text-gray-400 hover:text-white transition-colors text-sm">
+            Customers
+          </a>
+          <span class="text-gray-600 mx-2">/</span>
+          <span class="text-white text-sm">Sunday</span>
+        </nav>
+
+        <!-- Company Logo -->
+        <div class="mb-8">
+          <div class="inline-block px-6 py-4 rounded-xl bg-white">
+            <img
+              src="/images/customers/sunday.png"
+              alt={story.company}
+              class="h-10 w-auto object-contain"
+            />
+          </div>
+        </div>
+
+        <!-- Headline Quote -->
+        <blockquote class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-8 leading-tight">
+          "The most underrated and least known tool in a RevOps stack with Salesforce."
+        </blockquote>
+
+        <!-- Author Info -->
+        <div class="flex items-center gap-4">
+          <img
+            src={story.person.photo}
+            alt={story.person.name}
+            class="w-16 h-16 rounded-full object-cover border-2 border-white/20"
+          />
+          <div>
+            <div class="text-white font-semibold text-lg">{story.person.name}</div>
+            <div class="text-gray-300">{story.person.role} at {story.company}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Stats -->
+  <section class="py-12 bg-white border-b border-gray-100">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="text-center p-6 rounded-xl bg-gray-50">
+            <div class="text-3xl md:text-4xl font-bold mb-2" style="color: #F94730;">20+</div>
+            <div class="text-sm text-gray-600">Active Automations</div>
+          </div>
+          <div class="text-center p-6 rounded-xl bg-gray-50">
+            <div class="text-3xl md:text-4xl font-bold mb-2" style="color: #F94730;">9/10</div>
+            <div class="text-sm text-gray-600">NPS Score</div>
+          </div>
+          <div class="text-center p-6 rounded-xl bg-gray-50">
+            <div class="text-3xl md:text-4xl font-bold mb-2" style="color: #061A35;">2-3h</div>
+            <div class="text-sm text-gray-600">Saved per Alert (vs Zapier)</div>
+          </div>
+          <div class="text-center p-6 rounded-xl bg-gray-50">
+            <div class="text-3xl md:text-4xl font-bold mb-2" style="color: #061A35;">Great</div>
+            <div class="text-sm text-gray-600">ROI Rating</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+
+        <!-- The Challenge -->
+        <div class="mb-16">
+          <h2 class="text-2xl md:text-3xl font-bold mb-6" style="color: #061A35;">The Challenge</h2>
+
+          <div class="prose prose-lg max-w-none">
+            <p class="text-gray-700 mb-6">
+              Before Pyko, Sunday's RevOps team relied on a combination of Slack messages in dedicated channels, native Slack alerts, and emails to stay informed about important CRM changes. The approach was fragmented and created significant pain points.
+            </p>
+
+            <div class="p-6 rounded-xl mb-6" style="background-color: #FEF2F2;">
+              <h3 class="font-semibold mb-3" style="color: #991B1B;">Key Pain Points</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start gap-2">
+                  <span class="text-red-500 mt-1">&#x2717;</span>
+                  <span><strong>Data quality issues</strong> - Opportunities without recent touchpoints, opportunities lost by users who left, and internal flow issues</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-red-500 mt-1">&#x2717;</span>
+                  <span><strong>Time-consuming development</strong> - Each custom alert took 2-3 hours minimum to build with Zapier or Salesforce native flows</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-red-500 mt-1">&#x2717;</span>
+                  <span><strong>High maintenance burden</strong> - Even more time required to maintain these custom integrations</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-red-500 mt-1">&#x2717;</span>
+                  <span><strong>Poor UX</strong> - No ability to easily update from Slack; users had to go to the CRM or build even more custom flows</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Solution -->
+        <div class="mb-16">
+          <h2 class="text-2xl md:text-3xl font-bold mb-6" style="color: #061A35;">The Solution</h2>
+
+          <div class="prose prose-lg max-w-none">
+            <p class="text-gray-700 mb-6">
+              With Pyko, Sunday's RevOps team transformed their approach to CRM monitoring and data quality management. They now run over 20 active automations that would have taken weeks to build with their previous approach.
+            </p>
+
+            <div class="p-6 rounded-xl mb-6" style="background-color: #F0FDF4;">
+              <h3 class="font-semibold mb-3" style="color: #166534;">Top 3 Most-Used Automations</h3>
+              <ol class="space-y-4">
+                <li class="flex items-start gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm" style="background-color: #F94730;">1</span>
+                  <div>
+                    <strong class="text-gray-900">SDR to Sales Handover Sanity Check</strong>
+                    <p class="text-gray-600 text-sm mt-1">Ensures opportunities driven by SDRs are properly monitored and updated by sales</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm" style="background-color: #F94730;">2</span>
+                  <div>
+                    <strong class="text-gray-900">Lead Inbound Sanity Check</strong>
+                    <p class="text-gray-600 text-sm mt-1">Makes sure all inbound leads are being managed and not falling through the cracks</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm" style="background-color: #F94730;">3</span>
+                  <div>
+                    <strong class="text-gray-900">Ops/Billing Issue Alerts</strong>
+                    <p class="text-gray-600 text-sm mt-1">Alerts account owners when customers have billing or operational issues</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Favorite Features -->
+        <div class="mb-16">
+          <h2 class="text-2xl md:text-3xl font-bold mb-6" style="color: #061A35;">Favorite Features</h2>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="p-6 rounded-xl border border-gray-200">
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: rgba(249, 71, 48, 0.1);">
+                <svg class="w-6 h-6" style="color: #F94730;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-lg mb-2" style="color: #061A35;">Direct Group Messages</h3>
+              <p class="text-gray-600">
+                "Ability to create direct group messages with several stakeholders - very powerful for coordination."
+              </p>
+            </div>
+
+            <div class="p-6 rounded-xl border border-gray-200">
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: rgba(249, 71, 48, 0.1);">
+                <svg class="w-6 h-6" style="color: #F94730;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-lg mb-2" style="color: #061A35;">Deep Lookup Chains</h3>
+              <p class="text-gray-600">
+                "Ability to add all related fields and go lookup after lookup - just matching our CRM infrastructure complexity perfectly!"
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quote Block -->
+        <div class="mb-16 p-8 rounded-2xl" style="background-color: #061A35;">
+          <svg class="w-12 h-12 mb-4 opacity-30 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+          <blockquote class="text-xl md:text-2xl text-white mb-6 leading-relaxed">
+            "Pyko saves us a lot of time and gives peace of mind. When we add a specific flow and want to avoid data leaks or issues in our CRM flows, we push an alert in case something breaks - which is always happening in Salesforce. It helps us track and fix edge cases we didn't think about in the first place."
+          </blockquote>
+          <div class="flex items-center gap-3">
+            <img
+              src={story.person.photo}
+              alt={story.person.name}
+              class="w-12 h-12 rounded-full object-cover"
+            />
+            <div>
+              <div class="text-white font-semibold">{story.person.name}</div>
+              <div class="text-gray-400 text-sm">{story.person.role}</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results -->
+        <div class="mb-16">
+          <h2 class="text-2xl md:text-3xl font-bold mb-6" style="color: #061A35;">The Results</h2>
+
+          <div class="prose prose-lg max-w-none">
+            <p class="text-gray-700 mb-6">
+              The improvements from Pyko have been transformative for Sunday's operations:
+            </p>
+
+            <ul class="space-y-4 mb-6">
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 flex-shrink-0 mt-0.5" style="color: #22C55E;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700"><strong>Improved data quality</strong> - The primary measurable improvement across the CRM</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 flex-shrink-0 mt-0.5" style="color: #22C55E;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700"><strong>Faster RevOps team</strong> - Ability to move faster and automate quality sanity checks</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 flex-shrink-0 mt-0.5" style="color: #22C55E;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700"><strong>Low maintenance cost</strong> - Great ROI given the ease of implementation</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 flex-shrink-0 mt-0.5" style="color: #22C55E;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700"><strong>Peace of mind</strong> - Confidence that edge cases and data issues are being caught</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- What If -->
+        <div class="mb-16 p-6 rounded-xl border-2" style="border-color: #F94730; background-color: rgba(249, 71, 48, 0.05);">
+          <h3 class="font-semibold text-lg mb-3" style="color: #061A35;">What would happen if you stopped using Pyko tomorrow?</h3>
+          <p class="text-gray-700 italic">
+            "That would be very annoying. We would have to find alternatives and workarounds, and would probably lose some motion... or just find another competitor, which are usually more expensive."
+          </p>
+        </div>
+
+        <!-- Final Recommendation -->
+        <div class="p-8 rounded-2xl text-center" style="background-color: #F9FAFB;">
+          <div class="w-20 h-20 rounded-full mx-auto mb-6 overflow-hidden border-4 border-white shadow-lg">
+            <img
+              src={story.person.photo}
+              alt={story.person.name}
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <blockquote class="text-2xl font-semibold mb-4" style="color: #061A35;">
+            "The most underrated and least known tool in a RevOps stack with Salesforce."
+          </blockquote>
+          <p class="text-gray-600 mb-4">
+            {story.person.name}, {story.person.role} at {story.company}
+          </p>
+          <div class="flex items-center justify-center gap-1">
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => (
+              <div
+                class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold text-white"
+                style="background-color: #F94730;"
+              >
+                {n}
+              </div>
+            ))}
+            <div
+              class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold border-2"
+              style="border-color: #E5E7EB; color: #9CA3AF;"
+            >
+              10
+            </div>
+          </div>
+          <p class="text-sm text-gray-500 mt-2">NPS Score: 9/10</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <CTASection
+    headline="Ready to transform your RevOps?"
+    subheadline="Join Sunday and other leading teams using Pyko to improve data quality and automate CRM workflows."
+    primaryCTA={{ text: "Start Free Trial", href: "/trial" }}
+    secondaryCTA={{ text: "Talk to Sales", href: "/contact" }}
+    variant="gradient"
+  />
+</MainLayout>

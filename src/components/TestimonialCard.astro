@@ -7,13 +7,19 @@ interface Props {
   photo?: string;
   logo?: string;
   bgColor?: string;
+  href?: string;
   class?: string;
 }
 
-const { quote, author, role, company, photo, logo, bgColor = '#061A35', class: className = '' } = Astro.props;
+const { quote, author, role, company, photo, logo, bgColor = '#061A35', href, class: className = '' } = Astro.props;
+const Tag = href ? 'a' : 'div';
 ---
 
-<div class={`p-8 rounded-xl relative overflow-hidden flex flex-col ${className}`} style={`background-color: ${bgColor};`}>
+<Tag
+  href={href}
+  class={`p-8 rounded-xl relative overflow-hidden flex flex-col ${href ? 'group hover:scale-[1.02] transition-transform cursor-pointer' : ''} ${className}`}
+  style={`background-color: ${bgColor};`}
+>
   <!-- Quote Icon -->
   <div class="mb-4">
     <svg class="w-10 h-10 opacity-30" style="color: white;" fill="currentColor" viewBox="0 0 24 24">
@@ -57,4 +63,15 @@ const { quote, author, role, company, photo, logo, bgColor = '#061A35', class: c
       )}
     </div>
   </div>
-</div>
+
+  {href && (
+    <div class="mt-4 pt-4 border-t border-white/20">
+      <span class="text-white/80 text-sm font-medium group-hover:text-white transition-colors inline-flex items-center gap-1">
+        Read full story
+        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </span>
+    </div>
+  )}
+</Tag>
