@@ -1,0 +1,171 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Button from '../../components/Button.astro';
+import CTASection from '../../components/CTASection.astro';
+---
+
+<MainLayout
+  title="Use Cases | Pyko"
+  description="Discover how teams use Pyko to speed up lead response, improve data quality, and manage their pipeline in real-time."
+>
+  <!-- Hero Section -->
+  <section class="gradient-hero py-16 md:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+          One platform. Infinite possibilities.
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
+          Discover how revenue teams use Pyko to work smarter, respond faster, and forecast with confidence.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Grid -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Speed to Lead -->
+          <a href="/use-cases/speed-to-lead" class="group block">
+            <div class="p-8 rounded-2xl border-2 border-gray-200 bg-white transition-all duration-300 group-hover:border-[#F94730] group-hover:shadow-xl h-full">
+              <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-6" style="background: linear-gradient(135deg, rgba(249, 71, 48, 0.15) 0%, rgba(249, 71, 48, 0.05) 100%);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+              </div>
+              <h2 class="text-2xl font-bold mb-3" style="color: #061A35;">Speed to Lead</h2>
+              <p class="text-gray-600 mb-6">
+                Respond to new leads 10x faster with instant Slack/Teams notifications. Never lose a deal to a competitor who responded first.
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold" style="color: #F94730;">10x faster response</span>
+                <span class="text-[#F94730] transition-transform group-hover:translate-x-2">&rarr;</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Data Quality -->
+          <a href="/use-cases/data-quality" class="group block">
+            <div class="p-8 rounded-2xl border-2 border-gray-200 bg-white transition-all duration-300 group-hover:border-[#F94730] group-hover:shadow-xl h-full">
+              <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-6" style="background: linear-gradient(135deg, rgba(249, 71, 48, 0.15) 0%, rgba(249, 71, 48, 0.05) 100%);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <h2 class="text-2xl font-bold mb-3" style="color: #061A35;">Data Quality</h2>
+              <p class="text-gray-600 mb-6">
+                Automated CRM hygiene that runs on your schedule. Catch stale close dates, missing fields, and dirty data before they hurt your forecast.
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold" style="color: #F94730;">90%+ accuracy</span>
+                <span class="text-[#F94730] transition-transform group-hover:translate-x-2">&rarr;</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pipeline Management -->
+          <a href="/use-cases/pipeline-management" class="group block">
+            <div class="p-8 rounded-2xl border-2 border-gray-200 bg-white transition-all duration-300 group-hover:border-[#F94730] group-hover:shadow-xl h-full">
+              <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-6" style="background: linear-gradient(135deg, rgba(249, 71, 48, 0.15) 0%, rgba(249, 71, 48, 0.05) 100%);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              </div>
+              <h2 class="text-2xl font-bold mb-3" style="color: #061A35;">Pipeline Management</h2>
+              <p class="text-gray-600 mb-6">
+                Real-time visibility into every deal. Know when deals progress, stall, or slip—before it's too late to save them.
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold" style="color: #F94730;">Real-time visibility</span>
+                <span class="text-[#F94730] transition-transform group-hover:translate-x-2">&rarr;</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- More Use Cases -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
+            And so much more
+          </h2>
+          <p class="text-lg text-gray-700">
+            Pyko's flexible automation platform handles any CRM workflow you can imagine.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="flex items-center gap-4 p-6 rounded-xl bg-white border border-gray-200">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(249, 71, 48, 0.1);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            </div>
+            <div>
+              <h4 class="font-bold mb-1" style="color: #061A35;">Win/Loss Celebrations</h4>
+              <p class="text-sm text-gray-600">Celebrate every closed deal in your team channel. Build morale and visibility.</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 p-6 rounded-xl bg-white border border-gray-200">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(249, 71, 48, 0.1);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4 class="font-bold mb-1" style="color: #061A35;">Territory Routing</h4>
+              <p class="text-sm text-gray-600">Route leads to the right rep based on territory, deal size, or any CRM field.</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 p-6 rounded-xl bg-white border border-gray-200">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(249, 71, 48, 0.1);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+            </div>
+            <div>
+              <h4 class="font-bold mb-1" style="color: #061A35;">Renewal Alerts</h4>
+              <p class="text-sm text-gray-600">Never miss a renewal. Alert CSMs when contracts are coming up.</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 p-6 rounded-xl bg-white border border-gray-200">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(249, 71, 48, 0.1);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <h4 class="font-bold mb-1" style="color: #061A35;">Manager Escalations</h4>
+              <p class="text-sm text-gray-600">Automatically escalate high-value or at-risk deals to leadership.</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 p-6 rounded-xl bg-white border border-gray-200">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(249, 71, 48, 0.1);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></svg>
+            </div>
+            <div>
+              <h4 class="font-bold mb-1" style="color: #061A35;">Activity Reminders</h4>
+              <p class="text-sm text-gray-600">No activity in 7 days? Remind reps to follow up before deals go cold.</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 p-6 rounded-xl bg-white border border-gray-200">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(249, 71, 48, 0.1);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            </div>
+            <div>
+              <h4 class="font-bold mb-1" style="color: #061A35;">Quota Tracking</h4>
+              <p class="text-sm text-gray-600">Track progress to quota and alert reps when they hit milestones.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <CTASection
+    headline="Ready to transform your revenue operations?"
+    subheadline="Join 500+ sales teams using Pyko to work smarter."
+    primaryCTA={{ text: "Start Free 14-Day Trial", href: "/trial" }}
+    secondaryCTA={{ text: "Schedule a Demo", href: "/contact" }}
+    variant="gradient"
+  />
+</MainLayout>

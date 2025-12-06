@@ -71,6 +71,36 @@ import Button from './Button.astro';
           </div>
         </div>
 
+        <!-- Use Cases Dropdown -->
+        <div class="relative group">
+          <button class="flex items-center space-x-1 hover:opacity-80 transition-opacity font-medium" style="color: white;">
+            <span>Use Cases</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="absolute left-0 mt-2 w-64 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-700" style="background-color: #0A2342;">
+            <div class="py-2">
+              <a href="/use-cases/speed-to-lead" class="block px-4 py-3 text-sm transition-colors" style="color: white;" onmouseover="this.style.backgroundColor='rgba(249, 71, 48, 0.1)'" onmouseout="this.style.backgroundColor='transparent'">
+                <div class="font-semibold">Speed to Lead</div>
+                <div class="text-xs text-gray-400">Respond 10x faster to new leads</div>
+              </a>
+              <a href="/use-cases/data-quality" class="block px-4 py-3 text-sm transition-colors" style="color: white;" onmouseover="this.style.backgroundColor='rgba(249, 71, 48, 0.1)'" onmouseout="this.style.backgroundColor='transparent'">
+                <div class="font-semibold">Data Quality</div>
+                <div class="text-xs text-gray-400">Automated CRM hygiene</div>
+              </a>
+              <a href="/use-cases/pipeline-management" class="block px-4 py-3 text-sm transition-colors" style="color: white;" onmouseover="this.style.backgroundColor='rgba(249, 71, 48, 0.1)'" onmouseout="this.style.backgroundColor='transparent'">
+                <div class="font-semibold">Pipeline Management</div>
+                <div class="text-xs text-gray-400">Real-time deal visibility</div>
+              </a>
+              <div class="border-t border-gray-700 my-2"></div>
+              <a href="/use-cases" class="block px-4 py-2 text-sm transition-colors" style="color: #F94730;" onmouseover="this.style.backgroundColor='rgba(249, 71, 48, 0.1)'" onmouseout="this.style.backgroundColor='transparent'">
+                <span class="font-medium">View all use cases &rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
         <!-- Solutions Dropdown -->
         <div class="relative group">
           <button class="flex items-center space-x-1 hover:opacity-80 transition-opacity font-medium" style="color: white;">
@@ -103,7 +133,7 @@ import Button from './Button.astro';
       <div class="hidden lg:flex items-center space-x-4">
         <a href="/login" class="font-medium hover:opacity-80 transition-opacity" style="color: #F94730;">Login</a>
         <Button href="/trial" variant="primary" size="md">
-          Start Free Trial
+          Start Free 14-Day Trial
         </Button>
       </div>
 
@@ -143,6 +173,17 @@ import Button from './Button.astro';
         </div>
       </div>
 
+      <!-- Use Cases Links -->
+      <div>
+        <div class="font-semibold text-white mb-2">Use Cases</div>
+        <div class="space-y-2 pl-4">
+          <a href="/use-cases/speed-to-lead" class="block text-gray-300 hover:text-white">Speed to Lead</a>
+          <a href="/use-cases/data-quality" class="block text-gray-300 hover:text-white">Data Quality</a>
+          <a href="/use-cases/pipeline-management" class="block text-gray-300 hover:text-white">Pipeline Management</a>
+          <a href="/use-cases" class="block hover:text-white" style="color: #F94730;">View all &rarr;</a>
+        </div>
+      </div>
+
       <!-- Solutions Links -->
       <div>
         <div class="font-semibold text-white mb-2">Solutions</div>
@@ -165,7 +206,7 @@ import Button from './Button.astro';
           Login
         </a>
         <Button href="/trial" variant="primary" size="md" class="w-full">
-          Start Free Trial
+          Start Free 14-Day Trial
         </Button>
       </div>
     </div>

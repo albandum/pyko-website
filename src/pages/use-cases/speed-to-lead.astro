@@ -1,0 +1,265 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Button from '../../components/Button.astro';
+import FeatureCard from '../../components/FeatureCard.astro';
+import TestimonialCard from '../../components/TestimonialCard.astro';
+import CTASection from '../../components/CTASection.astro';
+---
+
+<MainLayout
+  title="Speed to Lead - Respond 10x Faster | Pyko"
+  description="Never lose a deal to a competitor who responded first. Get instant lead notifications in Slack and Teams."
+>
+  <!-- Hero Section -->
+  <section class="gradient-hero py-16 md:py-24 lg:py-32">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white/90 text-sm mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+          Use Case
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+          Respond to leads <span style="color: #F94730;">10x faster</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
+          Never lose a deal to a competitor who responded first. Get instant notifications the moment a lead comes in.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <Button href="/trial" variant="primary" size="lg">
+            Start Free 14-Day Trial
+          </Button>
+          <Button href="#how-it-works" variant="outline" size="lg">
+            See How It Works
+          </Button>
+        </div>
+        <p class="text-sm text-gray-400">
+          No credit card required
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem Section -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
+            Speed wins deals
+          </h2>
+          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+            The data is clear: the first company to respond wins. But most teams are too slow.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <div class="text-center p-6">
+            <div class="text-5xl font-bold mb-2" style="color: #F94730;">78%</div>
+            <p class="text-gray-700">of customers buy from the first responder</p>
+          </div>
+          <div class="text-center p-6">
+            <div class="text-5xl font-bold mb-2" style="color: #F94730;">47h</div>
+            <p class="text-gray-700">average B2B lead response time</p>
+          </div>
+          <div class="text-center p-6">
+            <div class="text-5xl font-bold mb-2" style="color: #F94730;">5 min</div>
+            <p class="text-gray-700">response window for optimal conversion</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl border border-gray-200 text-center">
+          <p class="text-xl text-gray-800">
+            Your reps are in meetings, on calls, or deep in work. By the time they check the CRM, <span class="font-semibold" style="color: #F94730;">the lead is already talking to your competitor</span>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How Pyko Solves This -->
+  <section id="how-it-works" class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
+            From lead to call in under 60 seconds
+          </h2>
+          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+            Pyko monitors your CRM and instantly alerts your team in Slack or Teams the moment a new lead arrives.
+          </p>
+        </div>
+
+        <!-- Workflow Visualization -->
+        <div class="relative mb-16">
+          <div class="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-gray-200 -translate-y-1/2"></div>
+          <div class="grid md:grid-cols-4 gap-8">
+            <div class="relative text-center">
+              <div class="w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10" style="background-color: #F94730;">
+                1
+              </div>
+              <h3 class="font-bold mb-2" style="color: #061A35;">Lead Created</h3>
+              <p class="text-sm text-gray-600">New lead enters your CRM via form, import, or integration</p>
+            </div>
+            <div class="relative text-center">
+              <div class="w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10" style="background-color: #F94730;">
+                2
+              </div>
+              <h3 class="font-bold mb-2" style="color: #061A35;">Pyko Detects</h3>
+              <p class="text-sm text-gray-600">Real-time monitoring catches the new record instantly</p>
+            </div>
+            <div class="relative text-center">
+              <div class="w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10" style="background-color: #F94730;">
+                3
+              </div>
+              <h3 class="font-bold mb-2" style="color: #061A35;">Rep Notified</h3>
+              <p class="text-sm text-gray-600">Direct message or channel alert with lead details</p>
+            </div>
+            <div class="relative text-center">
+              <div class="w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10" style="background-color: #F94730;">
+                4
+              </div>
+              <h3 class="font-bold mb-2" style="color: #061A35;">Deal Won</h3>
+              <p class="text-sm text-gray-600">First response wins. You beat the competition.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Features -->
+        <div class="grid md:grid-cols-3 gap-8">
+          <FeatureCard
+            icon="zap"
+            title="Instant Notifications"
+            description="Get alerted within seconds of a new lead, not hours. Salesforce Platform Events deliver under 3 seconds."
+          />
+          <FeatureCard
+            icon="target"
+            title="Smart Routing"
+            description="Route leads to the right rep based on territory, deal size, product interest, or any CRM field."
+          />
+          <FeatureCard
+            icon="mouse-pointer-click"
+            title="One-Click Actions"
+            description="Call the lead, update the status, or create a task—all without opening your CRM."
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sample Alert -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
+            What your team will see
+          </h2>
+        </div>
+
+        <!-- Slack Message Mockup -->
+        <div class="p-6 rounded-xl bg-white border border-gray-200 shadow-lg">
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-[#F94730] to-[#D83820] flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="font-semibold" style="color: #061A35;">Pyko</span>
+                <span class="text-xs text-gray-500">just now</span>
+              </div>
+              <div class="p-4 rounded-lg bg-gray-50 border border-gray-200 mb-3">
+                <div class="flex items-center gap-2 mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg>
+                  <span class="font-semibold" style="color: #F94730;">New High-Value Lead</span>
+                </div>
+                <p class="font-medium mb-1" style="color: #061A35;">Sarah Chen - VP of Sales @ TechCorp</p>
+                <p class="text-sm text-gray-600 mb-2">Requested demo for Enterprise plan</p>
+                <div class="flex gap-4 text-xs text-gray-500">
+                  <span>Company Size: 500+</span>
+                  <span>Source: Website</span>
+                  <span>Score: 85/100</span>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <button class="px-4 py-2 rounded-md text-sm font-medium bg-[#F94730] text-white">
+                  Call Now
+                </button>
+                <button class="px-4 py-2 rounded-md text-sm font-medium bg-gray-100 text-gray-700 border border-gray-200">
+                  View in CRM
+                </button>
+                <button class="px-4 py-2 rounded-md text-sm font-medium bg-gray-100 text-gray-700 border border-gray-200">
+                  Create Task
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Story -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
+            Real results from real teams
+          </h2>
+        </div>
+
+        <div class="bg-gradient-to-br from-[#061A35] to-[#0A2342] p-8 md:p-12 rounded-2xl">
+          <div class="flex flex-col md:flex-row gap-8 items-center">
+            <div class="flex-shrink-0">
+              <img
+                src="/images/customers/testimonials/sunday/person.jpeg"
+                alt="Robin Iss"
+                class="w-24 h-24 rounded-full border-4 border-white/20"
+              />
+            </div>
+            <div class="text-white">
+              <blockquote class="text-xl md:text-2xl mb-4 leading-relaxed">
+                "Pyko fixes the one issue that I've seen in every single company I worked for: slow lead response. Our SDRs now respond within minutes, not hours."
+              </blockquote>
+              <div class="flex items-center gap-4">
+                <div>
+                  <p class="font-semibold">Robin Iss</p>
+                  <p class="text-gray-400">Head of RevOps, Sunday</p>
+                </div>
+                <img
+                  src="/images/customers/testimonials/sunday/logo.png"
+                  alt="Sunday"
+                  class="h-8 opacity-80"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <CTASection
+    headline="Stop losing deals to slow response times"
+    subheadline="Set up speed-to-lead alerts in under 5 minutes. No credit card required."
+    primaryCTA={{ text: "Start Free 14-Day Trial", href: "/trial" }}
+    secondaryCTA={{ text: "Schedule a Demo", href: "/contact" }}
+    variant="gradient"
+  >
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/90 mt-6">
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+        </svg>
+        <span>Works with Salesforce & HubSpot</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+        </svg>
+        <span>Slack & Microsoft Teams</span>
+      </div>
+    </div>
+  </CTASection>
+</MainLayout>

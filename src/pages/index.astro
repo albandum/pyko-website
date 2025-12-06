@@ -6,6 +6,7 @@ import StatCard from '../components/StatCard.astro';
 import TestimonialCard from '../components/TestimonialCard.astro';
 import ComparisonTable from '../components/ComparisonTable.astro';
 import CTASection from '../components/CTASection.astro';
+import HeroMockup from '../components/HeroMockup.astro';
 ---
 
 <MainLayout
@@ -26,7 +27,7 @@ import CTASection from '../components/CTASection.astro';
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
             <Button href="/trial" variant="primary" size="lg">
-              Start Free Trial
+              Start Free 14-Day Trial
             </Button>
             <Button href="#demo" variant="outline" size="lg">
               See How It Works
@@ -37,31 +38,9 @@ import CTASection from '../components/CTASection.astro';
           </p>
         </div>
 
-        <!-- Right: Visual -->
-        <div class="relative">
-          <!-- Placeholder for split-screen comparison -->
-          <div class="grid grid-cols-2 gap-4">
-            <div class="p-4 rounded-lg border-2 border-gray-700" style="background-color: #0A2342;">
-              <div class="text-xs text-gray-500 mb-2">❌ Without Pyko</div>
-              <div class="space-y-2">
-                <div class="h-3 rounded" style="background-color: #1E3A5F;"></div>
-                <div class="h-3 rounded w-3/4" style="background-color: #1E3A5F;"></div>
-                <div class="h-3 rounded w-1/2" style="background-color: #1E3A5F;"></div>
-                <div class="text-xs text-gray-500 mt-4">Cluttered CRM interface</div>
-              </div>
-            </div>
-            <div class="p-4 rounded-lg border-2" style="background-color: #0A2342; border-color: #F94730;">
-              <div class="text-xs mb-2" style="color: #F94730;">✓ With Pyko</div>
-              <div class="space-y-2">
-                <div class="text-xs font-semibold text-white">Deal Update</div>
-                <div class="text-xs text-gray-400">Acme Corp → Negotiation</div>
-                <div class="flex gap-2 mt-3">
-                  <div class="px-2 py-1 text-white text-xs rounded" style="background-color: #F94730;">Push Date</div>
-                  <div class="px-2 py-1 text-xs rounded" style="background-color: #1E3A5F; color: white;">Update</div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!-- Right: Visual Mockup -->
+        <div class="relative hidden lg:block">
+          <HeroMockup />
         </div>
       </div>
     </div>
@@ -78,17 +57,17 @@ import CTASection from '../components/CTASection.astro';
 
       <div class="grid md:grid-cols-3 gap-8 mb-12">
         <FeatureCard
-          icon="⏳"
+          icon="clock"
           title="Missed Opportunities"
           description="Hot leads go cold while reps are in meetings. By the time you notice a deal stalled, it's too late."
         />
         <FeatureCard
-          icon="🔄"
+          icon="refresh-cw"
           title="Context Switching"
           description="Sales reps switch apps 30+ times per day. Every tab switch breaks focus and kills momentum."
         />
         <FeatureCard
-          icon="⚠️"
+          icon="alert-triangle"
           title="Dirty Data"
           description="Stale close dates, missing fields, outdated info. Your forecast is only as good as your data."
         />
@@ -115,32 +94,32 @@ import CTASection from '../components/CTASection.astro';
 
       <div class="grid md:grid-cols-3 gap-8">
         <FeatureCard
-          icon="📡"
+          icon="radio"
           title="Live Alerts"
           description="Get instant Slack notifications when deals hit critical stages. Custom triggers. Rich messages. Zero noise."
         >
-          <a href="/product/live-alerts" class="font-medium text-sm mt-4 inline-block" style="color: #F94730;">
-            Learn more →
+          <a href="/product/live-alerts" class="font-medium text-sm mt-4 inline-flex items-center gap-1 group" style="color: #F94730;">
+            Learn more <span class="transition-transform group-hover:translate-x-1">&rarr;</span>
           </a>
         </FeatureCard>
 
         <FeatureCard
-          icon="⚡"
+          icon="mouse-pointer-click"
           title="One-Click Actions"
           description="Update records, push dates, create tasks - right from Slack. No CRM login required. Ever."
         >
-          <a href="/product/actions" class="font-medium text-sm mt-4 inline-block" style="color: #F94730;">
-            Learn more →
+          <a href="/product/actions" class="font-medium text-sm mt-4 inline-flex items-center gap-1 group" style="color: #F94730;">
+            Learn more <span class="transition-transform group-hover:translate-x-1">&rarr;</span>
           </a>
         </FeatureCard>
 
         <FeatureCard
-          icon="✨"
+          icon="sparkles"
           title="Cleaning Rules"
           description="Automated data hygiene that runs on your schedule. Catch problems before they hurt your forecast."
         >
-          <a href="/product/cleaning-rules" class="font-medium text-sm mt-4 inline-block" style="color: #F94730;">
-            Learn more →
+          <a href="/product/cleaning-rules" class="font-medium text-sm mt-4 inline-flex items-center gap-1 group" style="color: #F94730;">
+            Learn more <span class="transition-transform group-hover:translate-x-1">&rarr;</span>
           </a>
         </FeatureCard>
       </div>
@@ -265,37 +244,76 @@ import CTASection from '../components/CTASection.astro';
         </h2>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <FeatureCard
-          icon="🚀"
-          title="Speed to Lead"
-          description="New inbound lead? Notify rep in Slack within 60 seconds. Respond 10x faster than competitors."
-        />
-        <FeatureCard
-          icon="💚"
-          title="Deal Health Monitoring"
-          description="Deals stuck in stage for 14+ days? Alert manager. Prevent pipeline rot before it starts."
-        />
-        <FeatureCard
-          icon="🛡️"
-          title="Data Quality Enforcement"
-          description="Missing next step or close date? Notify rep every Monday. Keep your forecast accurate and clean."
-        />
-        <FeatureCard
-          icon="🏆"
-          title="Win/Loss Celebrations"
-          description="Deal closed? Celebrate in team channel with confetti. Build team morale and visibility."
-        />
-        <FeatureCard
-          icon="🗺️"
-          title="Territory Routing"
-          description="New lead in EMEA? Alert EMEA team lead. Route opportunities to the right rep instantly."
-        />
-        <FeatureCard
-          icon="🔄"
-          title="Renewal Alerts"
-          description="Contract up for renewal in 60 days? Notify CSM. Never miss a renewal conversation."
-        />
+      <!-- Featured Use Cases - Large Cards -->
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <a href="/use-cases/speed-to-lead" class="group block p-8 rounded-2xl border-2 border-gray-200 bg-white transition-all duration-300 hover:border-[#F94730] hover:shadow-xl">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, rgba(249, 71, 48, 0.15) 0%, rgba(249, 71, 48, 0.05) 100%);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="color: #061A35;">Speed to Lead</h3>
+          <p class="text-gray-600 mb-4">New inbound lead? Notify rep in Slack within 60 seconds. Respond 10x faster than competitors.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-sm font-semibold" style="color: #F94730;">10x faster response</span>
+            <span class="text-[#F94730] transition-transform group-hover:translate-x-1">&rarr;</span>
+          </div>
+        </a>
+
+        <a href="/use-cases/data-quality" class="group block p-8 rounded-2xl border-2 border-gray-200 bg-white transition-all duration-300 hover:border-[#F94730] hover:shadow-xl">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, rgba(249, 71, 48, 0.15) 0%, rgba(249, 71, 48, 0.05) 100%);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="color: #061A35;">Data Quality</h3>
+          <p class="text-gray-600 mb-4">Missing next step or close date? Notify rep automatically. Keep your forecast accurate and clean.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-sm font-semibold" style="color: #F94730;">90%+ accuracy</span>
+            <span class="text-[#F94730] transition-transform group-hover:translate-x-1">&rarr;</span>
+          </div>
+        </a>
+
+        <a href="/use-cases/pipeline-management" class="group block p-8 rounded-2xl border-2 border-gray-200 bg-white transition-all duration-300 hover:border-[#F94730] hover:shadow-xl">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, rgba(249, 71, 48, 0.15) 0%, rgba(249, 71, 48, 0.05) 100%);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"/><path d="m18 15-2-2"/><path d="m15 18-2-2"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="color: #061A35;">Pipeline Management</h3>
+          <p class="text-gray-600 mb-4">Deals stuck in stage for 14+ days? Alert manager. Prevent pipeline rot before it starts.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-sm font-semibold" style="color: #F94730;">Real-time visibility</span>
+            <span class="text-[#F94730] transition-transform group-hover:translate-x-1">&rarr;</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Secondary Use Cases - Smaller Cards -->
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="flex items-center gap-4 p-4 rounded-xl bg-white border border-gray-200">
+          <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(249, 71, 48, 0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+          </div>
+          <div>
+            <h4 class="font-semibold" style="color: #061A35;">Win/Loss Celebrations</h4>
+            <p class="text-sm text-gray-600">Build team morale with deal alerts</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4 p-4 rounded-xl bg-white border border-gray-200">
+          <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(249, 71, 48, 0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <h4 class="font-semibold" style="color: #061A35;">Territory Routing</h4>
+            <p class="text-sm text-gray-600">Route leads to the right rep instantly</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4 p-4 rounded-xl bg-white border border-gray-200">
+          <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(249, 71, 48, 0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+          </div>
+          <div>
+            <h4 class="font-semibold" style="color: #061A35;">Renewal Alerts</h4>
+            <p class="text-sm text-gray-600">Never miss a renewal conversation</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>

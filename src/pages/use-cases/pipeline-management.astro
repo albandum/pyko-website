@@ -1,0 +1,292 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Button from '../../components/Button.astro';
+import FeatureCard from '../../components/FeatureCard.astro';
+import CTASection from '../../components/CTASection.astro';
+---
+
+<MainLayout
+  title="Pipeline Management & Deal Health | Pyko"
+  description="Real-time pipeline visibility. Know when deals progress, stall, or slip—before it's too late."
+>
+  <!-- Hero Section -->
+  <section class="gradient-hero py-16 md:py-24 lg:py-32">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white/90 text-sm mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          Use Case
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+          Real-time <span style="color: #F94730;">pipeline visibility</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
+          Know when deals progress, stall, or slip—before it's too late. Never be surprised by a missed forecast again.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <Button href="/trial" variant="primary" size="lg">
+            Start Free 14-Day Trial
+          </Button>
+          <Button href="#how-it-works" variant="outline" size="lg">
+            See How It Works
+          </Button>
+        </div>
+        <p class="text-sm text-gray-400">
+          No credit card required
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem Section -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
+            Forecasting shouldn't be guesswork
+          </h2>
+          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+            Most sales managers are blindsided by slipped deals and inaccurate forecasts. The data is there—they just can't see it in time.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <div class="text-center p-6">
+            <div class="text-5xl font-bold mb-2" style="color: #F94730;">56%</div>
+            <p class="text-gray-700">of sales forecasts are inaccurate</p>
+          </div>
+          <div class="text-center p-6">
+            <div class="text-5xl font-bold mb-2" style="color: #F94730;">67%</div>
+            <p class="text-gray-700">of slipped deals were predicted to close</p>
+          </div>
+          <div class="text-center p-6">
+            <div class="text-5xl font-bold mb-2" style="color: #F94730;">12h</div>
+            <p class="text-gray-700">per week spent on forecast prep</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl border border-gray-200 text-center">
+          <p class="text-xl text-gray-800">
+            By the time you see a deal slip in your CRM report, <span class="font-semibold" style="color: #F94730;">it's already too late to save it</span>. You need to know the moment it happens.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How Pyko Solves This -->
+  <section id="how-it-works" class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
+            See every deal move in real-time
+          </h2>
+          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+            Get instant alerts when deals progress, stall, or need attention. Take action before problems become surprises.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+          <FeatureCard
+            icon="activity"
+            title="Stage Change Alerts"
+            description="Know instantly when deals move forward—or backward. Celebrate wins, investigate reversals."
+          />
+          <FeatureCard
+            icon="clock"
+            title="Stuck Deal Detection"
+            description="Deals stagnant for 7, 14, or 30 days? Get alerted automatically. Prevent pipeline rot."
+          />
+          <FeatureCard
+            icon="trending-up"
+            title="High-Value Tracking"
+            description="Any change on deals over $100K? Alert the manager immediately. High stakes = high visibility."
+          />
+        </div>
+
+        <!-- Scenarios -->
+        <div class="bg-gray-50 p-8 rounded-xl">
+          <h3 class="text-xl font-bold mb-6 text-center" style="color: #061A35;">
+            Alerts that matter
+          </h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-lg border border-gray-200">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: rgba(34, 197, 94, 0.1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold" style="color: #061A35;">Deal Advanced</h4>
+                  <span class="text-xs text-green-600">Good news</span>
+                </div>
+              </div>
+              <p class="text-sm text-gray-600">"Acme Corp just moved from Demo to Proposal. $150K ARR. Expected close: Dec 20."</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg border border-gray-200">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: rgba(239, 68, 68, 0.1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold" style="color: #061A35;">Stage Reversed</h4>
+                  <span class="text-xs text-red-600">Needs attention</span>
+                </div>
+              </div>
+              <p class="text-sm text-gray-600">"TechCorp deal moved back from Negotiation to Demo. Close date pushed 30 days."</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg border border-gray-200">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: rgba(234, 179, 8, 0.1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EAB308" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold" style="color: #061A35;">Deal Stuck</h4>
+                  <span class="text-xs text-yellow-600">14+ days</span>
+                </div>
+              </div>
+              <p class="text-sm text-gray-600">"GlobalCo has been in Demo stage for 18 days. Last activity: 12 days ago."</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg border border-gray-200">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: rgba(249, 71, 48, 0.1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold" style="color: #061A35;">Deal Won</h4>
+                  <span class="text-xs" style="color: #F94730;">Celebrate!</span>
+                </div>
+              </div>
+              <p class="text-sm text-gray-600">"MegaCorp closed for $200K! Congrats @sarah. Next step: Schedule kickoff."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- For Sales Managers -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
+            Built for sales managers
+          </h2>
+          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+            Stop spending hours in the CRM hunting for updates. Let the updates come to you.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white p-8 rounded-xl border border-gray-200">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, rgba(249, 71, 48, 0.15) 0%, rgba(249, 71, 48, 0.05) 100%);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3" style="color: #061A35;">Pipeline Health Dashboard</h3>
+            <p class="text-gray-600 mb-4">See your entire team's pipeline activity in one Slack channel. Who's progressing, who's stuck, what needs attention.</p>
+            <ul class="space-y-2 text-sm text-gray-600">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Daily deal movement summary
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Stuck deals flagged automatically
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                High-value deal monitoring
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-8 rounded-xl border border-gray-200">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, rgba(249, 71, 48, 0.15) 0%, rgba(249, 71, 48, 0.05) 100%);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3" style="color: #061A35;">Coaching Opportunities</h3>
+            <p class="text-gray-600 mb-4">Spot patterns across your team. Who needs help? Which deals need coaching? Act before it's too late.</p>
+            <ul class="space-y-2 text-sm text-gray-600">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Rep activity patterns
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Stage conversion tracking
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Deal velocity insights
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Story -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-gradient-to-br from-[#061A35] to-[#0A2342] p-8 md:p-12 rounded-2xl">
+          <div class="flex flex-col md:flex-row gap-8 items-center">
+            <div class="flex-shrink-0">
+              <img
+                src="/images/customers/testimonials/payfit/person.jpeg"
+                alt="Alain Hazout"
+                class="w-24 h-24 rounded-full border-4 border-white/20"
+              />
+            </div>
+            <div class="text-white">
+              <blockquote class="text-xl md:text-2xl mb-4 leading-relaxed">
+                "We went from confrontational business reviews because we couldn't trust the forecasts to a smooth pipeline. Pyko was a game changer for us."
+              </blockquote>
+              <div class="flex items-center gap-4">
+                <div>
+                  <p class="font-semibold">Alain Hazout</p>
+                  <p class="text-gray-400">VP Sales, Payfit</p>
+                </div>
+                <img
+                  src="/images/customers/testimonials/payfit/logo.png"
+                  alt="Payfit"
+                  class="h-8 opacity-80"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <CTASection
+    headline="Never be surprised by your pipeline again"
+    subheadline="Get real-time visibility into every deal. Set up in under 5 minutes."
+    primaryCTA={{ text: "Start Free 14-Day Trial", href: "/trial" }}
+    secondaryCTA={{ text: "Schedule a Demo", href: "/contact" }}
+    variant="gradient"
+  >
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/90 mt-6">
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+        </svg>
+        <span>Real-time Salesforce alerts</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+        </svg>
+        <span>One-click actions</span>
+      </div>
+    </div>
+  </CTASection>
+</MainLayout>

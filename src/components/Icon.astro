@@ -1,0 +1,86 @@
+---
+import {
+  Clock,
+  RefreshCw,
+  AlertTriangle,
+  Radio,
+  MousePointerClick,
+  Sparkles,
+  Rocket,
+  HeartPulse,
+  Shield,
+  Trophy,
+  MapPin,
+  Bell,
+  Zap,
+  TrendingUp,
+  Users,
+  Target,
+  CheckCircle,
+  ArrowRight,
+  Calendar,
+  BarChart3,
+  Settings,
+  Send,
+  MessageSquare,
+  Database,
+  FileCheck,
+  Timer,
+  Activity,
+  Eye,
+  PieChart,
+  Workflow,
+  Repeat,
+  AlertCircle,
+} from 'lucide-astro';
+
+interface Props {
+  name: string;
+  size?: number;
+  class?: string;
+  strokeWidth?: number;
+}
+
+const { name, size = 24, class: className = '', strokeWidth = 2 } = Astro.props;
+
+const icons: Record<string, any> = {
+  clock: Clock,
+  'refresh-cw': RefreshCw,
+  'alert-triangle': AlertTriangle,
+  radio: Radio,
+  'mouse-pointer-click': MousePointerClick,
+  sparkles: Sparkles,
+  rocket: Rocket,
+  'heart-pulse': HeartPulse,
+  shield: Shield,
+  trophy: Trophy,
+  'map-pin': MapPin,
+  bell: Bell,
+  zap: Zap,
+  'trending-up': TrendingUp,
+  users: Users,
+  target: Target,
+  'check-circle': CheckCircle,
+  'arrow-right': ArrowRight,
+  calendar: Calendar,
+  'bar-chart': BarChart3,
+  settings: Settings,
+  send: Send,
+  'message-square': MessageSquare,
+  database: Database,
+  'file-check': FileCheck,
+  timer: Timer,
+  activity: Activity,
+  eye: Eye,
+  'pie-chart': PieChart,
+  workflow: Workflow,
+  repeat: Repeat,
+  'alert-circle': AlertCircle,
+};
+
+const IconComponent = icons[name];
+---
+
+{IconComponent && (
+  <IconComponent size={size} class={className} stroke-width={strokeWidth} />
+)}

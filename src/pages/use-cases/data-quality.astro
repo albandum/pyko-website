@@ -1,0 +1,306 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Button from '../../components/Button.astro';
+import FeatureCard from '../../components/FeatureCard.astro';
+import CTASection from '../../components/CTASection.astro';
+---
+
+<MainLayout
+  title="Data Quality & CRM Hygiene | Pyko"
+  description="Automated CRM hygiene that runs while you sleep. Catch stale data, missing fields, and process violations before they hurt your forecast."
+>
+  <!-- Hero Section -->
+  <section class="gradient-hero py-16 md:py-24 lg:py-32">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white/90 text-sm mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+          Use Case
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+          Clean CRM data <span style="color: #F94730;">without lifting a finger</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
+          Automated hygiene rules that fix problems before they hurt your forecast. No more manual audits.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <Button href="/trial" variant="primary" size="lg">
+            Start Free 14-Day Trial
+          </Button>
+          <Button href="#how-it-works" variant="outline" size="lg">
+            See How It Works
+          </Button>
+        </div>
+        <p class="text-sm text-gray-400">
+          No credit card required
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem Section -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
+            Bad data is killing your forecast
+          </h2>
+          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+            Your CRM data decays every day. Stale close dates, missing fields, and outdated info make accurate forecasting impossible.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <div class="text-center p-6">
+            <div class="text-5xl font-bold mb-2" style="color: #F94730;">60%</div>
+            <p class="text-gray-700">of CRM data decays every year</p>
+          </div>
+          <div class="text-center p-6">
+            <div class="text-5xl font-bold mb-2" style="color: #F94730;">$15M</div>
+            <p class="text-gray-700">average annual cost of bad data</p>
+          </div>
+          <div class="text-center p-6">
+            <div class="text-5xl font-bold mb-2" style="color: #F94730;">30%</div>
+            <p class="text-gray-700">of close dates are inaccurate</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl border border-gray-200">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(239, 68, 68, 0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1" style="color: #061A35;">Stale Close Dates</h4>
+                <p class="text-sm text-gray-600">Opportunities with close dates in the past, still marked as open</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(239, 68, 68, 0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1" style="color: #061A35;">Missing Fields</h4>
+                <p class="text-sm text-gray-600">Required fields left empty, breaking reports and automations</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(239, 68, 68, 0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="17" x2="22" y1="8" y2="13"/><line x1="22" x2="17" y1="8" y2="13"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1" style="color: #061A35;">Inactive Owners</h4>
+                <p class="text-sm text-gray-600">Records assigned to employees who left the company</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(239, 68, 68, 0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1" style="color: #061A35;">Outdated Information</h4>
+                <p class="text-sm text-gray-600">No activity in 90+ days, but deal still in pipeline</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How Pyko Solves This -->
+  <section id="how-it-works" class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
+            Cleaning Rules that run on autopilot
+          </h2>
+          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+            Set up scheduled rules that find data problems and alert the right people to fix them—with one-click actions.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+          <FeatureCard
+            icon="calendar"
+            title="Scheduled Scans"
+            description="Run daily, weekly, or monthly. Choose specific days and times that work for your team."
+          />
+          <FeatureCard
+            icon="bell"
+            title="Smart Notifications"
+            description="Alert record owners, managers, or specific channels. DM or channel—your choice."
+          />
+          <FeatureCard
+            icon="mouse-pointer-click"
+            title="One-Click Fixes"
+            description="Reps fix issues without logging into the CRM. Push date, update field, done."
+          />
+        </div>
+
+        <!-- Example Rules -->
+        <div class="bg-gray-50 p-8 rounded-xl">
+          <h3 class="text-xl font-bold mb-6 text-center" style="color: #061A35;">
+            Popular cleaning rules
+          </h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-lg border border-gray-200">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: rgba(249, 71, 48, 0.1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold" style="color: #061A35;">Stale Close Dates</h4>
+                  <span class="text-xs text-gray-500">Every Monday at 9am</span>
+                </div>
+              </div>
+              <p class="text-sm text-gray-600 mb-4">Find open opportunities where close date has passed. Alert owner to update.</p>
+              <div class="flex items-center gap-2 text-sm">
+                <span class="px-2 py-1 rounded bg-green-100 text-green-700 font-medium">Result:</span>
+                <span class="text-gray-700">60% → 90% close date accuracy</span>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg border border-gray-200">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: rgba(249, 71, 48, 0.1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold" style="color: #061A35;">Missing Next Steps</h4>
+                  <span class="text-xs text-gray-500">Every Friday at 3pm</span>
+                </div>
+              </div>
+              <p class="text-sm text-gray-600 mb-4">Find assigned opportunities with empty Next Steps field. DM reminder with update button.</p>
+              <div class="flex items-center gap-2 text-sm">
+                <span class="px-2 py-1 rounded bg-green-100 text-green-700 font-medium">Result:</span>
+                <span class="text-gray-700">95% field compliance</span>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg border border-gray-200">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: rgba(249, 71, 48, 0.1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="17" x2="22" y1="8" y2="13"/><line x1="22" x2="17" y1="8" y2="13"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold" style="color: #061A35;">Inactive Owner Check</h4>
+                  <span class="text-xs text-gray-500">First of every month</span>
+                </div>
+              </div>
+              <p class="text-sm text-gray-600 mb-4">Find records assigned to deactivated users. Alert ops team for reassignment.</p>
+              <div class="flex items-center gap-2 text-sm">
+                <span class="px-2 py-1 rounded bg-green-100 text-green-700 font-medium">Result:</span>
+                <span class="text-gray-700">Zero orphaned records</span>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg border border-gray-200">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: rgba(249, 71, 48, 0.1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold" style="color: #061A35;">Renewal Pipeline</h4>
+                  <span class="text-xs text-gray-500">First of every month</span>
+                </div>
+              </div>
+              <p class="text-sm text-gray-600 mb-4">Find accounts with contracts ending in 60-90 days. Alert CSM, create renewal opportunity.</p>
+              <div class="flex items-center gap-2 text-sm">
+                <span class="px-2 py-1 rounded bg-green-100 text-green-700 font-medium">Result:</span>
+                <span class="text-gray-700">Zero missed renewals</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Story -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
+            From data chaos to data confidence
+          </h2>
+        </div>
+
+        <div class="bg-gradient-to-br from-[#061A35] to-[#0A2342] p-8 md:p-12 rounded-2xl">
+          <div class="flex flex-col md:flex-row gap-8 items-center">
+            <div class="flex-shrink-0">
+              <img
+                src="/images/customers/testimonials/lifen/raphael.jpeg"
+                alt="Raphael Brousse"
+                class="w-24 h-24 rounded-full border-4 border-white/20"
+              />
+            </div>
+            <div class="text-white">
+              <blockquote class="text-xl md:text-2xl mb-4 leading-relaxed">
+                "Data quality is never mentioned as an issue anymore by our 100+ daily Salesforce users. Pyko completely transformed how we handle CRM hygiene."
+              </blockquote>
+              <div class="flex items-center gap-4">
+                <div>
+                  <p class="font-semibold">Raphael Brousse</p>
+                  <p class="text-gray-400">VP of Operations, Lifen</p>
+                </div>
+                <img
+                  src="/images/customers/testimonials/lifen/logo.jpg"
+                  alt="Lifen"
+                  class="h-8 opacity-80"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-6 mt-8">
+          <div class="text-center p-6 bg-white rounded-xl border border-gray-200">
+            <div class="text-3xl font-bold mb-1" style="color: #F94730;">100+</div>
+            <p class="text-sm text-gray-600">daily users</p>
+          </div>
+          <div class="text-center p-6 bg-white rounded-xl border border-gray-200">
+            <div class="text-3xl font-bold mb-1" style="color: #F94730;">20+</div>
+            <p class="text-sm text-gray-600">active automations</p>
+          </div>
+          <div class="text-center p-6 bg-white rounded-xl border border-gray-200">
+            <div class="text-3xl font-bold mb-1" style="color: #F94730;">2 years</div>
+            <p class="text-sm text-gray-600">using Pyko</p>
+          </div>
+          <div class="text-center p-6 bg-white rounded-xl border border-gray-200">
+            <div class="text-3xl font-bold mb-1" style="color: #F94730;">10/10</div>
+            <p class="text-sm text-gray-600">NPS score</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <CTASection
+    headline="Stop fighting your CRM data"
+    subheadline="Set up cleaning rules in minutes. Watch your data quality improve automatically."
+    primaryCTA={{ text: "Start Free 14-Day Trial", href: "/trial" }}
+    secondaryCTA={{ text: "Schedule a Demo", href: "/contact" }}
+    variant="gradient"
+  >
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/90 mt-6">
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+        </svg>
+        <span>50+ pre-built templates</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+        </svg>
+        <span>No code required</span>
+      </div>
+    </div>
+  </CTASection>
+</MainLayout>
