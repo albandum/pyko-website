@@ -44,33 +44,6 @@ import Button from './Button.astro';
           </div>
         </div>
 
-        <!-- Integrations Dropdown -->
-        <div class="relative group">
-          <button class="flex items-center space-x-1 hover:opacity-80 transition-opacity font-medium" style="color: white;">
-            <span>Integrations</span>
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div class="absolute left-0 mt-2 w-56 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-700" style="background-color: #0A2342;">
-            <div class="py-2">
-              <a href="/integrations/salesforce" class="block px-4 py-2 text-sm transition-colors" style="color: white;" onmouseover="this.style.backgroundColor='rgba(249, 71, 48, 0.1)'" onmouseout="this.style.backgroundColor='transparent'">
-                <span class="font-medium">Salesforce</span>
-              </a>
-              <a href="/integrations/hubspot" class="block px-4 py-2 text-sm transition-colors" style="color: white;" onmouseover="this.style.backgroundColor='rgba(249, 71, 48, 0.1)'" onmouseout="this.style.backgroundColor='transparent'">
-                <span class="font-medium">HubSpot</span>
-              </a>
-              <div class="border-t border-gray-700 my-2"></div>
-              <a href="/integrations/slack" class="block px-4 py-2 text-sm transition-colors" style="color: white;" onmouseover="this.style.backgroundColor='rgba(249, 71, 48, 0.1)'" onmouseout="this.style.backgroundColor='transparent'">
-                <span class="font-medium">Slack</span>
-              </a>
-              <a href="/integrations/teams" class="block px-4 py-2 text-sm transition-colors" style="color: white;" onmouseover="this.style.backgroundColor='rgba(249, 71, 48, 0.1)'" onmouseout="this.style.backgroundColor='transparent'">
-                <span class="font-medium">Microsoft Teams</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
         <!-- Use Cases Dropdown -->
         <div class="relative group">
           <button class="flex items-center space-x-1 hover:opacity-80 transition-opacity font-medium" style="color: white;">
@@ -159,17 +132,6 @@ import Button from './Button.astro';
           <a href="/product/cleaning-rules" class="block text-gray-300 hover:text-white">Cleaning Rules</a>
           <a href="/product/actions" class="block text-gray-300 hover:text-white">Actions & Workflows</a>
           <a href="/product/analytics" class="block text-gray-300 hover:text-white">Analytics</a>
-        </div>
-      </div>
-
-      <!-- Integrations Links -->
-      <div>
-        <div class="font-semibold text-white mb-2">Integrations</div>
-        <div class="space-y-2 pl-4">
-          <a href="/integrations/salesforce" class="block text-gray-300 hover:text-white">Salesforce</a>
-          <a href="/integrations/hubspot" class="block text-gray-300 hover:text-white">HubSpot</a>
-          <a href="/integrations/slack" class="block text-gray-300 hover:text-white">Slack</a>
-          <a href="/integrations/teams" class="block text-gray-300 hover:text-white">Microsoft Teams</a>
         </div>
       </div>
 
