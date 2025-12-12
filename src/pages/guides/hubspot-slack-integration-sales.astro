@@ -1,0 +1,493 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Button from '../../components/Button.astro';
+import CTASection from '../../components/CTASection.astro';
+---
+
+<MainLayout
+  title="HubSpot Slack Integration for Sales Teams (2025 Guide)"
+  description="Connect HubSpot to Slack for real-time deal alerts and one-click CRM updates. Compare native HubSpot, Zapier, and Pyko for sales team notifications."
+>
+  <!-- Hero Section -->
+  <section class="gradient-hero py-16 md:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/20 text-orange-200 text-sm mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          HubSpot + Slack
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+          HubSpot Slack Integration for Sales Teams
+        </h1>
+        <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          Get instant HubSpot deal alerts in Slack. Respond to leads faster, track pipeline changes, and update your CRM without leaving chat.
+        </p>
+        <Button href="/trial" variant="primary" size="lg">
+          Connect HubSpot to Slack
+        </Button>
+        <p class="text-sm text-gray-400 mt-4">Set up in 5 minutes. No credit card required.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Connect Section -->
+  <section class="py-12 bg-white border-b border-gray-200">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-200 rounded-xl p-6">
+          <h2 class="text-lg font-bold mb-3" style="color: #061A35;">Why Connect HubSpot to Slack?</h2>
+          <p class="text-gray-700 mb-4">
+            Your sales team lives in Slack. Your CRM data lives in HubSpot. Connecting them means:
+          </p>
+          <div class="grid md:grid-cols-3 gap-4 text-sm">
+            <div class="text-center p-4 bg-white rounded-lg">
+              <div class="text-3xl font-bold text-orange-600 mb-1">10x</div>
+              <p class="text-gray-600">faster response to new leads</p>
+            </div>
+            <div class="text-center p-4 bg-white rounded-lg">
+              <div class="text-3xl font-bold text-orange-600 mb-1">5+ hrs</div>
+              <p class="text-gray-600">saved per week on CRM admin</p>
+            </div>
+            <div class="text-center p-4 bg-white rounded-lg">
+              <div class="text-3xl font-bold text-orange-600 mb-1">100%</div>
+              <p class="text-gray-600">team visibility on deals</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 Ways to Connect -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center" style="color: #061A35;">
+          3 Ways to Connect HubSpot to Slack
+        </h2>
+        <p class="text-lg text-gray-600 text-center mb-12">
+          Compare your options for HubSpot-Slack integration.
+        </p>
+
+        <div class="space-y-8">
+          <!-- Native HubSpot -->
+          <div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-orange-100 flex items-center justify-center">
+                <span class="text-2xl font-bold text-orange-600">1</span>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-bold mb-2" style="color: #061A35;">Native HubSpot Slack Integration</h3>
+                <p class="text-gray-700 mb-4">HubSpot's built-in Slack integration sends notifications for tasks, form submissions, and some deal events.</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div class="bg-green-50 rounded-lg p-3">
+                    <p class="font-medium text-green-800 text-sm mb-1">Pros:</p>
+                    <ul class="text-xs text-green-700 space-y-1">
+                      <li>Free with HubSpot</li>
+                      <li>Easy to set up</li>
+                      <li>Official support</li>
+                    </ul>
+                  </div>
+                  <div class="bg-red-50 rounded-lg p-3">
+                    <p class="font-medium text-red-800 text-sm mb-1">Cons:</p>
+                    <ul class="text-xs text-red-700 space-y-1">
+                      <li>Limited notification triggers</li>
+                      <li>No one-click CRM updates</li>
+                      <li>Basic customization</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Zapier -->
+          <div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-orange-100 flex items-center justify-center">
+                <span class="text-2xl font-bold text-orange-600">2</span>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-bold mb-2" style="color: #061A35;">Zapier</h3>
+                <p class="text-gray-700 mb-4">Zapier connects HubSpot to Slack with customizable triggers and actions. Good for basic notifications.</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div class="bg-green-50 rounded-lg p-3">
+                    <p class="font-medium text-green-800 text-sm mb-1">Pros:</p>
+                    <ul class="text-xs text-green-700 space-y-1">
+                      <li>Flexible triggers</li>
+                      <li>Connects 5,000+ apps</li>
+                      <li>No-code setup</li>
+                    </ul>
+                  </div>
+                  <div class="bg-red-50 rounded-lg p-3">
+                    <p class="font-medium text-red-800 text-sm mb-1">Cons:</p>
+                    <ul class="text-xs text-red-700 space-y-1">
+                      <li>5-15 minute delays (polling)</li>
+                      <li>No one-click CRM updates</li>
+                      <li>Can get expensive at scale</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pyko -->
+          <div class="bg-gradient-to-r from-[#F94730]/10 to-[#F94730]/5 rounded-xl border-2 border-[#F94730] p-6">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-[#F94730] flex items-center justify-center">
+                <span class="text-2xl font-bold text-white">3</span>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center gap-2 mb-2">
+                  <h3 class="text-xl font-bold" style="color: #061A35;">Pyko</h3>
+                  <span class="px-2 py-0.5 bg-[#F94730] text-white text-xs font-medium rounded">Recommended</span>
+                </div>
+                <p class="text-gray-700 mb-4">Pyko is purpose-built for sales teams. Real-time HubSpot alerts with one-click actions to update your CRM from Slack.</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div class="bg-green-50 rounded-lg p-3">
+                    <p class="font-medium text-green-800 text-sm mb-1">Pros:</p>
+                    <ul class="text-xs text-green-700 space-y-1">
+                      <li>Real-time alerts (no delays)</li>
+                      <li>One-click CRM updates</li>
+                      <li>Automated data hygiene</li>
+                      <li>Also works with Teams</li>
+                    </ul>
+                  </div>
+                  <div class="bg-red-50 rounded-lg p-3">
+                    <p class="font-medium text-red-800 text-sm mb-1">Cons:</p>
+                    <ul class="text-xs text-red-700 space-y-1">
+                      <li>CRM-specific (not general automation)</li>
+                      <li>Newer than Zapier</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center" style="color: #061A35;">
+          Feature Comparison
+        </h2>
+        <p class="text-lg text-gray-600 text-center mb-12">
+          Which HubSpot-Slack integration is right for your sales team?
+        </p>
+
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse bg-white text-gray-700">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="text-left p-4 border border-gray-200 font-semibold" style="color: #061A35;">Feature</th>
+                <th class="text-center p-4 border border-gray-200 font-semibold" style="color: #061A35;">Native HubSpot</th>
+                <th class="text-center p-4 border border-gray-200 font-semibold" style="color: #061A35;">Zapier</th>
+                <th class="text-center p-4 border border-gray-200 font-semibold" style="color: #F94730;">Pyko</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="p-4 border border-gray-200 font-medium text-gray-900">Deal Alerts</td>
+                <td class="p-4 border border-gray-200 text-center">Limited</td>
+                <td class="p-4 border border-gray-200 text-center">Yes</td>
+                <td class="p-4 border border-gray-200 text-center text-green-600 font-semibold">Yes</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border border-gray-200 font-medium text-gray-900">Alert Speed</td>
+                <td class="p-4 border border-gray-200 text-center">Varies</td>
+                <td class="p-4 border border-gray-200 text-center">5-15 min</td>
+                <td class="p-4 border border-gray-200 text-center text-green-600 font-semibold">Real-time</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-4 border border-gray-200 font-medium text-gray-900">Update HubSpot from Slack</td>
+                <td class="p-4 border border-gray-200 text-center text-red-500">No</td>
+                <td class="p-4 border border-gray-200 text-center text-red-500">No</td>
+                <td class="p-4 border border-gray-200 text-center text-green-600 font-semibold">Yes</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border border-gray-200 font-medium text-gray-900">One-Click Actions</td>
+                <td class="p-4 border border-gray-200 text-center text-red-500">No</td>
+                <td class="p-4 border border-gray-200 text-center text-red-500">No</td>
+                <td class="p-4 border border-gray-200 text-center text-green-600 font-semibold">Yes</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-4 border border-gray-200 font-medium text-gray-900">Data Hygiene Alerts</td>
+                <td class="p-4 border border-gray-200 text-center text-red-500">No</td>
+                <td class="p-4 border border-gray-200 text-center">Manual setup</td>
+                <td class="p-4 border border-gray-200 text-center text-green-600 font-semibold">Built-in</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border border-gray-200 font-medium text-gray-900">Microsoft Teams</td>
+                <td class="p-4 border border-gray-200 text-center">Separate app</td>
+                <td class="p-4 border border-gray-200 text-center">Yes</td>
+                <td class="p-4 border border-gray-200 text-center text-green-600 font-semibold">Yes</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-4 border border-gray-200 font-medium text-gray-900">Salesforce Support</td>
+                <td class="p-4 border border-gray-200 text-center text-red-500">No</td>
+                <td class="p-4 border border-gray-200 text-center">Separate Zaps</td>
+                <td class="p-4 border border-gray-200 text-center text-green-600 font-semibold">Yes</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border border-gray-200 font-medium text-gray-900">Pricing</td>
+                <td class="p-4 border border-gray-200 text-center text-sm">Free</td>
+                <td class="p-4 border border-gray-200 text-center text-sm">From $20/mo</td>
+                <td class="p-4 border border-gray-200 text-center font-semibold" style="color: #F94730;">From €3.99/user</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" style="color: #061A35;">
+          HubSpot Alerts Every Sales Team Needs
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+              </div>
+              <h3 class="font-bold text-lg" style="color: #061A35;">New Lead Notifications</h3>
+            </div>
+            <p class="text-gray-700">Alert sales reps instantly when new contacts are created or form submissions come in. Respond in minutes, not hours.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <h3 class="font-bold text-lg" style="color: #061A35;">Deal Stage Changes</h3>
+            </div>
+            <p class="text-gray-700">Track deals as they move through your pipeline. Get notified on key stages like "Qualified" or "Contract Sent."</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-yellow-100 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ca8a04" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg>
+              </div>
+              <h3 class="font-bold text-lg" style="color: #061A35;">Closed Won Celebrations</h3>
+            </div>
+            <p class="text-gray-700">Celebrate wins as a team. Automatically post to a #wins channel when deals close with deal details and confetti.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <h3 class="font-bold text-lg" style="color: #061A35;">Stale Deal Alerts</h3>
+            </div>
+            <p class="text-gray-700">Flag deals that haven't been updated. Keep your pipeline fresh and your forecasts accurate.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9333ea" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <h3 class="font-bold text-lg" style="color: #061A35;">Meeting Booked</h3>
+            </div>
+            <p class="text-gray-700">Get notified when prospects book meetings through your calendar links. Prepare before the call.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <h3 class="font-bold text-lg" style="color: #061A35;">Quote Requests</h3>
+            </div>
+            <p class="text-gray-700">Alert sales when a prospect requests pricing or downloads your rate card. Strike while the iron is hot.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Pyko Section -->
+  <section class="py-16 md:py-24 bg-gradient-to-br from-[#061A35] to-[#0A2342]">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <span class="inline-block px-4 py-1 rounded-full bg-[#F94730] text-white text-sm font-medium mb-4">Built for Sales</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+            Why Sales Teams Choose Pyko
+          </h2>
+          <p class="text-xl text-gray-300">
+            More than notifications—a complete HubSpot-Slack workflow.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-12">
+          <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-[#F94730] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-white">Real-Time Alerts</h3>
+            </div>
+            <p class="text-gray-300">No polling delays. HubSpot changes trigger Slack notifications instantly, so you can act fast.</p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-[#F94730] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M9 9h6v6H9z"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-white">One-Click Updates</h3>
+            </div>
+            <p class="text-gray-300">Update deal stages, close dates, and notes directly from Slack. No need to open HubSpot.</p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-[#F94730] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 2v4"/><path d="m6.8 14-3.5 2"/><path d="m20.7 16-3.5-2"/><path d="M6.8 10 3.3 8"/><path d="m20.7 8-3.5 2"/><circle cx="12" cy="10" r="4"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-white">Cleaning Rules</h3>
+            </div>
+            <p class="text-gray-300">Automatically detect stale deals, missing data, and hygiene issues. Get alerts with one-click fixes.</p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-[#F94730] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-white">Works with Teams Too</h3>
+            </div>
+            <p class="text-gray-300">Same features in Microsoft Teams. Choose your platform—or use both.</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <Button href="/trial" variant="primary" size="lg">
+            Connect HubSpot to Slack
+          </Button>
+          <p class="text-sm text-gray-400 mt-4">14-day free trial. No credit card required.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Set Up -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" style="color: #061A35;">
+          How to Connect HubSpot to Slack with Pyko
+        </h2>
+
+        <div class="space-y-8">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#F94730] text-white flex items-center justify-center font-bold">1</div>
+            <div>
+              <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Sign Up for Pyko</h3>
+              <p class="text-gray-700">Create a free account. No credit card required for the 14-day trial.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#F94730] text-white flex items-center justify-center font-bold">2</div>
+            <div>
+              <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Connect HubSpot</h3>
+              <p class="text-gray-700">Authorize Pyko to access your HubSpot account with OAuth. One click, fully secure.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#F94730] text-white flex items-center justify-center font-bold">3</div>
+            <div>
+              <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Connect Slack</h3>
+              <p class="text-gray-700">Add the Pyko app to your Slack workspace. Choose which channels receive alerts.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#F94730] text-white flex items-center justify-center font-bold">4</div>
+            <div>
+              <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Create Alert Rules</h3>
+              <p class="text-gray-700">Define which HubSpot events trigger alerts. New deals, stage changes, stale records—your choice.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#F94730] text-white flex items-center justify-center font-bold">5</div>
+            <div>
+              <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Start Receiving Alerts</h3>
+              <p class="text-gray-700">Alerts flow instantly. Click action buttons to update HubSpot without leaving Slack.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" style="color: #061A35;">
+          Frequently Asked Questions
+        </h2>
+
+        <div class="space-y-6">
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Does HubSpot have a native Slack integration?</h3>
+            <p class="text-gray-700">Yes, HubSpot offers a free Slack integration. It's good for basic notifications but lacks one-click CRM updates and has limited customization compared to tools like Pyko.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Can I update HubSpot from Slack?</h3>
+            <p class="text-gray-700">Not with the native integration or Zapier. Pyko lets you update deal stages, close dates, notes, and more directly from Slack with one-click action buttons.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">How fast are HubSpot-to-Slack notifications?</h3>
+            <p class="text-gray-700">Native HubSpot varies. Zapier has 5-15 minute delays due to polling. Pyko delivers alerts in real-time with no delays.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Can I get HubSpot alerts in Microsoft Teams instead?</h3>
+            <p class="text-gray-700">Yes. Pyko supports both Slack and Microsoft Teams. You can use either or both platforms.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">What if I also use Salesforce?</h3>
+            <p class="text-gray-700">Pyko supports both HubSpot and Salesforce. You can get alerts from either CRM in the same Slack workspace.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">How much does the HubSpot-Slack integration cost?</h3>
+            <p class="text-gray-700">Native HubSpot is free but limited. Zapier starts at $20/month. Pyko starts at €3.99/user/month with a 14-day free trial.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <CTASection
+    headline="Connect HubSpot to Slack in 5 minutes"
+    subheadline="Real-time alerts. One-click updates. Built for sales teams."
+    primaryCTA={{ text: "Start Free 14-Day Trial", href: "/trial" }}
+    secondaryCTA={{ text: "See All Features", href: "/product/live-alerts" }}
+    variant="gradient"
+  />
+</MainLayout>

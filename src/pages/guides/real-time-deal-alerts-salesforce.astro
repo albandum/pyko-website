@@ -1,0 +1,433 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Button from '../../components/Button.astro';
+import CTASection from '../../components/CTASection.astro';
+---
+
+<MainLayout
+  title="Real-Time Salesforce Deal Alerts in Slack & Teams (2025 Guide)"
+  description="Get instant Salesforce deal alerts in Slack or Microsoft Teams. Compare tools for real-time CRM notifications: Pyko, Rattle, Momentum, and native Salesforce options."
+>
+  <!-- Hero Section -->
+  <section class="gradient-hero py-16 md:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/20 text-green-200 text-sm mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Real-Time Alerts
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+          Real-Time Salesforce Deal Alerts in Slack & Teams
+        </h1>
+        <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          Never miss a deal signal again. Get instant notifications when opportunities change stage, close dates slip, or deals need attention—delivered in under 3 seconds.
+        </p>
+        <Button href="/trial" variant="primary" size="lg">
+          Get Real-Time Alerts
+        </Button>
+        <p class="text-sm text-gray-400 mt-4">Set up in 5 minutes. No credit card required.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Real-Time Matters -->
+  <section class="py-12 bg-white border-b border-gray-200">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6">
+          <h2 class="text-lg font-bold mb-3" style="color: #061A35;">Why Real-Time Deal Alerts Matter</h2>
+          <div class="grid md:grid-cols-3 gap-4 text-sm">
+            <div class="text-center p-4">
+              <div class="text-3xl font-bold text-blue-600 mb-1">78%</div>
+              <p class="text-gray-600">of deals go to the vendor that responds first</p>
+            </div>
+            <div class="text-center p-4">
+              <div class="text-3xl font-bold text-blue-600 mb-1">5 min</div>
+              <p class="text-gray-600">response time increases qualification by 21x</p>
+            </div>
+            <div class="text-center p-4">
+              <div class="text-3xl font-bold text-blue-600 mb-1">30%</div>
+              <p class="text-gray-600">of opportunities have outdated close dates</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real-Time vs Polling -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center" style="color: #061A35;">
+          Real-Time vs Polling: What's the Difference?
+        </h2>
+        <p class="text-lg text-gray-600 text-center mb-12">
+          Not all "real-time" alerts are actually real-time. Here's what to look for.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-red-50 border border-red-200 rounded-xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-red-800">Polling (5-15 min delay)</h3>
+            </div>
+            <p class="text-red-700 mb-4">Most tools check Salesforce every 5-15 minutes for changes. This means:</p>
+            <ul class="text-sm text-red-700 space-y-2">
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                <span>Alerts arrive 5-15 minutes after the change</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                <span>Multiple changes can batch into one alert</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                <span>Higher API usage on Salesforce</span>
+              </li>
+            </ul>
+            <p class="text-xs text-red-600 mt-4">Used by: Zapier, many workflow tools</p>
+          </div>
+
+          <div class="bg-green-50 border border-green-200 rounded-xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-green-800">Platform Events (&lt;3 sec)</h3>
+            </div>
+            <p class="text-green-700 mb-4">True real-time uses Salesforce Platform Events to push changes instantly:</p>
+            <ul class="text-sm text-green-700 space-y-2">
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>Alerts delivered in 1-3 seconds</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>Every change triggers its own alert</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>Lower API usage, more efficient</span>
+              </li>
+            </ul>
+            <p class="text-xs text-green-600 mt-4">Used by: Pyko</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center" style="color: #061A35;">
+          Compare Real-Time Alert Tools
+        </h2>
+        <p class="text-lg text-gray-600 text-center mb-12">
+          Which tool delivers the fastest, most reliable Salesforce alerts?
+        </p>
+
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse bg-white text-gray-700">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="text-left p-4 border border-gray-200 font-semibold" style="color: #061A35;">Feature</th>
+                <th class="text-center p-4 border border-gray-200 font-semibold" style="color: #061A35;">Native SF</th>
+                <th class="text-center p-4 border border-gray-200 font-semibold" style="color: #061A35;">Zapier</th>
+                <th class="text-center p-4 border border-gray-200 font-semibold" style="color: #061A35;">Rattle</th>
+                <th class="text-center p-4 border border-gray-200 font-semibold" style="color: #F94730;">Pyko</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="p-4 border border-gray-200 font-medium text-gray-900">Alert Speed</td>
+                <td class="p-4 border border-gray-200 text-center">5-15 min</td>
+                <td class="p-4 border border-gray-200 text-center">5-15 min</td>
+                <td class="p-4 border border-gray-200 text-center">~1 min</td>
+                <td class="p-4 border border-gray-200 text-center text-green-600 font-semibold">&lt;3 seconds</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border border-gray-200 font-medium text-gray-900">Technology</td>
+                <td class="p-4 border border-gray-200 text-center text-sm">Flow + Email</td>
+                <td class="p-4 border border-gray-200 text-center text-sm">Polling</td>
+                <td class="p-4 border border-gray-200 text-center text-sm">Polling</td>
+                <td class="p-4 border border-gray-200 text-center text-sm text-green-600 font-semibold">Platform Events</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-4 border border-gray-200 font-medium text-gray-900">Slack Support</td>
+                <td class="p-4 border border-gray-200 text-center">Via app</td>
+                <td class="p-4 border border-gray-200 text-center">Yes</td>
+                <td class="p-4 border border-gray-200 text-center">Yes</td>
+                <td class="p-4 border border-gray-200 text-center text-green-600 font-semibold">Yes</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border border-gray-200 font-medium text-gray-900">Microsoft Teams</td>
+                <td class="p-4 border border-gray-200 text-center text-red-500">Limited</td>
+                <td class="p-4 border border-gray-200 text-center">Yes</td>
+                <td class="p-4 border border-gray-200 text-center text-red-500">No</td>
+                <td class="p-4 border border-gray-200 text-center text-green-600 font-semibold">Yes</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-4 border border-gray-200 font-medium text-gray-900">One-Click Actions</td>
+                <td class="p-4 border border-gray-200 text-center text-red-500">No</td>
+                <td class="p-4 border border-gray-200 text-center text-red-500">No</td>
+                <td class="p-4 border border-gray-200 text-center">Yes</td>
+                <td class="p-4 border border-gray-200 text-center text-green-600 font-semibold">Yes</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border border-gray-200 font-medium text-gray-900">No-Code Setup</td>
+                <td class="p-4 border border-gray-200 text-center text-red-500">Requires admin</td>
+                <td class="p-4 border border-gray-200 text-center">Yes</td>
+                <td class="p-4 border border-gray-200 text-center">Yes</td>
+                <td class="p-4 border border-gray-200 text-center text-green-600 font-semibold">Yes</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-4 border border-gray-200 font-medium text-gray-900">Pricing</td>
+                <td class="p-4 border border-gray-200 text-center text-sm">Included</td>
+                <td class="p-4 border border-gray-200 text-center text-sm">From $20/mo</td>
+                <td class="p-4 border border-gray-200 text-center text-sm">Contact sales</td>
+                <td class="p-4 border border-gray-200 text-center font-semibold" style="color: #F94730;">From €3.99/user</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" style="color: #061A35;">
+          What Deal Alerts Should You Set Up?
+        </h2>
+
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Stage Changes</h3>
+                <p class="text-gray-700">Get notified when opportunities move to key stages like "Negotiation" or "Closed Won." Celebrate wins in team channels instantly.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-yellow-100 flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ca8a04" stroke-width="2"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Close Date Slips</h3>
+                <p class="text-gray-700">Alert managers when close dates are pushed back, especially on high-value deals. Catch forecast risks before they become surprises.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Stale Deals</h3>
+                <p class="text-gray-700">Flag opportunities that haven't been updated in 14+ days. Keep your pipeline moving and forecasts accurate.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M12 2v4"/><path d="m6.8 14-3.5 2"/><path d="m20.7 16-3.5-2"/><path d="M6.8 10 3.3 8"/><path d="m20.7 8-3.5 2"/><circle cx="12" cy="10" r="4"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg mb-2" style="color: #061A35;">High-Value Deal Activity</h3>
+                <p class="text-gray-700">Track any changes on deals above a certain amount. Keep leadership informed on strategic opportunities without manual updates.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9333ea" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Owner Changes</h3>
+                <p class="text-gray-700">Alert when deals are reassigned. Ensure smooth handoffs and keep the right people in the loop.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Pyko Section -->
+  <section class="py-16 md:py-24 bg-gradient-to-br from-[#061A35] to-[#0A2342]">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <span class="inline-block px-4 py-1 rounded-full bg-[#F94730] text-white text-sm font-medium mb-4">Fastest Alerts</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+            Why Pyko for Real-Time Deal Alerts
+          </h2>
+          <p class="text-xl text-gray-300">
+            The only tool that uses Salesforce Platform Events for true real-time delivery.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-12">
+          <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-[#F94730] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-white">Under 3 Seconds</h3>
+            </div>
+            <p class="text-gray-300">Pyko uses Salesforce Platform Events—no polling. Changes trigger alerts instantly, not on a timer.</p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-[#F94730] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M9 9h6v6H9z"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-white">One-Click Actions</h3>
+            </div>
+            <p class="text-gray-300">Update close dates, change stages, or add notes directly from the alert. No need to open Salesforce.</p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-[#F94730] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-white">Slack + Teams</h3>
+            </div>
+            <p class="text-gray-300">Works with both Slack and Microsoft Teams. Route alerts to the right channels automatically.</p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-[#F94730] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-white">No-Code Setup</h3>
+            </div>
+            <p class="text-gray-300">Set up alerts in minutes without Salesforce admin help. Point-and-click configuration.</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <Button href="/trial" variant="primary" size="lg">
+            Get Real-Time Alerts Free
+          </Button>
+          <p class="text-sm text-gray-400 mt-4">14-day free trial. No credit card required.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Set Up -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" style="color: #061A35;">
+          How to Set Up Real-Time Deal Alerts
+        </h2>
+
+        <div class="space-y-8">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#F94730] text-white flex items-center justify-center font-bold">1</div>
+            <div>
+              <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Connect Salesforce</h3>
+              <p class="text-gray-700">Sign up for Pyko and connect your Salesforce org with OAuth. No credentials to manage, no packages to install.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#F94730] text-white flex items-center justify-center font-bold">2</div>
+            <div>
+              <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Connect Slack or Teams</h3>
+              <p class="text-gray-700">Add the Pyko app to your workspace. Choose which channels should receive alerts.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#F94730] text-white flex items-center justify-center font-bold">3</div>
+            <div>
+              <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Create Alert Rules</h3>
+              <p class="text-gray-700">Define which Opportunity changes trigger alerts. Filter by stage, amount, owner, or any custom field.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#F94730] text-white flex items-center justify-center font-bold">4</div>
+            <div>
+              <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Go Live</h3>
+              <p class="text-gray-700">Alerts start flowing in real-time. Your team can respond to deal changes in seconds, not hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" style="color: #061A35;">
+          Frequently Asked Questions
+        </h2>
+
+        <div class="space-y-6">
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">How fast are Pyko's Salesforce alerts?</h3>
+            <p class="text-gray-700">Pyko delivers alerts in 1-3 seconds using Salesforce Platform Events. This is significantly faster than polling-based tools which typically have 5-15 minute delays.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Can I get alerts in Microsoft Teams?</h3>
+            <p class="text-gray-700">Yes. Pyko is one of the few tools that supports both Slack and Microsoft Teams for Salesforce deal alerts.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">What's the difference between Pyko and Salesforce Flow?</h3>
+            <p class="text-gray-700">Salesforce Flow requires admin setup and typically sends email notifications. Pyko is no-code, delivers to Slack/Teams, and includes one-click actions to update Salesforce without leaving chat.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Can I filter alerts by deal value or stage?</h3>
+            <p class="text-gray-700">Yes. Pyko lets you create rules based on any Salesforce field—amount, stage, owner, close date, or custom fields. Route different alerts to different channels.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Does Pyko work with HubSpot too?</h3>
+            <p class="text-gray-700">Yes. Pyko supports both Salesforce and HubSpot, so you can get real-time deal alerts from either CRM.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <CTASection
+    headline="Stop missing deal signals"
+    subheadline="Get real-time Salesforce alerts in Slack or Teams. Set up in 5 minutes."
+    primaryCTA={{ text: "Start Free 14-Day Trial", href: "/trial" }}
+    secondaryCTA={{ text: "See All Features", href: "/product/live-alerts" }}
+    variant="gradient"
+  />
+</MainLayout>

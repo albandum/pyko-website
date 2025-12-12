@@ -1,0 +1,423 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Button from '../../components/Button.astro';
+import FeatureCard from '../../components/FeatureCard.astro';
+import CTASection from '../../components/CTASection.astro';
+---
+
+<MainLayout
+  title="Salesforce Microsoft Teams Integration: 5 Ways to Connect (2025)"
+  description="Connect Salesforce to Microsoft Teams for real-time notifications and CRM updates. Compare Cyfuno, Power Automate, Zapier, and Pyko."
+>
+  <!-- Hero Section -->
+  <section class="gradient-hero py-16 md:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="flex items-center justify-center gap-4 mb-6">
+          <img src="/images/logos/salesforce.svg" alt="Salesforce" class="h-12 w-12" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          <img src="/images/logos/teams.svg" alt="Microsoft Teams" class="h-12 w-12" />
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+          Salesforce Microsoft Teams Integration
+        </h1>
+        <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          5 ways to send Salesforce notifications to Microsoft Teams. Compare your options and find the best fit for your sales team.
+        </p>
+        <Button href="/trial" variant="primary" size="lg">
+          Try Pyko Free
+        </Button>
+        <p class="text-sm text-gray-400 mt-4">Real-time alerts. No credit card required.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Answer Section -->
+  <section class="py-12 bg-white border-b border-gray-200">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-purple-50 border border-purple-200 rounded-xl p-6">
+          <h2 class="text-lg font-bold text-purple-900 mb-3">Quick Answer</h2>
+          <p class="text-purple-800">
+            To connect Salesforce to Microsoft Teams, you can use: <strong>Cyfuno Labs AppExchange package</strong>, <strong>Microsoft Power Automate</strong>, <strong>Zapier</strong>, <strong>Custom Microsoft Graph API</strong>, or <strong>Pyko</strong>. For sales teams wanting real-time alerts with the easiest setup, Pyko is the recommended option.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Teams? -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center" style="color: #061A35;">
+          Why Connect Salesforce to Microsoft Teams?
+        </h2>
+        <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+          Many enterprise organizations use Microsoft Teams instead of Slack. Here's why the integration matters.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-50 rounded-xl p-6">
+            <h3 class="font-bold text-xl mb-3" style="color: #061A35;">The Problem</h3>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 mt-1">&#10005;</span>
+                <span>Sales reps miss critical deal updates while in meetings</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 mt-1">&#10005;</span>
+                <span>Leads go cold because response time is too slow</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 mt-1">&#10005;</span>
+                <span>Constant context-switching between Teams and Salesforce</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 mt-1">&#10005;</span>
+                <span>Email notifications get buried or ignored</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-green-50 rounded-xl p-6">
+            <h3 class="font-bold text-xl mb-3" style="color: #061A35;">The Solution</h3>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 mt-1">&#10003;</span>
+                <span>Get instant alerts in Teams where you already work</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 mt-1">&#10003;</span>
+                <span>Respond to leads within minutes, not hours</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 mt-1">&#10003;</span>
+                <span>Update Salesforce records without switching apps</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 mt-1">&#10003;</span>
+                <span>Keep the whole team informed in real-time</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center" style="color: #061A35;">
+          5 Ways to Connect Salesforce to Teams
+        </h2>
+        <p class="text-lg text-gray-600 text-center mb-12">
+          Compare setup complexity, features, and pricing.
+        </p>
+
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse bg-white rounded-xl overflow-hidden text-gray-700">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="text-left p-4 border-b border-gray-200 font-semibold" style="color: #061A35;">Solution</th>
+                <th class="text-center p-4 border-b border-gray-200 font-semibold" style="color: #061A35;">Setup Time</th>
+                <th class="text-center p-4 border-b border-gray-200 font-semibold" style="color: #061A35;">Alert Speed</th>
+                <th class="text-center p-4 border-b border-gray-200 font-semibold" style="color: #061A35;">Actions in Teams</th>
+                <th class="text-center p-4 border-b border-gray-200 font-semibold" style="color: #061A35;">Technical Skill</th>
+                <th class="text-center p-4 border-b border-gray-200 font-semibold" style="color: #061A35;">Best For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="p-4 border-b border-gray-200 font-medium text-gray-900">Cyfuno Labs</td>
+                <td class="p-4 border-b border-gray-200 text-center">30-60 min</td>
+                <td class="p-4 border-b border-gray-200 text-center">Flow-triggered</td>
+                <td class="p-4 border-b border-gray-200 text-center">Limited</td>
+                <td class="p-4 border-b border-gray-200 text-center">Admin</td>
+                <td class="p-4 border-b border-gray-200 text-center text-sm">Salesforce admins</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border-b border-gray-200 font-medium text-gray-900">Power Automate</td>
+                <td class="p-4 border-b border-gray-200 text-center">15-30 min</td>
+                <td class="p-4 border-b border-gray-200 text-center">5-15 min polling</td>
+                <td class="p-4 border-b border-gray-200 text-center">No</td>
+                <td class="p-4 border-b border-gray-200 text-center">Low-code</td>
+                <td class="p-4 border-b border-gray-200 text-center text-sm">Microsoft shops</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-4 border-b border-gray-200 font-medium text-gray-900">Zapier</td>
+                <td class="p-4 border-b border-gray-200 text-center">10-15 min</td>
+                <td class="p-4 border-b border-gray-200 text-center">1-15 min polling</td>
+                <td class="p-4 border-b border-gray-200 text-center">No</td>
+                <td class="p-4 border-b border-gray-200 text-center">None</td>
+                <td class="p-4 border-b border-gray-200 text-center text-sm">Simple automation</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border-b border-gray-200 font-medium text-gray-900">MS Graph API</td>
+                <td class="p-4 border-b border-gray-200 text-center">Hours-Days</td>
+                <td class="p-4 border-b border-gray-200 text-center">Real-time possible</td>
+                <td class="p-4 border-b border-gray-200 text-center">Custom build</td>
+                <td class="p-4 border-b border-gray-200 text-center">Developer</td>
+                <td class="p-4 border-b border-gray-200 text-center text-sm">Custom requirements</td>
+              </tr>
+              <tr style="background-color: #FEF3F2;">
+                <td class="p-4 border-b border-gray-200 font-bold" style="color: #F94730;">Pyko</td>
+                <td class="p-4 border-b border-gray-200 text-center font-semibold" style="color: #F94730;">5 min</td>
+                <td class="p-4 border-b border-gray-200 text-center font-semibold" style="color: #F94730;">1-3 seconds</td>
+                <td class="p-4 border-b border-gray-200 text-center text-green-600 font-semibold">Yes</td>
+                <td class="p-4 border-b border-gray-200 text-center font-semibold">None</td>
+                <td class="p-4 border-b border-gray-200 text-center text-sm font-semibold">Sales teams</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Method Details -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" style="color: #061A35;">
+          Detailed Breakdown
+        </h2>
+
+        <!-- Method 1 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h3 class="text-2xl font-bold mb-4" style="color: #061A35;">1. Cyfuno Labs (AppExchange)</h3>
+          <p class="text-gray-700 mb-6">
+            Cyfuno Labs offers an AppExchange package that lets you send Teams notifications from Salesforce Flows. It's the most Salesforce-native option for Teams integration.
+          </p>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-green-50 rounded-lg p-4">
+              <p class="font-medium text-green-800 mb-2">Pros:</p>
+              <ul class="text-sm text-green-700 space-y-1">
+                <li>Native Salesforce Flow integration</li>
+                <li>Rich Adaptive Card messages</li>
+                <li>Channel and DM support</li>
+              </ul>
+            </div>
+            <div class="bg-red-50 rounded-lg p-4">
+              <p class="font-medium text-red-800 mb-2">Cons:</p>
+              <ul class="text-sm text-red-700 space-y-1">
+                <li>Requires Salesforce admin skills</li>
+                <li>Need to build Flows manually</li>
+                <li>Additional licensing costs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Method 2 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h3 class="text-2xl font-bold mb-4" style="color: #061A35;">2. Microsoft Power Automate</h3>
+          <p class="text-gray-700 mb-6">
+            If your organization uses Microsoft 365, Power Automate is included with most licenses. It can poll Salesforce for changes and post to Teams.
+          </p>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-green-50 rounded-lg p-4">
+              <p class="font-medium text-green-800 mb-2">Pros:</p>
+              <ul class="text-sm text-green-700 space-y-1">
+                <li>Often included in Microsoft 365</li>
+                <li>Deep Microsoft ecosystem integration</li>
+                <li>Low-code visual builder</li>
+              </ul>
+            </div>
+            <div class="bg-red-50 rounded-lg p-4">
+              <p class="font-medium text-red-800 mb-2">Cons:</p>
+              <ul class="text-sm text-red-700 space-y-1">
+                <li>Polling delays (5-15 minutes)</li>
+                <li>Can't update Salesforce from Teams</li>
+                <li>Premium connectors cost extra</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Method 3 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h3 class="text-2xl font-bold mb-4" style="color: #061A35;">3. Zapier</h3>
+          <p class="text-gray-700 mb-6">
+            Zapier is the easiest general-purpose automation tool. Create a "Zap" to send Teams messages when Salesforce records change.
+          </p>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-green-50 rounded-lg p-4">
+              <p class="font-medium text-green-800 mb-2">Pros:</p>
+              <ul class="text-sm text-green-700 space-y-1">
+                <li>Very easy to set up</li>
+                <li>No technical skills needed</li>
+                <li>Connects to 6,000+ apps</li>
+              </ul>
+            </div>
+            <div class="bg-red-50 rounded-lg p-4">
+              <p class="font-medium text-red-800 mb-2">Cons:</p>
+              <ul class="text-sm text-red-700 space-y-1">
+                <li>Polling delays (1-15 minutes)</li>
+                <li>No bi-directional sync</li>
+                <li>Task-based pricing adds up</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Method 4 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h3 class="text-2xl font-bold mb-4" style="color: #061A35;">4. Custom Microsoft Graph API</h3>
+          <p class="text-gray-700 mb-6">
+            For complete control, you can build a custom integration using Microsoft Graph API and Salesforce Platform Events.
+          </p>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-green-50 rounded-lg p-4">
+              <p class="font-medium text-green-800 mb-2">Pros:</p>
+              <ul class="text-sm text-green-700 space-y-1">
+                <li>Complete customization</li>
+                <li>Can be real-time</li>
+                <li>No per-seat licensing</li>
+              </ul>
+            </div>
+            <div class="bg-red-50 rounded-lg p-4">
+              <p class="font-medium text-red-800 mb-2">Cons:</p>
+              <ul class="text-sm text-red-700 space-y-1">
+                <li>Requires developer resources</li>
+                <li>Ongoing maintenance burden</li>
+                <li>Complex authentication setup</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Method 5: Pyko (Recommended) -->
+        <div class="bg-gradient-to-br from-[#061A35] to-[#0A2342] rounded-2xl p-8">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="px-3 py-1 rounded-full bg-[#F94730] text-white text-sm font-medium">Recommended</span>
+            <h3 class="text-2xl font-bold text-white">5. Pyko</h3>
+          </div>
+          <p class="text-gray-300 mb-6">
+            Pyko is purpose-built for sales teams. Get real-time Salesforce alerts in Teams with one-click actions to update records without leaving Teams.
+          </p>
+
+          <div class="grid md:grid-cols-3 gap-4 mb-8">
+            <div class="bg-white/10 rounded-lg p-4 text-center">
+              <div class="text-3xl font-bold text-[#F94730] mb-1">5 min</div>
+              <p class="text-sm text-gray-300">Setup time</p>
+            </div>
+            <div class="bg-white/10 rounded-lg p-4 text-center">
+              <div class="text-3xl font-bold text-[#F94730] mb-1">&lt;3s</div>
+              <p class="text-sm text-gray-300">Alert delivery</p>
+            </div>
+            <div class="bg-white/10 rounded-lg p-4 text-center">
+              <div class="text-3xl font-bold text-[#F94730] mb-1">1-click</div>
+              <p class="text-sm text-gray-300">CRM updates</p>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-4 mb-8">
+            <div class="bg-white/10 rounded-lg p-4">
+              <p class="font-medium text-white mb-2">Key Features:</p>
+              <ul class="text-sm text-gray-300 space-y-2">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Real-time via Platform Events
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Update Salesforce from Teams
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Adaptive Card messages
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Enterprise Grid support
+                </li>
+              </ul>
+            </div>
+            <div class="bg-white/10 rounded-lg p-4">
+              <p class="font-medium text-white mb-2">Perfect For:</p>
+              <ul class="text-sm text-gray-300 space-y-2">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Speed-to-lead notifications
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Deal stage change alerts
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Pipeline management
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  CRM data quality alerts
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <Button href="/trial" variant="primary" size="lg">
+              Start Free 14-Day Trial
+            </Button>
+            <p class="text-sm text-gray-400 mt-3">No credit card required</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" style="color: #061A35;">
+          Frequently Asked Questions
+        </h2>
+
+        <div class="space-y-6">
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Does Salesforce have a native Microsoft Teams integration?</h3>
+            <p class="text-gray-700">Salesforce's native integration focuses primarily on Slack (which Salesforce owns). For Microsoft Teams, you'll need a third-party solution like Cyfuno Labs, Power Automate, or Pyko.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">What's the fastest way to get Salesforce alerts in Teams?</h3>
+            <p class="text-gray-700">Pyko uses Salesforce Platform Events to deliver notifications in 1-3 seconds. Polling-based solutions like Power Automate and Zapier have delays of 1-15 minutes.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Can I update Salesforce records from Microsoft Teams?</h3>
+            <p class="text-gray-700">Yes, with Pyko you can update fields, change stages, and create tasks directly from Teams using interactive buttons. Most other solutions only send one-way notifications.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Is Power Automate free for Salesforce integration?</h3>
+            <p class="text-gray-700">Basic Power Automate is included with Microsoft 365, but the Salesforce connector is a "premium" connector that requires an additional license ($15/user/month or higher).</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Does Pyko work with Teams Enterprise?</h3>
+            <p class="text-gray-700">Yes. Pyko supports Microsoft Teams Enterprise features including multi-tenant deployments, Azure AD authentication, compliance features, and data residency requirements.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Can I send alerts to Teams channels and direct messages?</h3>
+            <p class="text-gray-700">Yes. Pyko supports both Teams channels and 1:1 chats. You can route messages dynamically based on Salesforce data (like lead owner or territory).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <CTASection
+    headline="Connect Salesforce to Microsoft Teams in 5 minutes"
+    subheadline="Real-time alerts. One-click actions. No code required."
+    primaryCTA={{ text: "Start Free 14-Day Trial", href: "/trial" }}
+    secondaryCTA={{ text: "See Teams Integration", href: "/integrations/teams" }}
+    variant="gradient"
+  />
+</MainLayout>

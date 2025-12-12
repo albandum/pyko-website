@@ -1,0 +1,456 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Button from '../../components/Button.astro';
+import FeatureCard from '../../components/FeatureCard.astro';
+import CTASection from '../../components/CTASection.astro';
+---
+
+<MainLayout
+  title="HubSpot Microsoft Teams Integration: Get Notifications & Updates (2025)"
+  description="Connect HubSpot to Microsoft Teams for deal notifications, lead alerts, and CRM updates. Compare native integration, Zapier, and Pyko."
+>
+  <!-- Hero Section -->
+  <section class="gradient-hero py-16 md:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="flex items-center justify-center gap-4 mb-6">
+          <img src="/images/logos/hubspot.svg" alt="HubSpot" class="h-12 w-12" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          <img src="/images/logos/teams.svg" alt="Microsoft Teams" class="h-12 w-12" />
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+          HubSpot Microsoft Teams Integration
+        </h1>
+        <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          Get HubSpot notifications in Microsoft Teams. Alert your sales team instantly when deals move, leads come in, or data needs attention.
+        </p>
+        <Button href="/trial" variant="primary" size="lg">
+          Try Pyko Free
+        </Button>
+        <p class="text-sm text-gray-400 mt-4">Setup in 5 minutes. No credit card required.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Answer Section -->
+  <section class="py-12 bg-white border-b border-gray-200">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-orange-50 border border-orange-200 rounded-xl p-6">
+          <h2 class="text-lg font-bold text-orange-900 mb-3">Quick Answer</h2>
+          <p class="text-orange-800">
+            To connect HubSpot to Microsoft Teams, you can use the <strong>native HubSpot integration</strong> (limited features), <strong>Zapier</strong> (polling-based), or <strong>Pyko</strong> (real-time with one-click CRM actions). For sales teams needing instant lead alerts and the ability to update HubSpot from Teams, Pyko is the most feature-rich option.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why This Matters -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center" style="color: #061A35;">
+          Why Connect HubSpot to Microsoft Teams?
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <div class="text-center p-6 bg-gray-50 rounded-xl">
+            <div class="text-5xl font-bold mb-2" style="color: #F94730;">270M+</div>
+            <p class="text-gray-700">Microsoft Teams daily active users</p>
+          </div>
+          <div class="text-center p-6 bg-gray-50 rounded-xl">
+            <div class="text-5xl font-bold mb-2" style="color: #F94730;">78%</div>
+            <p class="text-gray-700">of buyers choose the first responder</p>
+          </div>
+          <div class="text-center p-6 bg-gray-50 rounded-xl">
+            <div class="text-5xl font-bold mb-2" style="color: #F94730;">5h+</div>
+            <p class="text-gray-700">saved per week with CRM automation</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-xl">
+          <p class="text-lg text-gray-700 text-center">
+            If your company uses HubSpot CRM and Microsoft Teams, you need these systems talking to each other. Otherwise, your sales reps are constantly switching between apps, missing critical updates, and losing deals to faster competitors.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center" style="color: #061A35;">
+          Compare Your Options
+        </h2>
+        <p class="text-lg text-gray-600 text-center mb-12">
+          Three ways to connect HubSpot to Microsoft Teams.
+        </p>
+
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse bg-white rounded-xl overflow-hidden text-gray-700">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="text-left p-4 border-b border-gray-200 font-semibold" style="color: #061A35;">Feature</th>
+                <th class="text-center p-4 border-b border-gray-200 font-semibold" style="color: #061A35;">Native HubSpot</th>
+                <th class="text-center p-4 border-b border-gray-200 font-semibold" style="color: #061A35;">Zapier</th>
+                <th class="text-center p-4 border-b border-gray-200 font-semibold" style="color: #F94730;">Pyko</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="p-4 border-b border-gray-200 font-medium text-gray-900">Setup Time</td>
+                <td class="p-4 border-b border-gray-200 text-center">10-15 min</td>
+                <td class="p-4 border-b border-gray-200 text-center">10-15 min</td>
+                <td class="p-4 border-b border-gray-200 text-center font-semibold" style="color: #F94730;">5 min</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border-b border-gray-200 font-medium text-gray-900">Alert Speed</td>
+                <td class="p-4 border-b border-gray-200 text-center">Near real-time</td>
+                <td class="p-4 border-b border-gray-200 text-center">1-15 min polling</td>
+                <td class="p-4 border-b border-gray-200 text-center font-semibold" style="color: #F94730;">5 min polling*</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-4 border-b border-gray-200 font-medium text-gray-900">Custom Deal Alerts</td>
+                <td class="p-4 border-b border-gray-200 text-center text-red-500">Limited</td>
+                <td class="p-4 border-b border-gray-200 text-center">Yes</td>
+                <td class="p-4 border-b border-gray-200 text-center text-green-600 font-semibold">Yes</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border-b border-gray-200 font-medium text-gray-900">Lead Routing</td>
+                <td class="p-4 border-b border-gray-200 text-center text-red-500">No</td>
+                <td class="p-4 border-b border-gray-200 text-center">Basic</td>
+                <td class="p-4 border-b border-gray-200 text-center text-green-600 font-semibold">Yes (Dynamic)</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-4 border-b border-gray-200 font-medium text-gray-900">Update HubSpot from Teams</td>
+                <td class="p-4 border-b border-gray-200 text-center text-red-500">No</td>
+                <td class="p-4 border-b border-gray-200 text-center text-red-500">No</td>
+                <td class="p-4 border-b border-gray-200 text-center text-green-600 font-semibold">Yes</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border-b border-gray-200 font-medium text-gray-900">Data Quality Alerts</td>
+                <td class="p-4 border-b border-gray-200 text-center text-red-500">No</td>
+                <td class="p-4 border-b border-gray-200 text-center text-red-500">No</td>
+                <td class="p-4 border-b border-gray-200 text-center text-green-600 font-semibold">Yes</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-4 border-b border-gray-200 font-medium text-gray-900">Custom Objects</td>
+                <td class="p-4 border-b border-gray-200 text-center text-red-500">No</td>
+                <td class="p-4 border-b border-gray-200 text-center">Limited</td>
+                <td class="p-4 border-b border-gray-200 text-center text-green-600 font-semibold">Yes</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border-b border-gray-200 font-medium text-gray-900">Best For</td>
+                <td class="p-4 border-b border-gray-200 text-center text-sm">Basic notifications</td>
+                <td class="p-4 border-b border-gray-200 text-center text-sm">Simple automation</td>
+                <td class="p-4 border-b border-gray-200 text-center text-sm font-semibold" style="color: #F94730;">Sales teams</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-sm text-gray-500 mt-4 text-center">*HubSpot API uses polling; Pyko checks every 5 minutes via HubSpot Search API</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Method 1: Native -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8" style="color: #061A35;">
+          Option 1: Native HubSpot-Teams Integration
+        </h2>
+
+        <div class="bg-white rounded-xl border border-gray-200 p-8 mb-8">
+          <h3 class="font-bold text-xl mb-4" style="color: #061A35;">How to Set Up</h3>
+          <ol class="space-y-4 text-gray-700">
+            <li class="flex gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-sm font-bold">1</span>
+              <span>Go to HubSpot Settings > Integrations > Connected Apps</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-sm font-bold">2</span>
+              <span>Search for Microsoft Teams and click Install</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-sm font-bold">3</span>
+              <span>Choose "Full Install" (requires Microsoft admin) or "Limited Install"</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-sm font-bold">4</span>
+              <span>Authenticate with your Microsoft account</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-sm font-bold">5</span>
+              <span>Configure notification settings in HubSpot</span>
+            </li>
+          </ol>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-green-50 border border-green-200 rounded-xl p-6">
+            <h4 class="font-bold text-green-800 mb-3">Pros</h4>
+            <ul class="space-y-2 text-green-700">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Free with HubSpot</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Official HubSpot support</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Teams meeting links in HubSpot</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-red-50 border border-red-200 rounded-xl p-6">
+            <h4 class="font-bold text-red-800 mb-3">Cons</h4>
+            <ul class="space-y-2 text-red-700">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                <span>Very limited notification types</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                <span>No custom deal stage alerts</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                <span>Can't update HubSpot from Teams</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Method 2: Zapier -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8" style="color: #061A35;">
+          Option 2: Zapier
+        </h2>
+
+        <div class="bg-white rounded-xl border border-gray-200 p-8 mb-8">
+          <h3 class="font-bold text-xl mb-4" style="color: #061A35;">How to Set Up</h3>
+          <ol class="space-y-4 text-gray-700">
+            <li class="flex gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-sm font-bold">1</span>
+              <span>Create a Zapier account and connect HubSpot</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-sm font-bold">2</span>
+              <span>Connect your Microsoft Teams account</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-sm font-bold">3</span>
+              <span>Create a Zap with HubSpot trigger (New Deal, New Contact, etc.)</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-sm font-bold">4</span>
+              <span>Add Microsoft Teams action (Send Channel Message)</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-sm font-bold">5</span>
+              <span>Map HubSpot fields to your message template</span>
+            </li>
+          </ol>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-green-50 border border-green-200 rounded-xl p-6">
+            <h4 class="font-bold text-green-800 mb-3">Pros</h4>
+            <ul class="space-y-2 text-green-700">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Easy to set up</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>More trigger options than native</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Connects to 6,000+ apps</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-red-50 border border-red-200 rounded-xl p-6">
+            <h4 class="font-bold text-red-800 mb-3">Cons</h4>
+            <ul class="space-y-2 text-red-700">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                <span>Polling delays (1-15 minutes)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                <span>One-way only (no CRM updates)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                <span>Task-based pricing adds up</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Method 3: Pyko (Recommended) -->
+  <section class="py-16 md:py-24 bg-gradient-to-br from-[#061A35] to-[#0A2342]">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-8">
+          <span class="inline-block px-4 py-1 rounded-full bg-[#F94730] text-white text-sm font-medium mb-4">Recommended for Sales Teams</span>
+          <h2 class="text-3xl font-bold text-white mb-4">
+            Option 3: Pyko
+          </h2>
+          <p class="text-xl text-gray-300">
+            The only HubSpot-Teams integration built specifically for sales teams.
+          </p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur rounded-xl border border-white/20 p-8 mb-8">
+          <h3 class="font-bold text-xl mb-4 text-white">How to Set Up (5 minutes)</h3>
+          <ol class="space-y-4 text-gray-200">
+            <li class="flex gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-[#F94730] flex items-center justify-center text-sm font-bold text-white">1</span>
+              <span>Start free trial and connect Microsoft Teams</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-[#F94730] flex items-center justify-center text-sm font-bold text-white">2</span>
+              <span>Connect HubSpot with one-click OAuth</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-[#F94730] flex items-center justify-center text-sm font-bold text-white">3</span>
+              <span>Choose from 10+ HubSpot templates (or build custom)</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-[#F94730] flex items-center justify-center text-sm font-bold text-white">4</span>
+              <span>Select your Teams channel or enable DM routing</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-[#F94730] flex items-center justify-center text-sm font-bold text-white">5</span>
+              <span>Done! Alerts start flowing automatically</span>
+            </li>
+          </ol>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-8">
+          <FeatureCard
+            icon="zap"
+            title="Rich Adaptive Cards"
+            description="Beautiful Teams messages with all deal details, not plain text."
+          />
+          <FeatureCard
+            icon="mouse-pointer-click"
+            title="One-Click Actions"
+            description="Update deal stage, add notes, or create tasks without leaving Teams."
+          />
+          <FeatureCard
+            icon="target"
+            title="Smart Routing"
+            description="Route alerts based on deal owner, territory, or any HubSpot field."
+          />
+        </div>
+
+        <div class="text-center">
+          <Button href="/trial" variant="primary" size="lg">
+            Start Free 14-Day Trial
+          </Button>
+          <p class="text-sm text-gray-400 mt-4">No credit card required</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" style="color: #061A35;">
+          What Can You Do With HubSpot + Teams?
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-gray-50 rounded-xl p-6">
+            <h3 class="font-bold text-lg mb-3" style="color: #061A35;">New Lead Alerts</h3>
+            <p class="text-gray-700">Get notified instantly when new leads come in from your website, ads, or integrations. Route to the right rep based on territory or lead source.</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-6">
+            <h3 class="font-bold text-lg mb-3" style="color: #061A35;">Deal Stage Changes</h3>
+            <p class="text-gray-700">Alert the team when deals move forward (or backward). Celebrate wins and catch at-risk deals before they slip.</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-6">
+            <h3 class="font-bold text-lg mb-3" style="color: #061A35;">High-Value Deal Tracking</h3>
+            <p class="text-gray-700">Get special alerts for deals above a certain amount. Keep leadership informed on your biggest opportunities.</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-6">
+            <h3 class="font-bold text-lg mb-3" style="color: #061A35;">Data Quality Alerts</h3>
+            <p class="text-gray-700">Automatically detect stale deals, missing fields, and outdated close dates. Fix issues before they hurt your forecast.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" style="color: #061A35;">
+          Frequently Asked Questions
+        </h2>
+
+        <div class="space-y-6">
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Does HubSpot have a native Microsoft Teams integration?</h3>
+            <p class="text-gray-700">Yes, HubSpot offers a native Teams integration, but it has limited features. It's mainly for meeting links and basic notifications. For custom deal alerts and CRM actions, you'll need Zapier or Pyko.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Can I get HubSpot deal alerts in Microsoft Teams?</h3>
+            <p class="text-gray-700">Yes. With Pyko, you can create custom alerts for any HubSpot event: new deals, stage changes, property updates, and more. Each alert includes full deal details and action buttons.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Can I update HubSpot records from Microsoft Teams?</h3>
+            <p class="text-gray-700">With Pyko, yes. You can update deal stages, add notes, push close dates, and create tasks directly from Teams. The native HubSpot integration and Zapier don't support this.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">How fast are HubSpot notifications?</h3>
+            <p class="text-gray-700">HubSpot's API doesn't support real-time webhooks like Salesforce. Pyko polls HubSpot every 5 minutes using the Search API. For most sales workflows, this is fast enough to catch updates promptly.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Does Pyko work with HubSpot custom properties?</h3>
+            <p class="text-gray-700">Yes. Pyko automatically detects all your HubSpot properties, including custom ones. You can use them in filters, messages, and routing rules.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-bold text-lg mb-2" style="color: #061A35;">Can I use Pyko with both Slack and Teams?</h3>
+            <p class="text-gray-700">Yes. Pyko supports both Slack and Microsoft Teams. You can even send some alerts to Slack and others to Teams based on your team structure.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <CTASection
+    headline="Connect HubSpot to Microsoft Teams today"
+    subheadline="Get deal alerts and update your CRM without switching apps."
+    primaryCTA={{ text: "Start Free 14-Day Trial", href: "/trial" }}
+    secondaryCTA={{ text: "See HubSpot Integration", href: "/integrations/hubspot" }}
+    variant="gradient"
+  />
+</MainLayout>
