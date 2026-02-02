@@ -1,0 +1,77 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Button from '../../components/Button.astro';
+---
+
+<MainLayout
+  title="The RevOps Guide to AI-Powered Data Quality"
+  description="How RevOps teams use AI automation to maintain CRM data quality at scale - without nagging reps or building complex workflows."
+>
+  <article class="py-16 md:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <div class="mb-8">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-sm px-3 py-1 rounded-full font-medium" style="background: rgba(33, 150, 243, 0.1); color: #2196F3;">RevOps</span>
+            <span class="text-sm text-gray-500">January 2026</span>
+          </div>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style="color: #061A35;">
+            The RevOps Guide to AI-Powered Data Quality
+          </h1>
+          <p class="text-xl text-gray-600">
+            Your forecast is only as good as your data. Here's how AI and automation solve the CRM data quality problem once and for all.
+          </p>
+        </div>
+
+        <div class="prose prose-lg max-w-none" style="color: #374151;">
+          <h2 style="color: #061A35;">The Data Quality Crisis</h2>
+          <p>Every RevOps leader knows the pain: your CRO asks for a forecast, and you're not sure you can trust the numbers. Close dates are stale. Fields are empty. Stages don't reflect reality. Studies estimate that <strong>poor CRM data quality costs companies $15M annually</strong> in lost productivity and bad decisions.</p>
+          <p>The traditional approach - sending weekly "please update your CRM" emails - doesn't work. Reps ignore them. Managers get frustrated. The data stays dirty.</p>
+
+          <h2 style="color: #061A35;">Why AI Changes the Equation</h2>
+          <p>AI-powered data quality automation works differently from traditional approaches:</p>
+          <ul>
+            <li><strong>Proactive detection:</strong> AI scans your CRM and identifies data issues before they impact the forecast - stale close dates, missing fields, stuck deals</li>
+            <li><strong>Smart prioritization:</strong> Instead of flagging everything, AI prioritizes issues by business impact. A $500K deal with a past close date gets flagged before a $5K deal</li>
+            <li><strong>Contextual nudges:</strong> Reps receive alerts in Slack with context about why the update matters, not just "please update field X"</li>
+            <li><strong>One-click fixes:</strong> Reps can update the CRM directly from the alert. Push a close date forward, add a next step, update a stage - all without leaving Slack</li>
+          </ul>
+
+          <h2 style="color: #061A35;">Building Your Data Quality Automation Stack</h2>
+          <p>Here's a practical framework for implementing AI-powered data quality:</p>
+
+          <h3 style="color: #061A35;">Layer 1: Close Date Hygiene</h3>
+          <p>The single most impactful automation. Alert reps when their deals have close dates in the past. Include a "Push 30 Days" button so they can fix it in one click. This alone can take close date accuracy from 40% to 90%+.</p>
+
+          <h3 style="color: #061A35;">Layer 2: Required Field Enforcement</h3>
+          <p>Identify deals missing critical fields (Next Step, MEDDIC criteria, competition). Send daily reminders to reps with empty fields. Include an "Update" button that opens a quick-edit modal.</p>
+
+          <h3 style="color: #061A35;">Layer 3: Pipeline Velocity Monitoring</h3>
+          <p>Flag deals that have been in the same stage for longer than your average sales cycle. Alert the rep and their manager. This prevents pipeline rot and improves forecast accuracy.</p>
+
+          <h3 style="color: #061A35;">Layer 4: AI-Powered Suggestions</h3>
+          <p>Use AI to analyze your CRM schema and proactively suggest data quality rules. The AI identifies patterns you might miss - "You have 47 opportunities with close dates in the past" - and recommends specific automations to fix them.</p>
+
+          <h2 style="color: #061A35;">Measuring Data Quality Impact</h2>
+          <p>Track these metrics to prove the ROI of your data quality program:</p>
+          <ul>
+            <li><strong>Close date accuracy:</strong> % of open deals with future close dates</li>
+            <li><strong>Field completion rate:</strong> % of required fields filled across pipeline</li>
+            <li><strong>Forecast variance:</strong> Difference between forecast and actuals</li>
+            <li><strong>Time to CRM update:</strong> How quickly reps respond to data quality alerts</li>
+          </ul>
+
+          <h2 style="color: #061A35;">Getting Started</h2>
+          <p>Tools like Pyko make it possible to implement a complete data quality automation stack without writing a single line of code. Connect your CRM, use AI suggestions to identify the biggest issues, and deploy automations in minutes.</p>
+          <p>The best RevOps teams don't nag reps about data quality. They automate it.</p>
+        </div>
+
+        <div class="mt-12 p-8 rounded-2xl" style="background: linear-gradient(135deg, #071935 0%, #0A2342 100%);">
+          <h3 class="text-2xl font-bold text-white mb-3">Automate your CRM data quality</h3>
+          <p class="text-gray-300 mb-6">Start your free 14-day trial. AI suggestions included.</p>
+          <Button href="/trial" variant="primary" size="lg">Start Free Trial</Button>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>

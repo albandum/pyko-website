@@ -1,0 +1,353 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Button from '../../components/Button.astro';
+import FeatureCard from '../../components/FeatureCard.astro';
+import CTASection from '../../components/CTASection.astro';
+---
+
+<MainLayout
+  title="AI-Powered Revenue Intelligence"
+  description="Enterprise-grade AI intelligence at startup pricing. Smart suggestions, weekly digests, and intelligent alerts that transform your CRM data into action."
+>
+  <!-- Hero Section -->
+  <section class="gradient-hero py-16 md:py-24 lg:py-32">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6" style="background: linear-gradient(135deg, rgba(249, 71, 48, 0.2) 0%, rgba(249, 71, 48, 0.05) 100%); color: #F94730;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+          AI-Powered
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+          AI-Powered Revenue Intelligence
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
+          Your CRM data holds the answers. Pyko's AI finds them for you - automatically suggesting automations, generating pipeline summaries, and enriching every alert with actionable context.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button href="/trial" variant="primary" size="lg">
+            Start Free 14-Day Trial
+          </Button>
+          <Button href="#features" variant="outline" size="lg">
+            See AI Features
+          </Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 1: AI Automation Suggestions -->
+  <section id="features" class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium mb-4" style="background: rgba(33, 150, 243, 0.1); color: #2196F3;">
+            Feature 1
+          </div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
+            Connect your CRM. Get instant recommendations.
+          </h2>
+          <p class="text-lg text-gray-700 mb-6">
+            Pyko scans your CRM and identifies exactly which automations your team needs. 47 stale close dates? We'll suggest the fix. Missing next steps? We'll flag them. No more guessing what to build first.
+          </p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style="background: rgba(249, 71, 48, 0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-gray-700"><strong style="color: #061A35;">Automatic CRM analysis</strong> - Scans your schema, fields, and record counts</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style="background: rgba(249, 71, 48, 0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-gray-700"><strong style="color: #061A35;">Specific templates</strong> - "Set up a Stale Close Date Alert - 47 records match right now"</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style="background: rgba(249, 71, 48, 0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-gray-700"><strong style="color: #061A35;">One-click deploy</strong> - Accept a suggestion and it's live in seconds</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+          <div class="space-y-4">
+            <div class="bg-white rounded-xl border border-gray-200 p-5 shadow-sm">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(244, 67, 54, 0.1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F44336" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-semibold text-sm" style="color: #061A35;">Stale Close Date Alert</span>
+                    <span class="text-xs px-2 py-0.5 rounded-full bg-red-100 text-red-700 font-medium">High Priority</span>
+                  </div>
+                  <p class="text-xs text-gray-600 mb-2">47 opportunities have close dates in the past but are still open</p>
+                  <button class="text-xs font-medium px-3 py-1.5 rounded-lg text-white" style="background: #F94730;">Deploy this automation</button>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-200 p-5 shadow-sm">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(255, 152, 0, 0.1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF9800" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-semibold text-sm" style="color: #061A35;">Missing Next Step</span>
+                    <span class="text-xs px-2 py-0.5 rounded-full bg-orange-100 text-orange-700 font-medium">Medium</span>
+                  </div>
+                  <p class="text-xs text-gray-600 mb-2">23 deals in pipeline have no next step defined</p>
+                  <button class="text-xs font-medium px-3 py-1.5 rounded-lg text-white" style="background: #F94730;">Deploy this automation</button>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-200 p-5 shadow-sm">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(156, 39, 176, 0.1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9C27B0" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-semibold text-sm" style="color: #061A35;">Stuck Deal Monitor</span>
+                    <span class="text-xs px-2 py-0.5 rounded-full bg-purple-100 text-purple-700 font-medium">Medium</span>
+                  </div>
+                  <p class="text-xs text-gray-600 mb-2">12 deals haven't moved stages in 14+ days</p>
+                  <button class="text-xs font-medium px-3 py-1.5 rounded-lg text-white" style="background: #F94730;">Deploy this automation</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 2: Weekly Digest -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="order-2 lg:order-1">
+          <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-lg">
+            <div class="flex items-center gap-2 mb-4">
+              <div class="w-8 h-8 rounded" style="background: #611f69;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 h-8 p-1.5" fill="white"><path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313z"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-sm" style="color: #061A35;">Pyko</p>
+                <p class="text-xs text-gray-500">Monday 9:00 AM</p>
+              </div>
+            </div>
+            <div class="space-y-3 text-sm">
+              <p class="font-bold" style="color: #061A35;">Your Weekly Pipeline Digest</p>
+              <p class="text-gray-700">This week: <strong>12 deals progressed</strong>, 5 stalled, <strong>3 closed won ($240K)</strong>. Your pipeline is at $1.2M across 34 deals.</p>
+              <div class="border-l-4 pl-3 py-1" style="border-color: #F44336;">
+                <p class="font-semibold text-xs" style="color: #F44336;">Top Risk</p>
+                <p class="text-gray-700">Acme Corp ($85K) hasn't had activity in 21 days. Consider reaching out this week.</p>
+              </div>
+              <div class="border-l-4 pl-3 py-1" style="border-color: #4CAF50;">
+                <p class="font-semibold text-xs" style="color: #4CAF50;">Action Items</p>
+                <p class="text-gray-700">Follow up on 3 deals with past close dates. Review 2 stuck deals in negotiation.</p>
+              </div>
+              <p class="text-xs text-gray-400 pt-2">Powered by Pyko</p>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium mb-4" style="background: rgba(76, 175, 80, 0.1); color: #4CAF50;">
+            Feature 2
+          </div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
+            Your pipeline summary, every Monday in Slack.
+          </h2>
+          <p class="text-lg text-gray-700 mb-6">
+            AI-generated weekly rollup of deals won, deals at risk, and team activity. Personalized for each rep and rolled up for managers. No dashboards to check.
+          </p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style="background: rgba(249, 71, 48, 0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-gray-700"><strong style="color: #061A35;">Per-user personalization</strong> - Each rep sees their own deals</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style="background: rgba(249, 71, 48, 0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-gray-700"><strong style="color: #061A35;">Risk detection</strong> - Automatically flags deals that need attention</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style="background: rgba(249, 71, 48, 0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-gray-700"><strong style="color: #061A35;">Slack &amp; Teams</strong> - Rich formatting with Block Kit and Adaptive Cards</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 3: Smart Alert Summaries -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium mb-4" style="background: rgba(156, 39, 176, 0.1); color: #9C27B0;">
+            Feature 3
+          </div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #061A35;">
+            Alerts that explain WHY, not just WHAT.
+          </h2>
+          <p class="text-lg text-gray-700 mb-6">
+            Every alert includes AI context: deal velocity, risk signals, and recommended actions. Transform Pyko from a notification tool into an intelligence tool.
+          </p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style="background: rgba(249, 71, 48, 0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-gray-700"><strong style="color: #061A35;">One-click enable</strong> - Toggle AI enhancement on any automation</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style="background: rgba(249, 71, 48, 0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-gray-700"><strong style="color: #061A35;">Deal velocity tracking</strong> - Know if a deal is slower than your average</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style="background: rgba(249, 71, 48, 0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F94730" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-gray-700"><strong style="color: #061A35;">Suggested actions</strong> - AI recommends what to do next</span>
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+            <p class="text-xs font-medium text-gray-500 mb-3">WITHOUT AI Enhancement</p>
+            <div class="bg-white rounded-xl border border-gray-200 p-4">
+              <p class="text-sm text-gray-700"><strong>Opportunity:</strong> Acme Corp</p>
+              <p class="text-sm text-gray-700"><strong>Stage:</strong> Negotiation</p>
+              <p class="text-sm text-gray-700"><strong>Amount:</strong> $50,000</p>
+            </div>
+          </div>
+          <div class="rounded-2xl p-6 border-2" style="background: rgba(249, 71, 48, 0.03); border-color: #F94730;">
+            <p class="text-xs font-medium mb-3" style="color: #F94730;">WITH AI Enhancement</p>
+            <div class="bg-white rounded-xl border border-gray-200 p-4">
+              <p class="text-sm text-gray-700"><strong>Opportunity:</strong> Acme Corp</p>
+              <p class="text-sm text-gray-700"><strong>Stage:</strong> Negotiation</p>
+              <p class="text-sm text-gray-700"><strong>Amount:</strong> $50,000</p>
+              <div class="mt-3 pt-3 border-t border-gray-100">
+                <div class="flex items-start gap-2">
+                  <span class="text-sm">💡</span>
+                  <p class="text-sm text-gray-700"><em>Acme Corp ($50K) just moved to Negotiation - this deal has been in pipeline for 45 days, which is 2x your average. Consider prioritizing.</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: #061A35;">
+          Enterprise AI at startup pricing
+        </h2>
+        <p class="text-lg text-gray-700">
+          Get the same AI intelligence as platforms charging 8-25x more.
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse rounded-lg overflow-hidden border border-gray-200 bg-white">
+            <thead>
+              <tr class="bg-gray-50">
+                <th class="px-6 py-4 text-left text-sm font-semibold" style="color: #061A35;">Feature</th>
+                <th class="px-6 py-4 text-center text-sm font-semibold" style="background-color: rgba(249, 71, 48, 0.05);">
+                  <div class="font-bold text-lg" style="color: #F94730;">Pyko AI</div>
+                  <div class="text-xs text-gray-500">~$8/user/mo</div>
+                </th>
+                <th class="px-6 py-4 text-center text-sm font-semibold text-gray-600">
+                  <div>Momentum</div>
+                  <div class="text-xs text-gray-500">From $69/user/mo</div>
+                </th>
+                <th class="px-6 py-4 text-center text-sm font-semibold text-gray-600">
+                  <div>Clari</div>
+                  <div class="text-xs text-gray-500">From $100/user/mo</div>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr>
+                <td class="px-6 py-4 text-sm" style="color: #374151;">AI automation suggestions</td>
+                <td class="px-6 py-4 text-center" style="background-color: rgba(249, 71, 48, 0.03);"><span class="text-2xl" style="color: #10B981;">✓</span></td>
+                <td class="px-6 py-4 text-center"><span class="text-red-500 text-2xl">✗</span></td>
+                <td class="px-6 py-4 text-center"><span class="text-red-500 text-2xl">✗</span></td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-sm" style="color: #374151;">Weekly pipeline digest</td>
+                <td class="px-6 py-4 text-center" style="background-color: rgba(249, 71, 48, 0.03);"><span class="text-2xl" style="color: #10B981;">✓</span></td>
+                <td class="px-6 py-4 text-center"><span class="text-2xl" style="color: #10B981;">✓</span></td>
+                <td class="px-6 py-4 text-center"><span class="text-2xl" style="color: #10B981;">✓</span></td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-sm" style="color: #374151;">Smart alert enrichment</td>
+                <td class="px-6 py-4 text-center" style="background-color: rgba(249, 71, 48, 0.03);"><span class="text-2xl" style="color: #10B981;">✓</span></td>
+                <td class="px-6 py-4 text-center"><span class="text-2xl" style="color: #10B981;">✓</span></td>
+                <td class="px-6 py-4 text-center"><span class="text-2xl" style="color: #10B981;">✓</span><div class="text-xs text-gray-500">Via Copilot add-on</div></td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-sm" style="color: #374151;">NL automation builder</td>
+                <td class="px-6 py-4 text-center" style="background-color: rgba(249, 71, 48, 0.03);"><span class="text-2xl" style="color: #10B981;">✓</span></td>
+                <td class="px-6 py-4 text-center"><span class="text-red-500 text-2xl">✗</span></td>
+                <td class="px-6 py-4 text-center"><span class="text-red-500 text-2xl">✗</span></td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-sm" style="color: #374151;">One-click CRM actions</td>
+                <td class="px-6 py-4 text-center" style="background-color: rgba(249, 71, 48, 0.03);"><span class="text-2xl" style="color: #10B981;">✓</span></td>
+                <td class="px-6 py-4 text-center"><span class="text-2xl" style="color: #10B981;">✓</span></td>
+                <td class="px-6 py-4 text-center"><span class="text-sm text-gray-500">Limited</span></td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-sm" style="color: #374151;">HubSpot support</td>
+                <td class="px-6 py-4 text-center" style="background-color: rgba(249, 71, 48, 0.03);"><span class="text-2xl" style="color: #10B981;">✓</span></td>
+                <td class="px-6 py-4 text-center"><span class="text-sm text-gray-500">In rollout</span></td>
+                <td class="px-6 py-4 text-center"><span class="text-sm text-gray-500">Limited</span></td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-sm" style="color: #374151;">Microsoft Teams support</td>
+                <td class="px-6 py-4 text-center" style="background-color: rgba(249, 71, 48, 0.03);"><span class="text-2xl" style="color: #10B981;">✓</span></td>
+                <td class="px-6 py-4 text-center"><span class="text-sm text-gray-500">Coming soon</span></td>
+                <td class="px-6 py-4 text-center"><span class="text-sm text-gray-500">Limited</span></td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-sm" style="color: #374151;">Self-serve setup</td>
+                <td class="px-6 py-4 text-center" style="background-color: rgba(249, 71, 48, 0.03);"><span class="text-2xl" style="color: #10B981;">✓</span></td>
+                <td class="px-6 py-4 text-center"><span class="text-sm text-gray-500">Sales-led</span></td>
+                <td class="px-6 py-4 text-center"><span class="text-sm text-gray-500">Sales-led</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-gray-400 mt-4 text-center">
+          Pricing based on publicly available data as of January 2026. Clari total cost typically $200-300+/user/mo with required modules. Momentum offers startup discounts for teams under 10.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <CTASection
+    headline="Enterprise AI intelligence. Startup pricing."
+    subheadline="All AI features included in every Pyko plan. No upsells."
+    primaryCTA={{ text: "Start Free 14-Day Trial", href: "/trial" }}
+    secondaryCTA={{ text: "See Pricing", href: "/pricing" }}
+    variant="gradient"
+  />
+</MainLayout>
